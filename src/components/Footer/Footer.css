@@ -1,0 +1,48 @@
+.footer-container {
+  margin-top: auto;
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  background-color: var(--white);
+  border-top: 1px solid #f0f0f0;
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-family: var(--font-2);
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--orange);
+
+      span {
+        font-family: var(--font-2);
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--dark-blue);
+        border-radius: 0.5rem;
+        padding-right: 0.3rem;
+      }
+    }
+  }
+
+  .reserved {
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .7px;
+    color: var(--dark-blue);
+  }
+
+  .since {
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .7px;
+    color: var(--dark-blue);
+  }
+}
