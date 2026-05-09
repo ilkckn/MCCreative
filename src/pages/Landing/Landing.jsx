@@ -3,6 +3,7 @@ import websites from "../../MyWebsites.js";
 import WhatIOffer from "../../components/WhatIOffer/WhatIOffer.jsx";
 import SelectedWork from "../../components/SelectedWork/SelectedWork.jsx";
 import AboutMeLanding from "../../components/AboutMeLanding/AboutMeLanding.jsx";
+import GetYourBusiness from "../../components/GetYourBusiness/GetYourBusiness.jsx";
 
 function Landing() {
   return (
@@ -104,6 +105,7 @@ function Landing() {
       <WhatIOffer />
       <SelectedWork />
       <AboutMeLanding />
+      <GetYourBusiness />
     </main>
   );
 }
