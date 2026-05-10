@@ -1,5 +1,6 @@
-import MyStory from "../../components/MyStory/MyStory.jsx";
-import TechSkills from "../../components/TechSkills/TechSkills";
+import MyStory from "../../components/A-MyStory/MyStory.jsx";
+import TechSkills from "../../components/A-TechSkills/TechSkills.jsx";
+import WorkWithMe from "../../components/A-WorkWithMe/WorkWithMe.jsx";
 import "./About.css";
 
 function About() {
@@ -103,7 +104,9 @@ function About() {
       <section className="sec-3">
         <TechSkills />
       </section>
-      <section className="sec-4"></section>
+      <section className="sec-4">
+        <WorkWithMe />
+      </section>
     </main>
   );
 }

@@ -176,7 +176,7 @@
 
 /* Mobile Menu Styles */
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 820px) {
   .menu-overlay {
     display: block;
     position: fixed;
