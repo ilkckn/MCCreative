@@ -16,9 +16,10 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+
       span {
         width: 2rem;
-        height: 0.1rem;
+        height: 0.2rem;
         background-color: var(--orange);
       }
       p {
@@ -97,7 +98,7 @@
       gap: 1rem;
       span {
         width: 2rem;
-        height: 0.1rem;
+        height: 0.2rem;
         background-color: var(--orange);
       }
       p {

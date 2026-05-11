@@ -1,6 +1,19 @@
 import "./WorkWithMe.css";
+import { useNavigate } from "react-router-dom";
 
 function WorkWithMe() {
+  const navigate = useNavigate();
+
+  const handleProjectClick = () => {
+    navigate("/projects");
+    window.scrollTo(0, 0);
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <main className="work-with-me">
       <section className="sec-1-work-with-me">
@@ -20,8 +33,12 @@ function WorkWithMe() {
           </p>
         </div>
         <div className="btns">
-          <button className="start-a-project">Start a Project</button>
-          <button className="see-my-work">See My Work</button>
+          <button className="start-a-project" onClick={handleContactClick}>
+            Get in Touch
+          </button>
+          <button className="see-my-work" onClick={handleProjectClick}>
+            See My Work
+          </button>
         </div>
       </section>
 

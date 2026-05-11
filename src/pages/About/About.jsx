@@ -2,8 +2,21 @@ import MyStory from "../../components/A-MyStory/MyStory.jsx";
 import TechSkills from "../../components/A-TechSkills/TechSkills.jsx";
 import WorkWithMe from "../../components/A-WorkWithMe/WorkWithMe.jsx";
 import "./About.css";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
+
+  const handleProjectClick = () => {
+    navigate("/projects");
+    window.scrollTo(0, 0);
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <main className="about">
       <section className="sec-1">
@@ -27,8 +40,12 @@ function About() {
             </p>
           </div>
           <div className="btns">
-            <button className="btn-1">Let's talk</button>
-            <button className="btn-2">See my projects</button>
+            <button className="btn-1" onClick={handleContactClick}>
+              Let's talk
+            </button>
+            <button className="btn-2" onClick={handleProjectClick}>
+              See my projects
+            </button>
           </div>
         </div>
 
