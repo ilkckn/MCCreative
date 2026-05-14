@@ -1,4 +1,5 @@
 import "./Landing.css";
+import { useNavigate } from "react-router-dom";
 import websites from "../../MyWebsites.js";
 import WhatIOffer from "../../components/WhatIOffer/WhatIOffer.jsx";
 import SelectedWork from "../../components/SelectedWork/SelectedWork.jsx";
@@ -6,6 +7,8 @@ import AboutMeLanding from "../../components/AboutMeLanding/AboutMeLanding.jsx";
 import GetYourBusiness from "../../components/GetYourBusiness/GetYourBusiness.jsx";
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
     <main className="landing-container">
       <section className="sec-1">
@@ -26,8 +29,8 @@ function Landing() {
             </p>
           </div>
           <div className="btns">
-            <button>See My Work</button>
-            <button>How I Work</button>
+            <button onClick={() => navigate("/projects")}>See My Work</button>
+            <button onClick={() => navigate("/about")}>How I Work</button>
           </div>
           <div className="line"></div>
           <div className="metrics">

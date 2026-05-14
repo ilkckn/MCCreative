@@ -1,7 +1,20 @@
 import "./GetYourBusiness.css";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 function GetYourBusiness() {
+  const navigate = useNavigate();
+
+  const handleNavigateContact = () => {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  };
+
+  const handleNavigateProjects = () => {
+    navigate("/projects");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <main className="get-your-business">
       <section className="sec-1">
@@ -15,11 +28,19 @@ function GetYourBusiness() {
           need.
         </p>
         <div className="btns">
-          <button className="start-project">
+          <button
+            className="start-project"
+            onClick={handleNavigateContact}
+          >
             Start a Project
             <MdOutlineArrowRightAlt className="right-arrow" />
           </button>
-          <button className="all-projects">See All Projects</button>
+          <button
+            className="all-projects"
+            onClick={handleNavigateProjects}
+          >
+            See All Projects
+          </button>
         </div>
       </section>
 

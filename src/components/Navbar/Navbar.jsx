@@ -8,6 +8,10 @@ function Navbar() {
   const openMenu = () => setIsMenuOpen(true);
   const closeMenu = () => setIsMenuOpen(false);
 
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <div
@@ -25,19 +29,21 @@ function Navbar() {
           <section className="sec-links">
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={handleLinkClick}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" onClick={handleLinkClick}>About</NavLink>
               </li>
               <li>
-                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/projects" onClick={handleLinkClick}>Projects</NavLink>
               </li>
               <li>
-                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/blog" onClick={handleLinkClick}>Blog</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink>
               </li>
             </ul>
           </section>

@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
 import "./Blog.css";
 import FeaturedPost from "../../components/Blog-Featured-Post/FeaturedPost";
+import AllPosts from "../../components/Blog-Posts/AllPosts";
+import StayUpdated from "../../components/Blog-Stay-Updated/StayUpdated";
 
 function Blog() {
   return (
@@ -18,13 +19,15 @@ function Blog() {
             </h1>
             <h1>owners.</h1>
           </div>
-          <div className="go-back-home">
+          {/* <div className="go-back-home">
             <NavLink to="/" className="go-back-home-link">
               Home
             </NavLink>
-            <span>/</span>
+            <span>
+              <RiArrowRightSLine />
+            </span>
             <p>Blog</p>
-          </div>
+          </div> */}
         </div>
         <div className="blog-right">
           <h2 className="header">by the numbers</h2>
@@ -58,8 +61,13 @@ function Blog() {
       <section className="sec-featured-post">
         <FeaturedPost />
       </section>
-      <section className="sec-all-posts"></section>
-      <section className="sec-stay-updated"></section>
+      <section className="sec-all-posts">
+        <AllPosts />
+      </section>
+
+      <section className="sec-stay-updated">
+        <StayUpdated />
+      </section>
     </main>
   );
 }

@@ -1,0 +1,432 @@
+main {
+  width: 100%;
+
+  /* Başarı mesajı */
+  .form-success-message {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 0.8rem;
+    padding: 1.6rem 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      background-color: #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    p {
+      font-family: var(--font-2);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #16a34a;
+    }
+  }
+
+  /* Hata mesajı */
+  .form-error-message {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 0.8rem;
+    padding: 1.6rem 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      background-color: #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    p {
+      font-family: var(--font-2);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #dc2626;
+    }
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .name-email {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      .name,
+      .email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+          font-family: var(--font-2);
+          font-size: 1.4rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: var(--dark-blue);
+        }
+
+        input {
+          width: 100%;
+          padding: 1rem;
+          font-family: var(--font-2);
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: var(--description);
+          background-color: transparent;
+          border: 0.1rem solid var(--description-2);
+          border-radius: 0.5rem;
+
+          &::placeholder {
+            color: var(--description-2);
+            font-weight: 400;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+          }
+          &:focus {
+            outline: none;
+            border-color: var(--orange);
+          }
+        }
+      }
+    }
+
+    .business-service {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      .business,
+      .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        position: relative;
+
+        label {
+          font-family: var(--font-2);
+          font-size: 1.4rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: var(--description);
+        }
+
+        input {
+          width: 100%;
+          padding: 1rem;
+          font-family: var(--font-2);
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: var(--description);
+          background-color: transparent;
+          border: 0.1rem solid var(--description-2);
+          border-radius: 0.5rem;
+
+          &::placeholder {
+            color: var(--description-2);
+            font-weight: 400;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+          }
+          &:focus {
+            outline: none;
+            border-color: var(--orange);
+          }
+        }
+
+        select {
+          width: 100%;
+          padding: 1rem;
+          font-family: var(--font-2);
+          font-size: 1.3rem;
+          font-weight: 500;
+          color: var(--description);
+          background-color: transparent;
+          border: 0.1rem solid var(--description-2);
+          border-radius: 0.5rem;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+
+          & option {
+            font-size: 1.4rem;
+            font-family: var(--font-2);
+            letter-spacing: 2px;
+            background-color: var(--white);
+          }
+          &:focus {
+            outline: none;
+            border: 1px solid var(--orange);
+          }
+        }
+
+        &.service::after {
+          content: "⌄";
+          position: absolute;
+          right: 15px;
+          top: 55%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          font-family: var(--font-2);
+          font-size: 2.2rem;
+          color: var(--description-2);
+        }
+      }
+    }
+
+    .how-did-you-hear {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        font-family: var(--font-2);
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: var(--description);
+      }
+
+      .choose {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        span {
+          padding: 0.5rem 1rem;
+          font-family: var(--font-2);
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: var(--description);
+          background-color: transparent;
+          border: 0.1rem solid var(--description-2);
+          border-radius: 0.5rem;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--orange);
+            color: var(--white);
+            border-color: var(--orange);
+          }
+          &.active {
+            background-color: var(--orange);
+            color: var(--white);
+            border-color: var(--orange);
+          }
+        }
+      }
+    }
+
+    .your-message {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        font-family: var(--font-2);
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: var(--description);
+      }
+
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        font-family: var(--font-2);
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--description);
+        background-color: transparent;
+        border: 0.1rem solid var(--description-2);
+        border-radius: 0.5rem;
+        resize: vertical;
+        min-height: 14rem;
+
+        &::placeholder {
+          color: var(--description-2);
+          font-weight: 400;
+          font-size: 1.3rem;
+          letter-spacing: 0.5px;
+        }
+        &:focus {
+          outline: none;
+          border-color: var(--orange);
+        }
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 1.3rem;
+        font-family: var(--font-2);
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: var(--white);
+        background-color: var(--orange);
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        .arrow {
+          transform: translateY(0.2rem);
+          font-size: 1.9rem;
+        }
+        &:hover .arrow {
+          transform: translateY(0.2rem) translateX(0.3rem);
+        }
+      }
+
+      .btn-loading {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  main form {
+    .name-email {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .business-service {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+}
+
+/* ── 430px ── */
+@media (max-width: 430px) {
+  main {
+    .form-success-message,
+    .form-error-message {
+      padding: 1.2rem 1.4rem;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    form {
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+
+      .name-email,
+      .business-service {
+        .name label,
+        .email label,
+        .business label,
+        .service label {
+          font-size: 1.3rem;
+        }
+        .name input,
+        .email input,
+        .business input {
+          font-size: 1.3rem;
+          padding: 0.9rem;
+        }
+        .service select {
+          font-size: 1.2rem;
+          padding: 0.9rem;
+        }
+      }
+
+      .how-did-you-hear {
+        label {
+          font-size: 1.3rem;
+        }
+        .choose span {
+          font-size: 1.2rem;
+          padding: 0.5rem 0.9rem;
+        }
+      }
+
+      .your-message {
+        label {
+          font-size: 1.3rem;
+        }
+        textarea {
+          font-size: 1.3rem;
+          padding: 0.9rem;
+          min-height: 12rem;
+        }
+      }
+
+      .submit-btn button {
+        font-size: 1.3rem;
+        padding: 1.1rem;
+      }
+    }
+  }
+}
+
+/* ── 375px ── */
+@media (max-width: 375px) {
+  main form {
+    gap: 1rem;
+
+    .name-email .name input,
+    .name-email .email input,
+    .business-service .business input,
+    .business-service .service select {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+
+    .how-did-you-hear .choose span {
+      font-size: 1.1rem;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .your-message textarea {
+      font-size: 1.2rem;
+      min-height: 10rem;
+    }
+
+    .submit-btn button {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.selected-work {
+.sw-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -7,18 +7,20 @@
   border-top: 1px solid var(--description-3);
   border-bottom: 1px solid var(--description-3);
 
-  .sec-1 {
+  /* ── Section 1: başlık + view all ── */
+  .sw-sec-1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    .small-header {
+    .sw-small-header {
       display: flex;
       align-items: center;
       gap: 1rem;
       margin-bottom: 1rem;
 
       span {
+        display: inline-block;
         width: 3rem;
         height: 0.2rem;
         background-color: var(--orange);
@@ -34,12 +36,12 @@
       }
     }
 
-    .main-header-view-all-projects {
+    .sw-header-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .main-header {
+      .sw-main-header {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -60,7 +62,7 @@
         }
       }
 
-      .view-all-projects {
+      .sw-view-all {
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -75,24 +77,25 @@
           letter-spacing: 0.5px;
           text-decoration: none;
         }
-        .arrow-icon {
+        .sw-arrow-icon {
           width: 1.5rem;
           height: 1.5rem;
           transition: all 0.3s ease;
         }
-        &:hover .arrow-icon {
+        &:hover .sw-arrow-icon {
           transform: translateX(4px);
         }
       }
     }
   }
 
-  .sec-2 {
+  /* ── Section 2: kartlar ── */
+  .sw-sec-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
-    .project-box {
+    .sw-project-box {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -107,15 +110,14 @@
         background-color: rgba(255, 255, 255, 0.92);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transform: translateY(-4px);
-
-        .view-project-btn {
+        .sw-view-btn {
           opacity: 1;
           visibility: visible;
           transform: translate(-50%, -50%) scale(1);
         }
       }
 
-      .image-status {
+      .sw-image-wrap {
         width: 100%;
         position: relative;
 
@@ -129,7 +131,7 @@
           filter: grayscale(0%);
         }
 
-        .status {
+        .sw-status {
           position: absolute;
           top: 2rem;
           left: 2rem;
@@ -144,17 +146,17 @@
         }
       }
 
-      &:hover .image-status img {
+      &:hover .sw-image-wrap img {
         filter: grayscale(100%);
       }
 
-      .project-desc {
+      .sw-card-body {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         padding: 2rem;
 
-        p:nth-child(1) {
+        .sw-card-type {
           font-family: var(--font-2);
           font-size: 1.2rem;
           font-weight: 600;
@@ -162,14 +164,14 @@
           color: var(--orange);
           text-transform: uppercase;
         }
-        h2 {
+        .sw-card-title {
           font-family: var(--font-1);
           font-size: 2rem;
           font-weight: 500;
           letter-spacing: 0.5px;
           color: var(--dark-blue);
         }
-        p:nth-child(3) {
+        .sw-card-desc {
           font-family: var(--font-1);
           font-size: 1.4rem;
           font-weight: 400;
@@ -178,10 +180,13 @@
           color: var(--dark-blue);
           width: 80%;
         }
-        p:nth-child(4) {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
+
+        /* ── TAŞMA DÜZELTMESİ ── */
+        .sw-card-tags {
+          display: flex;
+          flex-wrap: wrap; /* ← alt satıra geçer */
+          gap: 0.6rem; /* ← tag arası boşluk */
+          margin-top: 0.4rem;
 
           span {
             font-family: var(--font-2);
@@ -198,7 +203,7 @@
         }
       }
 
-      .view-project-btn {
+      .sw-view-btn {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -226,9 +231,9 @@
 
 /* ── 1024px ── */
 @media (max-width: 1024px) {
-  .selected-work {
+  .sw-container {
     padding: 5rem 3rem;
-    .sec-1 .main-header-view-all-projects .main-header {
+    .sw-sec-1 .sw-header-row .sw-main-header {
       line-height: 5.5rem;
       h1:nth-child(1),
       h1:nth-child(2) {
@@ -240,14 +245,13 @@
 
 /* ── 820px ── */
 @media (max-width: 820px) {
-  .selected-work {
+  .sw-container {
     padding: 5rem 3rem;
-    .sec-1 .main-header-view-all-projects {
+    .sw-sec-1 .sw-header-row {
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
-
-      .main-header {
+      .sw-main-header {
         line-height: 5rem;
         h1:nth-child(1),
         h1:nth-child(2) {
@@ -255,7 +259,7 @@
         }
       }
     }
-    .sec-2 {
+    .sw-sec-2 {
       grid-template-columns: 1fr;
     }
   }
@@ -263,13 +267,13 @@
 
 /* ── 768px ── */
 @media (max-width: 768px) {
-  .selected-work {
+  .sw-container {
     padding: 4rem 3rem;
-    .sec-1 {
-      .small-header p {
+    .sw-sec-1 {
+      .sw-small-header p {
         font-size: 1.3rem;
       }
-      .main-header-view-all-projects .main-header {
+      .sw-header-row .sw-main-header {
         line-height: 4.5rem;
         h1:nth-child(1),
         h1:nth-child(2) {
@@ -277,11 +281,14 @@
         }
       }
     }
-    .sec-2 {
+    .sw-sec-2 {
       grid-template-columns: 1fr;
-      .project-box {
+      .sw-project-box {
         &:hover {
           transform: none;
+        }
+        .sw-card-body .sw-card-desc {
+          width: 100%;
         }
       }
     }
@@ -290,25 +297,26 @@
 
 /* ── 430px ── */
 @media (max-width: 430px) {
-  .selected-work {
+  .sw-container {
     padding: 3.5rem 2.5rem;
-    .sec-1 .main-header-view-all-projects .main-header {
+    .sw-sec-1 .sw-header-row .sw-main-header {
       line-height: 4rem;
       h1:nth-child(1),
       h1:nth-child(2) {
         font-size: 3.6rem;
       }
     }
-    .sec-2 .project-box {
-      .project-desc {
-        padding: 1.5rem;
-        h2 {
-          font-size: 1.7rem;
-        }
-        p:nth-child(3) {
-          width: 100%;
-          font-size: 1.3rem;
-        }
+    .sw-sec-2 .sw-project-box .sw-card-body {
+      padding: 1.5rem;
+      .sw-card-title {
+        font-size: 1.7rem;
+      }
+      .sw-card-desc {
+        font-size: 1.3rem;
+      }
+      .sw-card-tags span {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
       }
     }
   }
@@ -316,9 +324,9 @@
 
 /* ── 414px ── */
 @media (max-width: 414px) {
-  .selected-work {
+  .sw-container {
     padding: 3rem 2rem;
-    .sec-1 .main-header-view-all-projects .main-header {
+    .sw-sec-1 .sw-header-row .sw-main-header {
       line-height: 3.8rem;
       h1:nth-child(1),
       h1:nth-child(2) {
@@ -330,9 +338,9 @@
 
 /* ── 390px ── */
 @media (max-width: 390px) {
-  .selected-work {
+  .sw-container {
     padding: 3rem 2rem;
-    .sec-1 .main-header-view-all-projects .main-header {
+    .sw-sec-1 .sw-header-row .sw-main-header {
       line-height: 3.6rem;
       h1:nth-child(1),
       h1:nth-child(2) {
@@ -344,27 +352,33 @@
 
 /* ── 375px ── */
 @media (max-width: 375px) {
-  .selected-work {
+  .sw-container {
     padding: 2.5rem 1.8rem;
-    .sec-1 {
-      .small-header p {
+    .sw-sec-1 {
+      .sw-small-header p {
         font-size: 1.1rem;
       }
-      .main-header-view-all-projects .main-header {
-        line-height: 3.4rem;
-        h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 3rem;
+      .sw-header-row {
+        .sw-main-header {
+          line-height: 3.4rem;
+          h1:nth-child(1),
+          h1:nth-child(2) {
+            font-size: 3rem;
+          }
+        }
+        .sw-view-all a {
+          font-size: 1rem;
         }
       }
-      .main-header-view-all-projects .view-all-projects a {
-        font-size: 1rem;
-      }
     }
-    .sec-2 .project-box .project-desc {
+    .sw-sec-2 .sw-project-box .sw-card-body {
       padding: 1.2rem;
-      h2 {
+      .sw-card-title {
         font-size: 1.6rem;
+      }
+      .sw-card-tags span {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
       }
     }
   }
