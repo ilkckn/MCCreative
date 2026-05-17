@@ -9,10 +9,10 @@ import { TbArrowUpRight } from "react-icons/tb";
 function ProjectsGrid({ filteredProject }) {
   return (
     <main className="projects-grid-container">
-      <div className="projects-small-header">
+      {/* <div className="projects-small-header">
         <span></span>
         <p>Projects</p>
-      </div>
+      </div> */}
       <div>
         {filteredProject.map((website) => (
           <div className="project-box" key={website.id}>

@@ -71,9 +71,11 @@
 
     .description {
       font-family: var(--font-2);
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: var(--description);
+      font-size: 1.5rem;
+      font-weight: 200;
+      letter-spacing: 0.7px;
+      line-height: 2.5rem;
+      color: var(--white);
     }
 
     .subscribe {
@@ -135,9 +137,9 @@
     .no-spam {
       font-family: var(--font-2);
       font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: 0.6px;
-      color: var(--description);
+      font-weight: 200;
+      letter-spacing: 0.7px;
+      color: var(--white);
     }
   }
 
@@ -153,10 +155,10 @@
 
     .header-text {
       font-family: var(--font-2);
-      font-size: 1.4rem;
-      font-weight: 500;
+      font-size: 1.7rem;
+      font-weight: 300;
       letter-spacing: 1px;
-      color: var(--description-2);
+      color: var(--orange);
       text-transform: uppercase;
       margin-bottom: 1.5rem;
     }
@@ -173,8 +175,8 @@
 
       h2 {
         font-family: var(--font-1);
-        font-size: 2rem;
-        font-weight: 200;
+        font-size: 1.7rem;
+        font-weight: 300;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: var(--white);
@@ -184,7 +186,7 @@
         font-family: var(--font-2);
         font-size: 1.3rem;
         font-weight: 400;
-        color: var(--description-2);
+        color: var(--white);
         background-color: var(--description);
         padding: 0.5rem 1rem;
         border-radius: 2rem;

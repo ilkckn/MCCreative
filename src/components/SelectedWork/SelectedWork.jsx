@@ -6,16 +6,16 @@ import website from "../../MyWebsites.js";
 function SelectedWork() {
   return (
     <main className="sw-container">
-      {/* ── Section 1: Başlık + View All ── */}
+      {/* ── Başlık ── */}
       <section className="sw-sec-1">
         <div className="sw-small-header">
           <span></span>
-          <p>selected work</p>
+          <p>Selected Work</p>
         </div>
         <div className="sw-header-row">
           <div className="sw-main-header">
             <h1>Recent</h1>
-            <h1>projects</h1>
+            <h1 className="italic">projects</h1>
           </div>
           <div className="sw-view-all">
             <NavLink to="/projects">View all projects</NavLink>
@@ -24,7 +24,7 @@ function SelectedWork() {
         </div>
       </section>
 
-      {/* ── Section 2: Proje kartları ── */}
+      {/* ── Proje Kartları ── */}
       <section className="sw-sec-2">
         {/* Kart 1 */}
         <div className="sw-project-box">

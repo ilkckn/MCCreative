@@ -10,7 +10,7 @@ function Navbar() {
 
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -20,12 +20,15 @@ function Navbar() {
       />
       <div className="nav-container">
         <nav className="navbar">
-          <section className="sec-logo">
-            <div className="icon">MC</div>
+          {/* ── Logo ── */}
+          <NavLink to="/" className="sec-logo" onClick={handleLinkClick}>
+            <span className="logo-icon">MC</span>
             <div className="logo-name">
               <span>MC</span>Creative
             </div>
-          </section>
+          </NavLink>
+
+          {/* ── Linkler ── */}
           <section className="sec-links">
             <ul>
               <li>
@@ -34,28 +37,41 @@ function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" onClick={handleLinkClick}>About</NavLink>
+                <NavLink to="/about" onClick={handleLinkClick}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" onClick={handleLinkClick}>Projects</NavLink>
+                <NavLink to="/projects" onClick={handleLinkClick}>
+                  Projects
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/blog" onClick={handleLinkClick}>Blog</NavLink>
+                <NavLink to="/blog" onClick={handleLinkClick}>
+                  Blog
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink>
+                <NavLink to="/contact" onClick={handleLinkClick}>
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </section>
+
+          {/* ── Sağ Butonlar ── */}
           <section className="sec-btns">
             <div className="available-for-work">
-              <span></span>
+              <span className="dot"></span>
               <p>Available for work</p>
             </div>
             <div className="lets-talk">
-              <NavLink to="/contact">Let's Talk</NavLink>
+              <NavLink to="/contact" onClick={handleLinkClick}>
+                Let's Talk
+              </NavLink>
             </div>
 
+            {/* ── Mobil Menü ── */}
             <div className="mobile-menu-container">
               <button
                 className="menu-btn"
@@ -63,6 +79,7 @@ function Navbar() {
               >
                 {isMenuOpen ? "✕" : "☰"}
               </button>
+
               <ul className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
                 <li>
                   <NavLink to="/" onClick={closeMenu}>
@@ -90,20 +107,20 @@ function Navbar() {
                   </NavLink>
                 </li>
 
-                <div className="available-for-work">
-                  <span></span>
+                <div className="mobile-available">
+                  <span className="dot"></span>
                   <p>Available for work</p>
                 </div>
-                <div className="lets-talk">
+                <div className="mobile-lets-talk">
                   <NavLink to="/contact" onClick={closeMenu}>
                     Let's Talk
                   </NavLink>
                 </div>
 
-                <div className="logo">
-                  <span>MC</span>
+                <div className="mobile-logo">
+                  <span className="logo-icon">MC</span>
                   <p>
-                    <span className="logo-span">MC</span>Creative
+                    <span>MC</span>Creative
                   </p>
                 </div>
               </ul>

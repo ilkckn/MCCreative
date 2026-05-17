@@ -1,14 +1,18 @@
 .about-me-landing {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.2fr 1fr;
   width: 100%;
-  border-bottom: 1px solid var(--description-3);
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
 
+  /* ── Sol ── */
   .sec-1 {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 6rem 4rem;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 6rem 5rem;
+    border-right: 1px solid var(--border);
 
     .small-header {
       display: flex;
@@ -16,52 +20,51 @@
       gap: 1rem;
 
       span {
-        width: 3rem;
+        width: 2.5rem;
         height: 0.2rem;
         background-color: var(--orange);
       }
 
       p {
         font-family: var(--font-2);
-        font-size: 1.4rem;
-        font-weight: 600;
+        font-size: 1.3rem;
+        font-weight: 500;
         color: var(--orange);
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.25rem;
       }
     }
 
     .main-header {
       display: flex;
       flex-direction: column;
-      line-height: 6rem;
+      line-height: 1.05;
+      gap: 0.2rem;
 
-      h1:nth-child(1) {
+      h1 {
         font-family: var(--font-1);
-        font-size: 5.5rem;
-        font-weight: 400;
-        color: var(--dark-blue);
+        font-size: 5rem;
+        font-weight: 500;
+        color: var(--white);
+        letter-spacing: -0.02em;
       }
-      h1:nth-child(2) {
+
+      h1.has-dash {
         display: inline-flex;
         align-items: center;
-        gap: 1rem;
-        font-family: var(--font-1);
-        font-size: 5.5rem;
-        font-weight: 400;
-        color: var(--dark-blue);
+        gap: 1.2rem;
 
-        .main-span {
-          width: 3rem;
+        .dash {
+          width: 2.5rem;
           height: 0.2rem;
-          background-color: var(--dark-blue);
-          transform: translateY(0.5rem);
+          background-color: var(--white);
+          display: inline-block;
+          transform: translateY(0.2rem);
+          flex-shrink: 0;
         }
       }
-      h1:nth-child(3) {
-        font-family: var(--font-1);
-        font-size: 5.5rem;
-        font-weight: 400;
+
+      h1.italic {
         font-style: italic;
         color: var(--orange);
       }
@@ -70,33 +73,35 @@
     .main-desc {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
 
       p {
         font-family: var(--font-2);
-        font-size: 1.6rem;
-        font-weight: 300;
+        font-size: 1.5rem;
+        font-weight: 200;
         letter-spacing: 1px;
-        line-height: 2.2rem;
-        color: var(--description);
+        line-height: 2.4rem;
+        color: var(--white);
       }
     }
 
     .my-info {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 2rem;
+      gap: 0.6rem;
+      padding-left: 1.8rem;
 
       li {
         font-family: var(--font-2);
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: var(--dark-blue);
-        transform: translateX(2rem);
+        font-size: 1.4rem;
+        font-weight: 200;
+        letter-spacing: .8px;
+        color: var(--white);
+        line-height: 2rem;
+
         &::marker {
           color: var(--orange);
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -104,75 +109,80 @@
     .btns {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: 1.2rem;
+      margin-top: 0.5rem;
 
       button:nth-child(1) {
         display: inline-flex;
         align-items: center;
-        gap: 1rem;
-        padding: 1rem 4rem;
+        gap: 0.8rem;
+        padding: 1.1rem 3rem;
         font-family: var(--font-2);
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 600;
         color: var(--white);
         background-color: var(--orange);
         border: none;
-        border-radius: 2rem;
+        border-radius: 3rem;
         cursor: pointer;
-        transition: all 0.3s ease;
-        .right-arrow {
-          font-size: 1.5rem;
-        }
+        transition: all 0.25s ease;
+
+        .right-arrow { font-size: 1.6rem; }
+
         &:hover {
-          transform: translateY(-0.2rem);
-          box-shadow: 0 2px 8px var(--orange);
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
         }
       }
 
       button:nth-child(2) {
-        padding: 1rem 4rem;
+        padding: 1.1rem 3rem;
         font-family: var(--font-2);
         font-size: 1.4rem;
         font-weight: 500;
-        color: var(--dark-blue);
+        color: var(--white);
         background-color: transparent;
-        border: 1px solid var(--dark-blue);
-        border-radius: 2rem;
+        border: 1px solid #333333;
+        border-radius: 3rem;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.25s ease;
+
         &:hover {
-          color: var(--white);
-          background-color: var(--dark-blue);
+          border-color: var(--orange);
+          color: var(--orange);
         }
       }
     }
   }
 
+  /* ── Sağ ── */
   .sec-2 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
-    gap: 1rem;
-    background-color: var(--background);
-    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 4rem;
+    gap: 3rem;
+    background-color: var(--bg-card);
 
+    /* Ad & Unvan */
     .name {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      gap: 1rem;
-      border-bottom: 1px solid var(--description);
+      gap: 0.6rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
 
       h1 {
         font-family: var(--font-1);
-        font-size: 3.5rem;
-        font-weight: 400;
+        font-size: 3.2rem;
+        font-weight: 500;
         color: var(--white);
+        letter-spacing: -0.01em;
       }
-      p {
+
+      .title {
         font-family: var(--font-2);
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-size: 1.6rem;
+        font-weight: 400;
         letter-spacing: 1px;
         color: var(--orange);
       }
@@ -181,116 +191,120 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        .icon {
-          font-size: 1.3rem;
-        }
-        p:nth-child(2) {
+        margin-top: 0.4rem;
+
+        .icon { font-size: 1.3rem; }
+
+        p {
           font-family: var(--font-2);
           font-size: 1.3rem;
           font-weight: 200;
+          color: var(--white);
           letter-spacing: 1px;
-          color: var(--description-3);
         }
       }
     }
 
+    /* Metrik grid — 2x2 */
     .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 1rem;
-      border-bottom: 1px solid var(--description);
-      padding-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
 
-      .percentage-delivery,
-      .direct-contact-hidden-fees {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .percentage,
-      .delivery,
-      .direct-contact,
-      .hidden-fees {
+      .stat {
         display: flex;
         flex-direction: column;
+        gap: 0.7rem;
 
-        p:nth-child(1) {
+        .stat-value {
           font-family: var(--font-1);
           font-size: 3.5rem;
-          font-weight: 500;
+          font-weight: 600;
           color: var(--white);
+          line-height: 1;
+
           span {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             color: var(--orange);
           }
         }
 
-        p:nth-child(2) {
+        .stat-label {
           font-family: var(--font-2);
-          font-size: 1.5rem;
-          font-weight: 300;
+          font-size: 1.4rem;
+          font-weight: 200;
+          color: var(--white);
           letter-spacing: 1px;
-          color: var(--description-2);
         }
-      }
-
-      .hidden-fees {
-        transform: translateX(-2rem);
       }
     }
 
+    /* Dil seviyeleri */
     .language-level {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--description);
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
 
-      .turkish,
-      .english,
-      .german {
+      .lang-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        p:nth-child(1) {
-          display: inline-flex;
+        .lang-name {
+          display: flex;
           align-items: center;
-          gap: 0.5rem;
-          font-family: var(--font-1);
-          font-size: 1.5rem;
-          font-weight: 500;
+          gap: 0.6rem;
+          font-family: var(--font-2);
+          font-size: 1.4rem;
+          font-weight: 400;
           color: var(--white);
-          span {
-            font-size: 1.5rem;
+
+          .lang-code {
+            font-size: 1.2rem;
+            font-weight: 600;
             color: var(--orange);
+            background-color: var(--orange-glow);
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.3rem;
           }
         }
 
-        p:nth-child(2) {
+        .lang-level {
           font-family: var(--font-2);
-          font-size: 1.5rem;
-          font-weight: 300;
-          letter-spacing: 1px;
+          font-size: 1.3rem;
+          font-weight: 400;
           color: var(--orange);
         }
       }
     }
 
+    /* Alıntı */
     .my-word {
-      display: flex;
-      align-items: center;
       p {
-        font-family: var(--font-2);
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-family: var(--font-1);
+        font-size: 1.6rem;
+        font-weight: 200;
+        font-style: italic;
         letter-spacing: 1px;
-        color: var(--description-2);
+        line-height: 2.5rem;
+        color: var(--white);
       }
     }
+  }
+}
+
+/* ── 1200px ── */
+@media (max-width: 1200px) {
+  .about-me-landing {
+    .sec-1 {
+      padding: 6rem 4rem;
+      .main-header h1 { font-size: 4.5rem; }
+    }
+    .sec-2 { padding: 6rem 3rem; }
   }
 }
 
@@ -299,18 +313,9 @@
   .about-me-landing {
     .sec-1 {
       padding: 5rem 3rem;
-      .main-header {
-        line-height: 5.5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 5rem;
-        }
-      }
+      .main-header h1 { font-size: 4rem; }
     }
-    .sec-2 {
-      padding: 5rem 3rem;
-    }
+    .sec-2 { padding: 5rem 3rem; }
   }
 }
 
@@ -321,33 +326,14 @@
 
     .sec-1 {
       padding: 5rem 3rem;
-      .main-header {
-        line-height: 5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 4.5rem;
-        }
-      }
-      .main-desc p {
-        font-size: 1.5rem;
-      }
-      .my-info li {
-        font-size: 1.5rem;
-      }
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      .main-header h1 { font-size: 4rem; }
     }
 
     .sec-2 {
       padding: 4rem 3rem;
-      .info .percentage p:nth-child(1),
-      .info .delivery p:nth-child(1),
-      .info .direct-contact p:nth-child(1),
-      .info .hidden-fees p:nth-child(1) {
-        font-size: 3rem;
-        span {
-          font-size: 3rem;
-        }
-      }
+      .info .stat .stat-value { font-size: 3rem; }
     }
   }
 }
@@ -357,31 +343,11 @@
   .about-me-landing {
     .sec-1 {
       padding: 4rem 3rem;
-      .small-header p {
-        font-size: 1.2rem;
-      }
-      .main-header {
-        line-height: 4.5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 4rem;
-        }
-      }
+      .main-header h1 { font-size: 3.8rem; }
       .btns {
         flex-direction: column;
         align-items: stretch;
-        button:nth-child(1),
-        button:nth-child(2) {
-          text-align: center;
-          justify-content: center;
-        }
-      }
-    }
-    .sec-2 {
-      padding: 4rem 3rem;
-      .name h1 {
-        font-size: 3rem;
+        button { text-align: center; justify-content: center; }
       }
     }
   }
@@ -392,87 +358,12 @@
   .about-me-landing {
     .sec-1 {
       padding: 3.5rem 2.5rem;
-      gap: 1.2rem;
-      .main-header {
-        line-height: 4rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.6rem;
-        }
-      }
-      .main-desc p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      .my-info li {
-        font-size: 1.4rem;
-      }
-      .btns {
-        button:nth-child(1),
-        button:nth-child(2) {
-          padding: 1rem 2.5rem;
-          font-size: 1.3rem;
-        }
-      }
+      .main-header h1 { font-size: 3.4rem; }
+      .main-desc p { font-size: 1.4rem; }
     }
     .sec-2 {
       padding: 3rem 2.5rem;
-      .info .percentage p:nth-child(1),
-      .info .delivery p:nth-child(1),
-      .info .direct-contact p:nth-child(1),
-      .info .hidden-fees p:nth-child(1) {
-        font-size: 2.6rem;
-        span {
-          font-size: 2.6rem;
-        }
-      }
-      .info .percentage p:nth-child(2),
-      .info .delivery p:nth-child(2),
-      .info .direct-contact p:nth-child(2),
-      .info .hidden-fees p:nth-child(2) {
-        font-size: 1.3rem;
-      }
-      .my-word p {
-        font-size: 1.3rem;
-      }
-    }
-  }
-}
-
-/* ── 414px ── */
-@media (max-width: 414px) {
-  .about-me-landing {
-    .sec-1 {
-      padding: 3rem 2rem;
-      .main-header {
-        line-height: 3.8rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.4rem;
-        }
-      }
-    }
-    .sec-2 {
-      padding: 3rem 2rem;
-    }
-  }
-}
-
-/* ── 390px ── */
-@media (max-width: 390px) {
-  .about-me-landing {
-    .sec-1 {
-      padding: 3rem 2rem;
-      .main-header {
-        line-height: 3.6rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.2rem;
-        }
-      }
+      .info .stat .stat-value { font-size: 2.8rem; }
     }
   }
 }
@@ -481,44 +372,12 @@
 @media (max-width: 375px) {
   .about-me-landing {
     .sec-1 {
-      padding: 2.5rem 1.8rem;
-      .small-header p {
-        font-size: 1.1rem;
-      }
-      .main-header {
-        line-height: 3.4rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3rem;
-        }
-      }
-      .main-desc p {
-        font-size: 1.3rem;
-      }
-      .my-info li {
-        font-size: 1.3rem;
-      }
-      .btns button:nth-child(1),
-      .btns button:nth-child(2) {
-        padding: 0.9rem 2rem;
-        font-size: 1.2rem;
-      }
+      padding: 3rem 2rem;
+      .main-header h1 { font-size: 3rem; }
     }
     .sec-2 {
-      padding: 2.5rem 1.8rem;
-      .name h1 {
-        font-size: 2.6rem;
-      }
-      .info .percentage p:nth-child(1),
-      .info .delivery p:nth-child(1),
-      .info .direct-contact p:nth-child(1),
-      .info .hidden-fees p:nth-child(1) {
-        font-size: 2.4rem;
-        span {
-          font-size: 2.4rem;
-        }
-      }
+      padding: 2.5rem 2rem;
+      .name h1 { font-size: 2.6rem; }
     }
   }
 }

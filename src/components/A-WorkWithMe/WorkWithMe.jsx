@@ -4,27 +4,20 @@ import { useNavigate } from "react-router-dom";
 function WorkWithMe() {
   const navigate = useNavigate();
 
-  const handleProjectClick = () => {
-    navigate("/projects");
-    window.scrollTo(0, 0);
-  };
-
-  const handleContactClick = () => {
-    navigate("/contact");
-    window.scrollTo(0, 0);
-  };
+  const handleContactClick = () => { navigate("/contact"); window.scrollTo(0, 0); };
+  const handleProjectClick = () => { navigate("/projects"); window.scrollTo(0, 0); };
 
   return (
     <main className="work-with-me">
       <section className="sec-1-work-with-me">
         <div className="small-header">
           <span></span>
-          <p>work with me</p>
+          <p>Work With Me</p>
         </div>
         <div className="main-header">
           <h1>Ready to build</h1>
           <h1>something</h1>
-          <h1>together?</h1>
+          <h1 className="italic">together?</h1>
         </div>
         <div className="desc">
           <p>
@@ -33,12 +26,8 @@ function WorkWithMe() {
           </p>
         </div>
         <div className="btns">
-          <button className="start-a-project" onClick={handleContactClick}>
-            Get in Touch
-          </button>
-          <button className="see-my-work" onClick={handleProjectClick}>
-            See My Work
-          </button>
+          <button onClick={handleContactClick}>Get in Touch</button>
+          <button onClick={handleProjectClick}>See My Work</button>
         </div>
       </section>
 
@@ -61,16 +50,13 @@ function WorkWithMe() {
           <div className="icon">💰</div>
           <div className="info">
             <h2>Transparent Pricing</h2>
-            <p>
-              Fixed quotes, no hidden costs. You know what you're paying before
-              we start.
-            </p>
+            <p>Fixed quotes, no hidden costs. You know what you're paying before we start.</p>
           </div>
         </div>
         <div className="box">
           <div className="icon">🗣️</div>
           <div className="info">
-            <h2>Multilingual support</h2>
+            <h2>Multilingual Support</h2>
             <p>I work in Turkish, English and German — no barriers.</p>
           </div>
         </div>

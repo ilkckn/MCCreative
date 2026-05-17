@@ -60,7 +60,9 @@
       .desc p {
         font-family: var(--font-2);
         font-size: 1.6rem;
-        color: var(--description);
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: var(--white);
         line-height: 2.5rem;
       }
 
@@ -97,7 +99,8 @@
           cursor: pointer;
           transition: all 0.3s ease;
           &:hover {
-            background-color: var(--dark-blue);
+            border: 1px solid var(--orange);
+            background-color: var(--orange);
             color: var(--white);
           }
         }
@@ -105,7 +108,7 @@
     }
 
     .content-right {
-      background-color: var(--background);
+      /* background-color: var(--background); */
       display: grid;
       grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
       gap: 1rem;
@@ -144,7 +147,7 @@
             font-size: 1.3rem;
             font-weight: 200;
             letter-spacing: 1px;
-            color: var(--description-3);
+            color: var(--white);
           }
         }
       }
@@ -186,9 +189,9 @@
           p:nth-child(2) {
             font-family: var(--font-2);
             font-size: 1.5rem;
-            font-weight: 300;
+            font-weight: 200;
             letter-spacing: 1px;
-            color: var(--description-2);
+            color: var(--white);
           }
         }
 
@@ -241,10 +244,11 @@
         align-items: center;
         p {
           font-family: var(--font-2);
-          font-size: 1.5rem;
-          font-weight: 300;
-          letter-spacing: 1px;
-          color: var(--description-2);
+          font-size: 1.6rem;
+          font-weight: 200;
+          letter-spacing: 1.2px;
+          line-height: 2.5rem;
+          color: var(--white);
         }
       }
     }

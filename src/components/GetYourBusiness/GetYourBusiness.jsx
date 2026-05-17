@@ -19,28 +19,20 @@ function GetYourBusiness() {
     <main className="get-your-business">
       <section className="sec-1">
         <div className="main-header">
-          <h1>Ready to get</h1>
-          <h1>your business</h1>
-          <h1>online?</h1>
+          <h1>Ready to get your</h1>
+          <h1>business</h1>
+          <h1 className="italic">online?</h1>
         </div>
         <p className="description">
           Free consultation. No commitment. Just a friendly chat about what you
           need.
         </p>
         <div className="btns">
-          <button
-            className="start-project"
-            onClick={handleNavigateContact}
-          >
+          <button onClick={handleNavigateContact}>
             Start a Project
             <MdOutlineArrowRightAlt className="right-arrow" />
           </button>
-          <button
-            className="all-projects"
-            onClick={handleNavigateProjects}
-          >
-            See All Projects
-          </button>
+          <button onClick={handleNavigateProjects}>See All Projects</button>
         </div>
       </section>
 
@@ -48,7 +40,7 @@ function GetYourBusiness() {
         <div className="box">
           <div className="icon">📞</div>
           <div className="info">
-            <h2>Free discover call</h2>
+            <h2>Free discovery call</h2>
             <p>30 minutes to understand your business and what you need.</p>
           </div>
         </div>
