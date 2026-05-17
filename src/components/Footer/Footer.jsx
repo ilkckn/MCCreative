@@ -5,7 +5,9 @@ function Footer() {
     <div className="footer-container">
       <div className="footer-logo">
         <span className="logo-icon">MC</span>
-        <p><span>MC</span>Creative</p>
+        <p>
+          <span>MC</span>Creative
+        </p>
       </div>
       <div className="reserved">
         <p>&copy; 2025 MCCreative. All rights reserved.</p>
