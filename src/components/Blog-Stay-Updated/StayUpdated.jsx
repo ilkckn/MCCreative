@@ -33,7 +33,7 @@ function StayUpdated() {
         <p className="header-text">topic i write about</p>
         <div className="web-design">
           <h2>web design</h2>
-          <p>1 post</p>
+          <p>2 post</p>
         </div>
         <div className="local-seo">
           <h2>local seo</h2>
