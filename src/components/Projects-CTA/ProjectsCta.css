@@ -58,10 +58,10 @@
     .cta-desc p {
       font-family: var(--font-2);
       font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: 0.5px;
+      font-weight: 200;
+      letter-spacing: 0.8px;
       line-height: 2.6rem;
-      color: var(--description);
+      color: var(--white);
     }
 
     .cta-btns {
@@ -127,6 +127,7 @@
       .info {
         display: flex;
         flex-direction: column;
+        gap: .7rem;
         p:nth-child(1) {
           font-family: var(--font-2);
           font-size: 1.6rem;
@@ -137,9 +138,9 @@
         p:nth-child(2) {
           font-family: var(--font-2);
           font-size: 1.4rem;
-          font-weight: 400;
-          letter-spacing: 0.5px;
-          color: var(--description-2);
+          font-weight: 200;
+          letter-spacing: 0.8px;
+          color: var(--white);
         }
       }
     }

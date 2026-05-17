@@ -1,15 +1,16 @@
 .projects-container {
   display: grid;
   grid-template-rows: auto auto auto;
+  background-color: var(--bg-primary);
 
   .hero-sec {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 1px solid var(--border);
 
     .left {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       padding: 6rem 4rem;
 
       .header-top {
@@ -43,14 +44,14 @@
           font-family: var(--font-1);
           font-size: 5.5rem;
           font-weight: 400;
-          color: var(--dark-blue);
+          color: var(--white);
         }
 
         h1:nth-child(2) {
           font-family: var(--font-1);
           font-size: 5.5rem;
           font-weight: 400;
-          color: var(--dark-blue);
+          color: var(--white);
 
           span {
             font-size: 5.5rem;
@@ -64,30 +65,31 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 0.8rem;
+        gap: 0.6rem;
         margin-top: 3rem;
 
         button {
           font-family: var(--font-2);
           font-size: 1.35rem;
-          font-weight: 400;
-          letter-spacing: 0.6px;
-          color: var(--description);
+          font-weight: 300;
+          letter-spacing: 1px;
+          color: var(--white);
           background-color: transparent;
-          border: 0.1rem solid var(--border);
+          border: 0.1rem solid #2a2a2a;
           border-radius: 3rem;
-          padding: 0.7rem 2rem;
+          padding: 0.7rem 2.5rem;
           cursor: pointer;
           transition: all 0.3s ease;
 
           &:hover {
             background-color: var(--orange);
-            color: #fff;
+            color: var(--white);
             border-color: var(--orange);
           }
+
           &.active {
             background-color: var(--orange);
-            color: #fff;
+            color: var(--white);
             border-color: var(--orange);
           }
         }
@@ -101,42 +103,66 @@
       gap: 1rem;
       padding: 6rem 4rem;
 
-      .desc p {
-        font-family: var(--font-2);
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: 0.6px;
-        line-height: 2.6rem;
-        color: var(--description);
+      .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+          font-family: var(--font-2);
+          font-size: 1.7rem;
+          font-weight: 300;
+          letter-spacing: 0.6px;
+          line-height: 2.6rem;
+          color: var(--description);
+        }
       }
 
       .delivered-project {
         display: flex;
-        align-items: center;
-        gap: 0.5rem;
+        flex-direction: column;
+        gap: 2rem;
 
         p:nth-child(1) {
           font-family: var(--font-1);
-          font-size: 4.5rem;
+          font-size: 7.5rem;
           font-weight: 400;
-          color: var(--dark-blue);
+          color: var(--white);
+          line-height: 1;
 
           span {
             display: inline-block;
-            font-size: 4.5rem;
+            font-size: 6.5rem;
             font-weight: 400;
             color: var(--orange);
-            transform: translateX(-1rem);
+            transform: translateX(-1.5rem);
           }
         }
 
         p:nth-child(2) {
-          font-family: var(--font-2);
-          font-size: 1.5rem;
+          font-family: var(--font-1);
+          font-size: 3rem;
           font-weight: 400;
+          letter-spacing: 0.3px;
+          line-height: 3.5rem;
+          color: var(--white);
+          width: 60%;
+
+          span {
+            font-family: var(--font-1);
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: var(--orange);
+          }
+        }
+
+        p:nth-child(3) {
+          font-family: var(--font-2);
+          font-size: 1.7rem;
+          font-weight: 200;
           letter-spacing: 0.6px;
           line-height: 2.6rem;
-          color: var(--description);
+          color: var(--white);
         }
       }
     }
@@ -151,21 +177,16 @@
       .main-header {
         line-height: 5.5rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 5rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 5rem;
-        }
+        h1:nth-child(2) { font-size: 5rem; }
+        h1:nth-child(2) span { font-size: 5rem; }
       }
     }
     .right {
       padding: 5rem 3rem;
-      .delivered-project p:nth-child(1) {
-        font-size: 4rem;
-        span {
-          font-size: 4rem;
-        }
+      .delivered-project {
+        p:nth-child(1) { font-size: 6.5rem; span { font-size: 5.5rem; } }
+        p:nth-child(2) { font-size: 2.6rem; span { font-size: 3rem; } width: 70%; }
+        p:nth-child(3) { font-size: 1.6rem; }
       }
     }
   }
@@ -182,20 +203,20 @@
       .main-header {
         line-height: 5rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 4.5rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 4.5rem;
-        }
+        h1:nth-child(2) { font-size: 4.8rem; }
+        h1:nth-child(2) span { font-size: 4.8rem; }
       }
-      .filter-btns {
-        margin-top: 2rem;
-      }
+      .filter-btns { margin-top: 2.5rem; }
     }
 
     .right {
       padding: 4rem 3rem;
+      .delivered-project {
+        gap: 1.5rem;
+        p:nth-child(1) { font-size: 6rem; span { font-size: 5rem; } }
+        p:nth-child(2) { font-size: 2.6rem; span { font-size: 2.8rem; } width: 55%; }
+        p:nth-child(3) { font-size: 1.6rem; }
+      }
     }
   }
 }
@@ -205,28 +226,21 @@
   .projects-container .hero-sec {
     .left {
       padding: 4rem 3rem;
-      .header-top p {
-        font-size: 1.3rem;
-      }
+      .header-top p { font-size: 1.3rem; }
       .main-header {
         line-height: 4.5rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 4rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 4rem;
-        }
+        h1:nth-child(2) { font-size: 4.2rem; }
+        h1:nth-child(2) span { font-size: 4.2rem; }
       }
-      .filter-btns button {
-        font-size: 1.2rem;
-        padding: 0.7rem 2rem;
-      }
+      .filter-btns button { font-size: 1.25rem; padding: 0.7rem 1.8rem; }
     }
     .right {
       padding: 4rem 3rem;
-      .desc p {
-        font-size: 1.4rem;
+      .delivered-project {
+        p:nth-child(1) { font-size: 5.5rem; span { font-size: 4.5rem; } }
+        p:nth-child(2) { font-size: 2.4rem; span { font-size: 2.6rem; } width: 65%; }
+        p:nth-child(3) { font-size: 1.5rem; }
       }
     }
   }
@@ -237,38 +251,26 @@
   .projects-container .hero-sec {
     .left {
       padding: 3.5rem 2.5rem;
+      .header-top p { font-size: 1.2rem; }
       .main-header {
         line-height: 4rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 3.6rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 3.6rem;
-        }
+        h1:nth-child(2) { font-size: 3.8rem; }
+        h1:nth-child(2) span { font-size: 3.8rem; }
       }
       .filter-btns {
         gap: 0.6rem;
-        button {
-          font-size: 1.1rem;
-          padding: 0.6rem 1.6rem;
-        }
+        margin-top: 2rem;
+        button { font-size: 1.2rem; padding: 0.6rem 1.5rem; }
       }
     }
     .right {
-      padding: 3rem 2.5rem;
-      .desc p {
-        font-size: 1.3rem;
-        line-height: 2.2rem;
-      }
-      .delivered-project p:nth-child(1) {
-        font-size: 3.4rem;
-        span {
-          font-size: 3.4rem;
-        }
-      }
-      .delivered-project p:nth-child(2) {
-        font-size: 1.3rem;
+      padding: 3.5rem 2.5rem;
+      .delivered-project {
+        gap: 1.2rem;
+        p:nth-child(1) { font-size: 5rem; span { font-size: 4rem; transform: translateX(-1rem); } }
+        p:nth-child(2) { font-size: 2.2rem; span { font-size: 2.4rem; } width: 75%; line-height: 3rem; }
+        p:nth-child(3) { font-size: 1.5rem; line-height: 2.3rem; }
       }
     }
   }
@@ -282,16 +284,16 @@
       .main-header {
         line-height: 3.8rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 3.4rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 3.4rem;
-        }
+        h1:nth-child(2) { font-size: 3.6rem; }
+        h1:nth-child(2) span { font-size: 3.6rem; }
       }
     }
     .right {
       padding: 3rem 2rem;
+      .delivered-project {
+        p:nth-child(1) { font-size: 4.8rem; span { font-size: 3.8rem; } }
+        p:nth-child(2) { font-size: 2rem; span { font-size: 2.2rem; } width: 80%; }
+      }
     }
   }
 }
@@ -304,12 +306,15 @@
       .main-header {
         line-height: 3.6rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 3.2rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 3.2rem;
-        }
+        h1:nth-child(2) { font-size: 3.4rem; }
+        h1:nth-child(2) span { font-size: 3.4rem; }
+      }
+    }
+    .right {
+      padding: 3rem 2rem;
+      .delivered-project {
+        p:nth-child(1) { font-size: 4.5rem; span { font-size: 3.6rem; } }
+        p:nth-child(2) { font-size: 2rem; span { font-size: 2.2rem; } }
       }
     }
   }
@@ -320,34 +325,21 @@
   .projects-container .hero-sec {
     .left {
       padding: 2.5rem 1.8rem;
-      .header-top p {
-        font-size: 1.1rem;
-      }
+      .header-top p { font-size: 1.1rem; }
       .main-header {
         line-height: 3.4rem;
         h1:nth-child(1),
-        h1:nth-child(2) {
-          font-size: 3rem;
-        }
-        h1:nth-child(2) span {
-          font-size: 3rem;
-        }
+        h1:nth-child(2) { font-size: 3.2rem; }
+        h1:nth-child(2) span { font-size: 3.2rem; }
       }
-      .filter-btns button {
-        font-size: 1rem;
-        padding: 0.5rem 1.4rem;
-      }
+      .filter-btns button { font-size: 1.1rem; padding: 0.55rem 1.3rem; }
     }
     .right {
       padding: 2.5rem 1.8rem;
-      .desc p {
-        font-size: 1.2rem;
-      }
-      .delivered-project p:nth-child(1) {
-        font-size: 3rem;
-        span {
-          font-size: 3rem;
-        }
+      .delivered-project {
+        p:nth-child(1) { font-size: 4.2rem; span { font-size: 3.4rem; } }
+        p:nth-child(2) { font-size: 1.9rem; span { font-size: 2rem; } width: 85%; line-height: 2.8rem; }
+        p:nth-child(3) { font-size: 1.4rem; line-height: 2.1rem; }
       }
     }
   }

@@ -9,18 +9,28 @@
 }
 
 :root {
-  --green: #22c55e;
   --orange: #f97316;
+  --orange-light: #fcb989;
+  --orange-glow: rgba(249, 115, 22, 0.15);
   --white: #ffffff;
-  --dark-blue: #0D1117;
-  --background: #191D23;
-  --background-2: #FAFAF9;
-  --background-3: #f9741626;
+
+  /* Dark mode ana renkler */
+  --bg-primary: #0a0a0a;
+  --bg-card: #111111;
+  --bg-card-2: #161616;
+  --bg-elevated: #1a1a1a;
+
+  /* Eski değişkenler (bileşenler için uyumluluk) */
+  --dark-blue: #ffffff;
+  --background: #111111;
+  --background-2: #0f0f0f;
+  --background-3: rgba(249, 115, 22, 0.1);
   --background-4: #c45e15;
-  --description: #4b5563;
-  --description-2: #9c9fa6;
-  --description-3: #e5e7eb;
-  --border: #d8dade;
+  --description: #888888;
+  --description-2: #666666;
+  --description-3: #2a2a2a;
+  --border: #222222;
+
   --font-1: "Fraunces", serif;
   --font-2: "DM Sans", sans-serif;
 }
@@ -30,7 +40,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   padding-top: 8rem;
 }
 

@@ -1,13 +1,15 @@
 .work-with-me {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+  background-color: var(--bg-primary);
 
+  /* ── Sol ── */
   .sec-1-work-with-me {
-    padding: 6rem 4rem;
+    padding: 6rem 5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    border-top: 1px solid var(--border);
+    gap: 2rem;
     border-right: 1px solid var(--border);
 
     .small-header {
@@ -16,132 +18,160 @@
       gap: 1rem;
 
       span {
-        width: 2rem;
+        width: 2.5rem;
         height: 0.2rem;
         background-color: var(--orange);
       }
+
       p {
         font-family: var(--font-2);
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 500;
         color: var(--orange);
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.25rem;
       }
     }
 
     .main-header {
       display: flex;
       flex-direction: column;
-      line-height: 6.5rem;
-      h1:nth-child(1),
-      h1:nth-child(2) {
+      line-height: 1.1;
+      gap: 0.2rem;
+
+      h1 {
         font-family: var(--font-1);
-        font-size: 5.5rem;
+        font-size: 5rem;
         font-weight: 500;
-        color: var(--dark-blue);
+        color: var(--white);
+        letter-spacing: -0.02em;
       }
-      h1:nth-child(3) {
-        font-family: var(--font-1);
-        font-size: 5.5rem;
-        font-weight: 500;
+
+      h1.italic {
         font-style: italic;
         color: var(--orange);
       }
     }
 
     .desc {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      line-height: 2.4rem;
       p {
         font-family: var(--font-2);
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: var(--description);
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: var(--white);
+        line-height: 2.4rem;
       }
     }
 
     .btns {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: 1.2rem;
+      margin-top: 0.5rem;
 
       button:nth-child(1) {
-        padding: 0.8rem 4rem;
+        padding: 1.1rem 3.5rem;
         font-family: var(--font-2);
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
         color: var(--white);
         background-color: var(--orange);
         border: none;
-        border-radius: 0.5rem;
+        border-radius: 0.6rem;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.25s ease;
+
         &:hover {
           transform: translateY(-2px);
-          box-shadow: 0 2px 6px var(--orange);
+          box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
         }
       }
 
       button:nth-child(2) {
-        padding: 0.8rem 4rem;
+        padding: 1.1rem 3.5rem;
         font-family: var(--font-2);
-        font-size: 1.5rem;
-        color: var(--dark-blue);
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--white);
         background-color: transparent;
-        border: 1px solid var(--dark-blue);
-        border-radius: 0.5rem;
+        border: 1px solid #333333;
+        border-radius: 0.6rem;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.25s ease;
+
         &:hover {
-          background-color: var(--dark-blue);
-          color: var(--white);
+          border-color: var(--orange);
+          color: var(--orange);
         }
       }
     }
   }
 
+  /* ── Sağ: Liste kartları ── */
   .sec-2-work-with-me {
     padding: 6rem 4rem;
-    background-color: var(--background);
+    background-color: var(--bg-card);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1.2rem;
 
     .box {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      border: 1px solid var(--description);
+      gap: 1.5rem;
+      border: 1px solid var(--border);
       border-radius: 1rem;
-      padding: 2.2rem 2rem;
+      padding: 2rem 2.5rem;
+      background-color: var(--bg-elevated);
+      transition: border-color 0.2s ease;
+
+      &:hover {
+        border-color: #333;
+      }
 
       .icon {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        flex-shrink: 0;
       }
 
       .info {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        
+        gap: .8rem;
+
         h2 {
           font-family: var(--font-1);
-          font-size: 1.6rem;
-          font-weight: 400;
-          letter-spacing: 0.5px;
+          font-size: 1.8rem;
+          font-weight: 500;
           color: var(--white);
         }
+
         p {
           font-family: var(--font-2);
-          font-size: 1.5rem;
-          font-weight: 300;
-          letter-spacing: 0.5px;
-          color: var(--description-2);
+          font-size: 1.4rem;
+          font-weight: 200;
+          letter-spacing: .8px;
+          color: var(--white);
+          line-height: 1.9rem;
         }
       }
+    }
+  }
+}
+
+/* ── 1200px ── */
+@media (max-width: 1200px) {
+  .work-with-me {
+    .sec-1-work-with-me {
+      padding: 6rem 4rem;
+      .main-header h1 {
+        font-size: 4.5rem;
+      }
+    }
+    .sec-2-work-with-me {
+      padding: 6rem 3rem;
     }
   }
 }
@@ -151,13 +181,8 @@
   .work-with-me {
     .sec-1-work-with-me {
       padding: 5rem 3rem;
-      .main-header {
-        line-height: 6rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 5rem;
-        }
+      .main-header h1 {
+        font-size: 4rem;
       }
     }
     .sec-2-work-with-me {
@@ -173,23 +198,15 @@
 
     .sec-1-work-with-me {
       border-right: none;
+      border-bottom: 1px solid var(--border);
       padding: 5rem 3rem;
-      .main-header {
-        line-height: 5.5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 4.8rem;
-        }
-      }
-      .desc p {
-        font-size: 1.5rem;
+      .main-header h1 {
+        font-size: 4rem;
       }
     }
 
     .sec-2-work-with-me {
       padding: 4rem 3rem;
-      gap: 1.5rem;
     }
   }
 }
@@ -199,40 +216,19 @@
   .work-with-me {
     .sec-1-work-with-me {
       padding: 4rem 3rem;
-      .small-header p {
-        font-size: 1.2rem;
-      }
-      .main-header {
-        line-height: 5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 4.2rem;
-        }
-      }
-      .desc p {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
+      .main-header h1 {
+        font-size: 3.8rem;
       }
       .btns {
         flex-direction: column;
         align-items: stretch;
-        button:nth-child(1),
-        button:nth-child(2) {
+        button {
           text-align: center;
         }
       }
     }
     .sec-2-work-with-me {
       padding: 4rem 3rem;
-      .box {
-        .info h2 {
-          font-size: 1.4rem;
-        }
-        .info p {
-          font-size: 1.3rem;
-        }
-      }
     }
   }
 }
@@ -242,70 +238,16 @@
   .work-with-me {
     .sec-1-work-with-me {
       padding: 3.5rem 2.5rem;
-      gap: 1.2rem;
-      .main-header {
-        line-height: 4.2rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.8rem;
-        }
-      }
-      .desc p {
-        font-size: 1.4rem;
-      }
-      .btns button:nth-child(1),
-      .btns button:nth-child(2) {
-        padding: 0.8rem 2.5rem;
-        font-size: 1.3rem;
+      .main-header h1 {
+        font-size: 3.4rem;
       }
     }
     .sec-2-work-with-me {
       padding: 3rem 2.5rem;
       .box {
-        padding: 1.5rem;
+        padding: 1.5rem 2rem;
         .info h2 {
-          font-size: 1.3rem;
-        }
-        .info p {
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-}
-
-/* ── 414px ── */
-@media (max-width: 414px) {
-  .work-with-me {
-    .sec-1-work-with-me {
-      padding: 3rem 2rem;
-      .main-header {
-        line-height: 4rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.5rem;
-        }
-      }
-    }
-    .sec-2-work-with-me {
-      padding: 3rem 2rem;
-    }
-  }
-}
-
-/* ── 390px ── */
-@media (max-width: 390px) {
-  .work-with-me {
-    .sec-1-work-with-me {
-      padding: 3rem 2rem;
-      .main-header {
-        line-height: 3.8rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3.3rem;
+          font-size: 1.6rem;
         }
       }
     }
@@ -316,39 +258,13 @@
 @media (max-width: 375px) {
   .work-with-me {
     .sec-1-work-with-me {
-      padding: 2.5rem 1.8rem;
-      gap: 1rem;
-      .small-header p {
-        font-size: 1.1rem;
-      }
-      .main-header {
-        line-height: 3.5rem;
-        h1:nth-child(1),
-        h1:nth-child(2),
-        h1:nth-child(3) {
-          font-size: 3rem;
-        }
-      }
-      .desc p {
-        font-size: 1.3rem;
-      }
-      .btns button:nth-child(1),
-      .btns button:nth-child(2) {
-        padding: 0.7rem 2rem;
-        font-size: 1.2rem;
+      padding: 3rem 2rem;
+      .main-header h1 {
+        font-size: 3rem;
       }
     }
     .sec-2-work-with-me {
-      padding: 2.5rem 1.8rem;
-      .box {
-        padding: 1.2rem;
-        .info h2 {
-          font-size: 1.2rem;
-        }
-        .info p {
-          font-size: 1.1rem;
-        }
-      }
+      padding: 2.5rem 2rem;
     }
   }
 }

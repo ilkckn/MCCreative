@@ -52,17 +52,19 @@ function Projects() {
         </div>
         <div className="right">
           <div className="desc">
-            <p>
-              A collection of websites built for real local businesses — salons,
-              cafés, restaurants and more. Each one designed to attract
-              customers and make your business shine online.
-            </p>
-          </div>
-          <div className="delivered-project">
-            <p className="number">
-              4 <span>+</span>
-            </p>
-            <p>Projects delivered and counting</p>
+            <div className="delivered-project">
+              <p className="number">
+                4 <span>+</span>
+              </p>
+              <p>
+                <span>Projects</span> delivered and counting
+              </p>
+              <p>
+                A collection of websites built for real local businesses —
+                salons, cafés, restaurants and more. Each one designed to
+                attract customers and make your business shine online.
+              </p>
+            </div>
           </div>
         </div>
       </section>
