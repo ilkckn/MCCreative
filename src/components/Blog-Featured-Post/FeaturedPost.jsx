@@ -3,10 +3,18 @@ import posts from "../../pages/Blog/BlogData.js";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { MdOutlineTimer } from "react-icons/md";
 import { featuredPostImage } from "../../pages/Blog/BlogData.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function FeaturedPost() {
   const navigate = useNavigate();
+
+  const post = posts.find((blog) => blog.id === posts[0].id);
+
+  const handleReadArticle = (id) => {
+    navigate(`/blog/${id}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("clicked");
+  };
 
   return (
     <main className="featured-post-container">
@@ -28,11 +36,11 @@ function FeaturedPost() {
           </p>
         </div>
         <div className="info">
-          <h2>{posts[0].name}</h2>
-          <h1>{posts[0].header}</h1>
-          <p>{posts[0].description}</p>
+          <h2>{post.name}</h2>
+          <h1>{post.header}</h1>
+          <p>{post.description}</p>
           <div className="tags">
-            {posts[0].tags.map((tag, index) => (
+            {post.tags.map((tag, index) => (
               <span key={index} className="tag">
                 {tag}
               </span>
@@ -40,9 +48,12 @@ function FeaturedPost() {
           </div>
           <div className="break-line"></div>
           <p>
-            {posts[0].date} <span>&#8226;</span> {posts[0].readTime}
+            {post.date} <span>&#8226;</span> {post.readTime}
           </p>
-          <p>
+          <p
+            onClick={() => handleReadArticle(post.id)}
+            className="read-article"
+          >
             Read article <HiOutlineArrowLongRight className="right-arrow" />
           </p>
         </div>

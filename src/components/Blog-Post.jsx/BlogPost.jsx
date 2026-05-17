@@ -5,7 +5,7 @@ import blogs from "../../pages/Blog/BlogData";
 function BlogPost() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const post = blogs.find((blog) => blog.id === parseInt(id));
+  const post = blogs.find((blog) => blog.id === Number(id));
 
   if (!post) return <p className="post-not-found">Post not found.</p>;
 
