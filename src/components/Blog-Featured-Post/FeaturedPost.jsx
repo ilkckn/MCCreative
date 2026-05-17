@@ -3,7 +3,7 @@ import posts from "../../pages/Blog/BlogData.js";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { MdOutlineTimer } from "react-icons/md";
 import { featuredPostImage } from "../../pages/Blog/BlogData.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function FeaturedPost() {
   const navigate = useNavigate();
