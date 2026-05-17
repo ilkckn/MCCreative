@@ -15,6 +15,15 @@ function getTagSize(count, max) {
   return "size-sm";
 }
 
+function shuffleArray(arr) {
+  const shuffled = [...arr];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 // Tag'in accent mi neutral mi olacağını belirler
 function getTagStyle(count, max) {
   return count / max > 0.5 ? "accent" : "neutral";
@@ -42,7 +51,7 @@ function BlogAllPosts() {
 
   // Tag cloud listesi — en çok geçenden en aza karıştırılmış sırayla
   const tagCloudItems = useMemo(() => {
-    return Object.entries(tagCounts).sort(() => Math.random() - 0.5);
+    return shuffleArray(Object.entries(tagCounts));
   }, [tagCounts]);
 
   // Aktif taga göre filtrele
