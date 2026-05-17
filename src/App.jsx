@@ -8,6 +8,7 @@ import Projects from "./pages/Projects/Projects";
 import Blog from "./pages/Blog/Blog";
 import BlogAllPost from "./components/Blog-Post.jsx/BlogPost";
 import Contact from "./pages/Contact/Contact";
+import BlogAllPosts from "./components/Blog-All-posts/BlogAllPosts";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogAllPost />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog/all" element={<BlogAllPosts />} />
       </Routes>
       <Footer />
     </main>

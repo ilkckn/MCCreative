@@ -3,8 +3,11 @@ import posts from "../../pages/Blog/BlogData.js";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { MdOutlineTimer } from "react-icons/md";
 import { featuredPostImage } from "../../pages/Blog/BlogData.js";
+import { useNavigate } from "react-router-dom";
 
 function FeaturedPost() {
+  const navigate = useNavigate();
+
   return (
     <main className="featured-post-container">
       <div className="featured-top-header">
@@ -12,7 +15,7 @@ function FeaturedPost() {
           <span></span>
           <p>Featured Post</p>
         </div>
-        <p className="view-all">
+        <p className="view-all" onClick={() => navigate("/blog/all")}>
           View all posts <HiOutlineArrowLongRight className="right-arrow" />
         </p>
       </div>
