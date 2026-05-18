@@ -4,6 +4,10 @@ import { HiMiniArrowLongRight } from "react-icons/hi2";
 import website from "../../MyWebsites.js";
 
 function SelectedWork() {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main className="sw-container">
       {/* ── Başlık ── */}
@@ -43,7 +47,9 @@ function SelectedWork() {
             </div>
           </div>
           <div className="sw-view-btn">
-            <NavLink to="/projects">View project</NavLink>
+            <NavLink to="/projects" onClick={handleScrollToTop}>
+              View project
+            </NavLink>
           </div>
         </div>
 
@@ -73,7 +79,9 @@ function SelectedWork() {
             </div>
           </div>
           <div className="sw-view-btn">
-            <NavLink to="/projects">View project</NavLink>
+            <NavLink to="/projects" onClick={handleScrollToTop}>
+              View project
+            </NavLink>
           </div>
         </div>
       </section>
