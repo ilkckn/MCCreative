@@ -1,4 +1,4 @@
-import blanche from "../src/assets/website-images/blanche.png";
+// import blanche from "../src/assets/website-images/blanche.png";
 
 const websites = [
   {
@@ -28,7 +28,7 @@ const websites = [
     location: "Berlin, Germany",
     tags: ["React", "HTML", "CSS", "JavaScript", "Responsive"],
     latest: false,
-    live_demo: "https://another-website.netlify.app/",
+    live_demo: "https://terra-restaurant.netlify.app/",
   },
 ];
 
