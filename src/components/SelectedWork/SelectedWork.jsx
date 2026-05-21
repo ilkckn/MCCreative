@@ -1,10 +1,13 @@
 import "./SelectedWork.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 import website from "../../MyWebsites.js";
 
 function SelectedWork() {
+  const navigate = useNavigate();
+
   const handleScrollToTop = () => {
+    navigate("/projects");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -47,9 +50,7 @@ function SelectedWork() {
             </div>
           </div>
           <div className="sw-view-btn">
-            <NavLink to="/projects" onClick={handleScrollToTop}>
-              View project
-            </NavLink>
+            <button onClick={handleScrollToTop}>View project</button>
           </div>
         </div>
 
@@ -79,9 +80,7 @@ function SelectedWork() {
             </div>
           </div>
           <div className="sw-view-btn">
-            <NavLink to="/projects" onClick={handleScrollToTop}>
-              View project
-            </NavLink>
+            <button onClick={handleScrollToTop}>View project</button>
           </div>
         </div>
       </section>
