@@ -1,0 +1,83 @@
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-card: #f9f9f9;
+  --bg-card-2: #f0f0f0;
+  --bg-elevated: #e0e0e0;
+  --white: #111111; /* ← en kritik bu! tüm text'ler buna bağlı */
+  --border: #e0e0e0;
+  --description: #555555;
+  --description-2: #777777;
+  --description-3: #e8e8e8;
+  --background-3: rgba(249, 115, 22, 0.08);
+}
+
+[data-theme="light"] .nav-container .navbar {
+  background-color: #f9f9f9;
+  border-color: #e0e0e0;
+  box-shadow: -8px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .nav-container .navbar .sec-links a {
+  color: #111111;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-links a.active {
+  color: var(--orange);
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .available-for-work {
+  color: #111111;
+  border-color: #e0e0e0;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .available-for-work p {
+  color: #111111;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .lets-talk a {
+  color: #ffffff;
+}
+
+/* ✅ Bu çalışır */
+[data-theme="light"] .landing-container .sec-1 .land-left .btns button:nth-child(1) {
+  color: #ffffff;
+}
+
+[data-theme="light"] .landing-container .sec-1 .land-left .btns button:nth-child(2) {
+  color: #ffffff;
+}
+
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-card-body
+  .sw-card-tags
+  span {
+  background-color: #ebebeb;
+  border-color: #d0d0d0;
+  color: #111111;
+}
+
+[data-theme="light"] .about-me-landing .sec-1 .btns button:nth-child(1),
+[data-theme="light"] .get-your-business .sec-1 .btns button:nth-child(1) {
+  color: #ffffff;
+}
+
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-image-wrap
+  .sw-status {
+  color: white;
+}
+
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-view-btn
+  button {
+  color: white;
+}

@@ -144,6 +144,8 @@
           cursor: pointer;
           transition: all 0.2s ease;
           user-select: none;
+          color: black;
+          background-color: var(--dark-blue);
 
           &.size-xl {
             font-size: 1.3rem;
@@ -429,9 +431,12 @@
           display: flex;
           align-items: center;
           gap: 0.8rem;
-          font-family: var(--font-2);
-          font-size: 1.2rem;
-          color: var(--description);
+          
+          span {
+            font-family: var(--font-2);
+            font-size: 1.2rem;
+            color: var(--description);
+          }
 
           .meta-dot {
             width: 0.3rem;

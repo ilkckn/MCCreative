@@ -112,7 +112,7 @@
               font-size: 1.4rem;
               font-weight: 500;
               letter-spacing: .5px;
-              color: var(--dark-blue);
+              color: var(--white);
             }
             p:nth-child(3) {
               font-family: var(--font-2);

@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -11,9 +12,19 @@ import Contact from "./pages/Contact/Contact";
 import BlogAllPosts from "./components/Blog-All-posts/BlogAllPosts";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  });
+
   return (
     <main className="App">
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />

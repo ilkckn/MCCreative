@@ -1,8 +1,9 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { RiSunLine, RiMoonLine } from "react-icons/ri";
 
-function Navbar() {
+function Navbar({ theme, toggleTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const openMenu = () => setIsMenuOpen(true);
@@ -61,6 +62,9 @@ function Navbar() {
 
           {/* ── Sağ Butonlar ── */}
           <section className="sec-btns">
+            <button className="theme-btn" onClick={toggleTheme}>
+              {theme === "light" ? <RiMoonLine className="theme-icon" /> : <RiSunLine className="theme-icon" />}
+            </button>
             <div className="available-for-work">
               <span className="dot"></span>
               <p>Available for work</p>

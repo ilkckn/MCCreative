@@ -759,6 +759,7 @@
 
         .post-article-body {
           gap: 2rem;
+          
           .article-intro {
             font-size: 1.6rem;
           }
