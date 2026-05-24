@@ -28,7 +28,7 @@ const websites = [
     location: "Berlin, Germany",
     tags: ["React", "HTML", "CSS", "JavaScript", "Responsive", "Reservation System"],
     latest: false,
-    live_demo: "https://terra-restaurant.netlify.app/",
+    live_demo: "https://terra-restaurant-sigma.vercel.app/",
   },
 ];
 
