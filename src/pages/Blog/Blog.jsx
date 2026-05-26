@@ -18,7 +18,7 @@ function Blog() {
           <div className="main-header">
             <h1>{t("blog.title_1")}</h1>
             <h1>{t("blog.title_2")}</h1>
-            <h1>{t("blog.title_3")}</h1>
+            <h1 className="italic" id="italic">{t("blog.title_3")}</h1>
           </div>
         </div>
         <div className="blog-right">

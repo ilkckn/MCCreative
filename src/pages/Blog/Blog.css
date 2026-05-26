@@ -42,7 +42,7 @@
         flex-direction: column;
         line-height: 6rem;
 
-        h1:nth-child(1) {
+        h1 {
           font-family: var(--font-1);
           font-size: 5.5rem;
           font-weight: 500;
@@ -54,19 +54,13 @@
           font-size: 5.5rem;
           font-weight: 500;
           color: var(--dark-blue);
-
-          span {
-            font-size: 5.5rem;
-            font-style: italic;
-            color: var(--orange);
-          }
         }
 
-        h1:nth-child(3) {
+        h1#italic {
           font-family: var(--font-1);
           font-size: 5.5rem;
           font-weight: 500;
-          color: var(--dark-blue);
+          color: var(--orange);
           line-height: 5.5rem;
         }
       }

@@ -26,7 +26,7 @@ function SelectedWork() {
             <h1 className="italic">{t("selected_work.title_2")}</h1>
           </div>
           <div className="sw-view-all">
-            <NavLink to="/projects">{t("selected_work.view_all")}</NavLink>
+            <NavLink to="/projects" onClick={handleScrollToTop}>{t("selected_work.view_all")}</NavLink>
             <HiMiniArrowLongRight className="sw-arrow-icon" />
           </div>
         </div>

@@ -2,10 +2,12 @@
   display: grid;
   grid-template-rows: auto auto auto;
   background-color: var(--bg-primary);
-
+  
   .hero-sec {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4rem;
 
     .left {
       display: flex;
@@ -43,15 +45,15 @@
         h1:nth-child(1) {
           font-family: var(--font-1);
           font-size: 5.5rem;
-          font-weight: 400;
+          font-weight: 500;
           color: var(--white);
         }
 
         h1:nth-child(2) {
           font-family: var(--font-1);
           font-size: 5.5rem;
-          font-weight: 400;
-          color: var(--white);
+          font-weight: 500;
+          color: var(--orange);
 
           span {
             font-size: 5.5rem;
