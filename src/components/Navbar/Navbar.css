@@ -186,7 +186,7 @@
           border: 1px solid #2e2e2e;
           border-radius: 0.6rem;
           list-style: none;
-          padding: 1rem .6rem;
+          padding: 1rem 0.6rem;
           min-width: 13rem;
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
           z-index: 200;
@@ -308,18 +308,8 @@
 }
 
 /* ── Mobile ── */
+
 @media (max-width: 1024px) {
-  .menu-overlay {
-    display: block;
-  }
-
-  .nav-container .navbar .mobile-menu-container {
-    display: block;
-  }
-}
-
-
-@media (max-width: 820px) {
   .menu-overlay {
     display: block;
     position: fixed;
@@ -491,7 +481,7 @@
           }
 
           .mobile-logo {
-            color: #E3D3C6;
+            color: #e3d3c6;
             position: absolute;
             bottom: 3rem;
             left: 50%;
@@ -511,12 +501,16 @@
             }
 
             p {
+              display: inline-flex;
+              align-items: center;
+              gap: 0.1rem;
               font-family: var(--font-2);
               font-weight: 600;
               font-size: 1.6rem;
-              color: var(--white);
+              color: white;
 
               span {
+                font-size: 1.6rem;
                 color: var(--orange);
               }
             }
