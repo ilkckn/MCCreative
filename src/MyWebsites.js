@@ -10,7 +10,7 @@ const websites = [
     location: "Freiburg, Germany",
     tags: ["React", "Responsive", "Booking System", "CSS", "JavaScript"],
     latest: true,
-    live_demo: "https://blanche-hair-saloon.netlify.app/",
+    live_demo: "https://blanche-bice.vercel.app/",
   },
   {
     id: 2,

@@ -22,6 +22,7 @@ function Navbar({ theme, toggleTheme }) {
 
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
+      closeMenu();
   };
 
   // Dropdown dışına tıklayınca kapat
@@ -119,11 +120,11 @@ function Navbar({ theme, toggleTheme }) {
               </button>
 
               <ul className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-                <li><NavLink to="/" onClick={closeMenu}>{t("navbar.home")}</NavLink></li>
-                <li><NavLink to="/about" onClick={closeMenu}>{t("navbar.about")}</NavLink></li>
-                <li><NavLink to="/projects" onClick={closeMenu}>{t("navbar.projects")}</NavLink></li>
-                <li><NavLink to="/blog" onClick={closeMenu}>{t("navbar.blog")}</NavLink></li>
-                <li><NavLink to="/contact" onClick={closeMenu}>{t("navbar.contact")}</NavLink></li>
+                <li><NavLink to="/" onClick={handleLinkClick}>{t("navbar.home")}</NavLink></li>
+                <li><NavLink to="/about" onClick={handleLinkClick}>{t("navbar.about")}</NavLink></li>
+                <li><NavLink to="/projects" onClick={handleLinkClick}>{t("navbar.projects")}</NavLink></li>
+                <li><NavLink to="/blog" onClick={handleLinkClick}>{t("navbar.blog")}</NavLink></li>
+                <li><NavLink to="/contact" onClick={handleLinkClick}>{t("navbar.contact")}</NavLink></li>
 
                 {/* Mobil Dil Seçici */}
                 <li className="mobile-lang-switcher">
