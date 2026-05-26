@@ -135,6 +135,103 @@
           }
         }
       }
+
+      /* ── Dil Dropdown ── */
+      .lang-switcher {
+        position: relative;
+
+        .lang-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          background: transparent;
+          border: none;
+          border-left: 1px solid #2e2e2e;
+          border-right: 1px solid #2e2e2e;
+          /* border-radius: 0.5rem; */
+          padding: 0.5rem 0.9rem;
+          cursor: pointer;
+          transition: border-color 0.2s ease;
+
+          .lang-icon {
+            font-size: 1.8rem;
+            color: #aaaaaa;
+            transition: color 0.2s ease;
+          }
+
+          span {
+            font-family: var(--font-2);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #aaaaaa;
+            transition: color 0.2s ease;
+          }
+
+          &:hover {
+            border-color: var(--orange);
+
+            .lang-icon,
+            span {
+              color: var(--orange);
+            }
+          }
+        }
+
+        .lang-dropdown {
+          position: absolute;
+          top: calc(100% + 0.8rem);
+          left: 6.5rem;
+          transform: translateX(-50%);
+          background-color: #111111;
+          border: 1px solid #2e2e2e;
+          border-radius: 0.6rem;
+          list-style: none;
+          padding: 1rem .6rem;
+          min-width: 13rem;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+          z-index: 200;
+          opacity: 0;
+          pointer-events: none;
+          transform: translateX(-50%) translateY(-6px);
+          transition:
+            opacity 0.2s ease,
+            transform 0.2s ease;
+
+          &.open {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(-50%) translateY(0);
+          }
+
+          li button {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            font-family: var(--font-2);
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #aaaaaa;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            text-align: left;
+            transition:
+              background-color 0.15s ease,
+              color 0.15s ease;
+
+            &:hover {
+              background-color: #1e1e1e;
+              color: var(--white);
+            }
+
+            &.active {
+              color: var(--orange);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
       .available-for-work {
         display: flex;
         align-items: center;
@@ -211,6 +308,17 @@
 }
 
 /* ── Mobile ── */
+@media (max-width: 1024px) {
+  .menu-overlay {
+    display: block;
+  }
+
+  .nav-container .navbar .mobile-menu-container {
+    display: block;
+  }
+}
+
+
 @media (max-width: 820px) {
   .menu-overlay {
     display: block;
@@ -232,6 +340,10 @@
     padding: 0 2.5rem;
 
     .sec-links {
+      display: none;
+    }
+
+    .lang-switcher {
       display: none;
     }
 
@@ -302,6 +414,40 @@
             }
           }
 
+          /* ── Mobil Dil Seçici ── */
+          .mobile-lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.5rem 3rem;
+            border-bottom: 1px solid #1e1e1e;
+
+            button {
+              background: transparent;
+              border: 1px solid #2e2e2e;
+              border-radius: 0.4rem;
+              padding: 0.5rem 1rem;
+              font-family: var(--font-2);
+              font-size: 1.3rem;
+              font-weight: 600;
+              color: #aaaaaa;
+              cursor: pointer;
+              transition:
+                border-color 0.2s ease,
+                color 0.2s ease;
+
+              &:hover {
+                border-color: var(--orange);
+                color: var(--white);
+              }
+
+              &.active {
+                border-color: var(--orange);
+                color: var(--orange);
+              }
+            }
+          }
+
           .mobile-available {
             display: flex;
             align-items: center;
@@ -345,6 +491,7 @@
           }
 
           .mobile-logo {
+            color: #E3D3C6;
             position: absolute;
             bottom: 3rem;
             left: 50%;

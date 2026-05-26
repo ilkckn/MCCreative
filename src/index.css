@@ -78,6 +78,29 @@ body {
   color: var(--orange);
 }
 
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-btn .lang-icon,
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-btn span {
+  color: #111111;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown {
+  background-color: #f9f9f9;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button {
+  color: #111111;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button:hover {
+  color: var(--orange);
+  background-color: transparent;
+}
+
+[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button.active {
+  color: white;
+  background-color: var(--orange);
+}
+
 [data-theme="light"] .nav-container .navbar .sec-btns .available-for-work {
   color: #111111;
   border-color: #e0e0e0;

@@ -1,16 +1,32 @@
 import "./BlogPost.css";
 import { useParams, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import blogs from "../../pages/Blog/BlogData";
 
 function BlogPost() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.slice(0, 2) || "en";
+
   const post = blogs.find((blog) => blog.id === Number(id));
 
   if (!post) return <p className="post-not-found">Post not found.</p>;
 
+  const postName = post.name?.[lang] || post.name?.en || "";
+  const postHeader = post.header?.[lang] || post.header?.en || "";
+  const postDescription =
+    post.description?.[lang] || post.description?.en || "";
+  const postTags = post.tags?.[lang] || post.tags?.en || [];
+  const postDate = post.date?.[lang] || post.date?.en || "";
+  const postContent = post.fullContent?.[lang] || post.fullContent?.en || [];
+
   const relatedPosts = blogs
-    .filter((blog) => blog.id !== post.id && blog.name === post.name)
+    .filter(
+      (blog) =>
+        blog.id !== post.id &&
+        (blog.name?.[lang] || blog.name?.en) === postName,
+    )
     .slice(0, 3);
 
   const fallbackRelated = blogs
@@ -29,7 +45,7 @@ function BlogPost() {
         );
       case "heading":
         return (
-          <h2 key={index} id={`heading-${index}`} className="article-heading">
+          <h2 key={index} id={"heading-" + index} className="article-heading">
             {block.text}
           </h2>
         );
@@ -63,79 +79,75 @@ function BlogPost() {
 
   return (
     <main className="blog-post-container">
-      {/* ── BREADCRUMB ── */}
+      {/* BREADCRUMB */}
       <div className="blog-post-breadcrumb">
         <span className="breadcrumb-link" onClick={() => navigate("/")}>
-          Home
+          {t("blog.home")}
         </span>
         <span className="breadcrumb-sep">›</span>
         <span className="breadcrumb-link" onClick={() => navigate("/blog")}>
-          Blog
+          {t("blog.blog")}
         </span>
         <span className="breadcrumb-sep">›</span>
-        <span className="breadcrumb-current">{post.header}</span>
+        <span className="breadcrumb-current">{postHeader}</span>
       </div>
 
-      {/* ── MAIN LAYOUT: content + sidebar ── */}
       <div className="blog-post-layout">
-        {/* ════════════════════════
-            LEFT — MAIN CONTENT
-        ════════════════════════ */}
+        {/* MAIN CONTENT */}
         <article className="blog-post-content">
-          {/* POST HEADER */}
           <div className="post-header">
             <div className="post-header-top">
-              <span className="post-category">{post.name}</span>
+              <span className="post-category">{postName}</span>
               <span className="post-read-time">⏱ {post.readTime}</span>
             </div>
-            <h1 className="post-title">{post.header}</h1>
-            <p className="post-description">{post.description}</p>
+            <h1 className="post-title">{postHeader}</h1>
+            <p className="post-description">{postDescription}</p>
             <div className="post-meta">
               <div className="post-author">
                 <div className="post-author-avatar">MC</div>
                 <div className="post-author-info">
                   <span className="post-author-name">Musa Çekçen</span>
                   <span className="post-author-role">
-                    Web Designer & Developer
+                    {t("blog.author_role")}
                   </span>
                 </div>
               </div>
               <div className="post-meta-dot"></div>
-              <span className="post-date">{post.date}</span>
+              <span className="post-date">{postDate}</span>
             </div>
           </div>
 
-          {/* COVER IMAGE */}
           <div className="post-cover-image">
-            <img src={post.image} alt={post.header} />
+            <img src={post.image} alt={postHeader} />
           </div>
 
-          {/* TAGS */}
           <div className="post-tags">
-            {post.tags.map((tag, i) => (
+            {postTags.map((tag, i) => (
               <span key={i} className="post-tag">
                 {tag}
               </span>
             ))}
           </div>
 
-          {/* ARTICLE BODY */}
           <div className="post-article-body">
-            {post.fullContent.map((block, i) => renderBlock(block, i))}
+            {postContent.map((block, i) => renderBlock(block, i))}
           </div>
 
-          {/* POST FOOTER */}
           <div className="post-footer">
             <div className="post-footer-tags">
-              <span className="post-footer-label">Tags:</span>
-              {post.tags.map((tag, i) => (
+              <span className="post-footer-label">
+                {t("blog.blog_post_tags")}
+              </span>
+              {postTags.map((tag, i) => (
                 <span key={i} className="post-tag">
                   {tag}
                 </span>
               ))}
             </div>
             <div className="post-footer-share">
-              <span className="post-footer-label">Share:</span>
+              <span className="post-footer-label">
+                {t("blog.blog_post_share")}
+              </span>
               <button className="share-btn">LinkedIn ↗</button>
               <button className="share-btn">Twitter ↗</button>
               <button
@@ -144,7 +156,7 @@ function BlogPost() {
                   navigator.clipboard.writeText(window.location.href)
                 }
               >
-                Copy link
+                {t("blog.blog_post_copy_link")}
               </button>
             </div>
             <button
@@ -154,28 +166,23 @@ function BlogPost() {
                 window.scrollTo(0, 0);
               }}
             >
-              ← Back to all posts
+              {t("blog.blog_post_back")}
             </button>
           </div>
         </article>
 
-        {/* ════════════════════════
-            RIGHT — SIDEBAR
-        ════════════════════════ */}
+        {/* SIDEBAR */}
         <aside className="blog-post-sidebar">
-          {/* AUTHOR CARD */}
           <div className="sidebar-author-card">
             <div className="sidebar-author-avatar">MC</div>
             <div className="sidebar-author-info">
               <span className="sidebar-author-name">Musa Çekçen</span>
               <span className="sidebar-author-role">
-                Web Designer & Developer
+                {t("blog.author_role")}
               </span>
             </div>
             <p className="sidebar-author-bio">
-              I build beautiful websites for local businesses in Freiburg and
-              beyond. Salons, cafés, restaurants — if you need customers to find
-              you online, I can help.
+              {t("blog.blog_post_author_bio")}
             </p>
             <button
               className="sidebar-author-cta"
@@ -184,15 +191,16 @@ function BlogPost() {
                 window.scrollTo(0, 0);
               }}
             >
-              Work with me →
+              {t("blog.blog_post_work_with_me")}
             </button>
           </div>
 
-          {/* TABLE OF CONTENTS */}
           <div className="sidebar-toc">
-            <div className="sidebar-toc-title">In this article</div>
+            <div className="sidebar-toc-title">
+              {t("blog.blog_post_in_this_article")}
+            </div>
             <ul className="sidebar-toc-list">
-              {post.fullContent
+              {postContent
                 .map((block, originalIndex) => ({ ...block, originalIndex }))
                 .filter((block) => block.type === "heading")
                 .map((block, i) => (
@@ -201,7 +209,7 @@ function BlogPost() {
                     className="sidebar-toc-item"
                     onClick={() => {
                       const el = document.getElementById(
-                        `heading-${block.originalIndex}`,
+                        "heading-" + block.originalIndex,
                       );
                       if (el) {
                         const y =
@@ -217,29 +225,33 @@ function BlogPost() {
             </ul>
           </div>
 
-          {/* RELATED POSTS */}
           {allRelated.length > 0 && (
             <div className="sidebar-related">
-              <div className="sidebar-related-title">Related posts</div>
+              <div className="sidebar-related-title">
+                {t("blog.blog_post_related")}
+              </div>
               <div className="sidebar-related-list">
                 {allRelated.map((related) => (
                   <div
                     key={related.id}
                     className="sidebar-related-card"
                     onClick={() => {
-                      navigate(`/blog/${related.id}`);
+                      navigate("/blog/" + related.id);
                       window.scrollTo(0, 0);
                     }}
                   >
                     <div className="sidebar-related-img">
-                      <img src={related.image} alt={related.header} />
+                      <img
+                        src={related.image}
+                        alt={related.header?.[lang] || related.header?.en}
+                      />
                     </div>
                     <div className="sidebar-related-info">
                       <span className="sidebar-related-cat">
-                        {related.name}
+                        {related.name?.[lang] || related.name?.en}
                       </span>
                       <span className="sidebar-related-header">
-                        {related.header}
+                        {related.header?.[lang] || related.header?.en}
                       </span>
                       <span className="sidebar-related-read">
                         {related.readTime}

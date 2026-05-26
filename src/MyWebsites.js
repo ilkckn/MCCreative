@@ -1,15 +1,11 @@
-// import blanche from "../src/assets/website-images/blanche.png";
-
 const websites = [
   {
     id: 1,
-    name: "Blanche Hair Salon",
-    type: "Salon & Beauty",
+    nameKey: "selected_work.name.salon_beauty",
+    typeKey: "selected_work.type.restaurant_cafe",
     category: "salon-beauty",
-    description:
-      "A modern and elegant website for a hair salon, featuring a sleek design and easy navigation.",
-    image:
-      "https://images.unsplash.com/photo-1707979577466-2d6109c68a45?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    descKey: "selected_work.projects.blanche_desc",
+    image: "https://images.unsplash.com/photo-1707979577466-2d6109c68a45?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://blanche-hair-salon.netlify.app/",
     location: "Freiburg, Germany",
     tags: ["React", "Responsive", "Booking System", "CSS", "JavaScript"],
@@ -18,12 +14,11 @@ const websites = [
   },
   {
     id: 2,
-    name: "Terra Restaurant",
-    type: "Restaurant & Cafe",
+    nameKey: "selected_work.name.restaurant_cafe",
+    typeKey: "selected_work.type.restaurant_cafe",
     category: "restaurant-cafe",
-    description: "A stylish and user-friendly website for a restaurant, showcasing the menu, location, and reservation system.",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    descKey: "selected_work.projects.terra_desc",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://terra-restaurant-sigma.vercel.app/",
     location: "Berlin, Germany",
     tags: ["React", "HTML", "CSS", "JavaScript", "Responsive", "Reservation System"],

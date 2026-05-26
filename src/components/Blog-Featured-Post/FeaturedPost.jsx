@@ -4,16 +4,25 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { MdOutlineTimer } from "react-icons/md";
 import { featuredPostImage } from "../../pages/Blog/BlogData.js";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function FeaturedPost() {
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.slice(0, 2) || "en";
 
-  const post = posts.find((blog) => blog.id === posts[0].id);
+  const post = posts[0];
+
+  const postName = post.name?.[lang] || post.name?.en || "";
+  const postHeader = post.header?.[lang] || post.header?.en || "";
+  const postDescription =
+    post.description?.[lang] || post.description?.en || "";
+  const postTags = post.tags?.[lang] || post.tags?.en || [];
+  const postDate = post.date?.[lang] || post.date?.en || "";
 
   const handleReadArticle = (id) => {
     navigate(`/blog/${id}`);
     window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log("clicked");
   };
 
   return (
@@ -21,26 +30,27 @@ function FeaturedPost() {
       <div className="featured-top-header">
         <div className="header">
           <span></span>
-          <p>Featured Post</p>
+          <p>{t("blog.featured_header")}</p>
         </div>
         <p className="view-all" onClick={() => navigate("/blog/all")}>
-          View all posts <HiOutlineArrowLongRight className="right-arrow" />
+          {t("blog.view_all")}{" "}
+          <HiOutlineArrowLongRight className="right-arrow" />
         </p>
       </div>
       <div className="posts">
         <div className="image-status">
           <img src={featuredPostImage} alt="featured post" />
-          <p className="status1">featured</p>
+          <p className="status1">{t("blog.featured_badge")}</p>
           <p className="status2">
-            <MdOutlineTimer className="timer-icon" /> {posts[0].readTime}
+            <MdOutlineTimer className="timer-icon" /> {post.readTime}
           </p>
         </div>
         <div className="info">
-          <h2>{post.name}</h2>
-          <h1>{post.header}</h1>
-          <p>{post.description}</p>
+          <h2>{postName}</h2>
+          <h1>{postHeader}</h1>
+          <p>{postDescription}</p>
           <div className="tags">
-            {post.tags.map((tag, index) => (
+            {postTags.map((tag, index) => (
               <span key={index} className="tag">
                 {tag}
               </span>
@@ -48,13 +58,14 @@ function FeaturedPost() {
           </div>
           <div className="break-line"></div>
           <p>
-            {post.date} <span>&#8226;</span> {post.readTime}
+            {postDate} <span>&#8226;</span> {post.readTime}
           </p>
           <p
             onClick={() => handleReadArticle(post.id)}
             className="read-article"
           >
-            Read article <HiOutlineArrowLongRight className="right-arrow" />
+            {t("blog.read_article")}{" "}
+            <HiOutlineArrowLongRight className="right-arrow" />
           </p>
         </div>
       </div>

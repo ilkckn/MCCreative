@@ -1,5 +1,6 @@
 import "./Landing.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import WhatIOffer from "../../components/WhatIOffer/WhatIOffer.jsx";
 import SelectedWork from "../../components/SelectedWork/SelectedWork.jsx";
 import AboutMeLanding from "../../components/AboutMeLanding/AboutMeLanding.jsx";
@@ -7,38 +8,37 @@ import GetYourBusiness from "../../components/GetYourBusiness/GetYourBusiness.js
 
 function Landing() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <main className="landing-container">
       <section className="sec-1">
-        {/* ── Sol: Hero Metin ── */}
         <section className="land-left">
           <div className="small-header">
             <span></span>
-            <p>Freelance web developer</p>
+            <p>{t("landing.small_header")}</p>
           </div>
           <div className="main-header">
-            <h1>I build websites</h1>
-            <h1>small businesses</h1>
-            <h1 className="italic">actually love.</h1>
+            <h1>{t("landing.title_1")}</h1>
+            <h1>{t("landing.title_2")}</h1>
+            <h1 className="italic">{t("landing.title_3")}</h1>
           </div>
           <div className="main-desc">
-            <p>
-              I design and build beautiful, fast websites for local businesses
-              in Germany and beyond — salons, cafés, restaurants and more.
-            </p>
+            <p>{t("landing.desc")}</p>
           </div>
           <div className="btns">
-            <button onClick={() => navigate("/projects")}>See My Work</button>
-            <button onClick={() => navigate("/about")}>How I Work</button>
+            <button onClick={() => navigate("/projects")}>
+              {t("landing.btn_work")}
+            </button>
+            <button onClick={() => navigate("/about")}>
+              {t("landing.btn_how")}
+            </button>
           </div>
         </section>
 
-        {/* ── Sağ: Skill Bars + Metrik Kartlar ── */}
         <section className="land-right">
-          {/* Skill bar kartı */}
           <div className="tech-skills">
-            <p className="header">Tech skills</p>
+            <p className="header">{t("landing.tech_skills")}</p>
             <div className="skills">
               <div className="skill-item">
                 <div className="skill-label">
@@ -70,25 +70,24 @@ function Landing() {
             </div>
           </div>
 
-          {/* 3 metrik kutusu */}
           <div className="metrics-grid">
             <div className="metric-card">
               <div className="metric-value">
-                10<span>+</span>
+                5<span>+</span>
               </div>
-              <p className="metric-label">Projects done</p>
+              <p className="metric-label">{t("landing.metric_projects")}</p>
             </div>
             <div className="metric-card">
               <div className="metric-value">
                 100<span>%</span>
               </div>
-              <p className="metric-label">Client satisfaction</p>
+              <p className="metric-label">{t("landing.metric_satisfaction")}</p>
             </div>
             <div className="metric-card">
               <div className="metric-value">
                 3<span>+</span>
               </div>
-              <p className="metric-label">Years experience</p>
+              <p className="metric-label">{t("landing.metric_experience")}</p>
             </div>
           </div>
         </section>

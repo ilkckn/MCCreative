@@ -1,4 +1,5 @@
 import "./TechSkills.css";
+import { useTranslation } from "react-i18next";
 import tools from "./Tools.js";
 
 const skills = [
@@ -12,17 +13,18 @@ const skills = [
 ];
 
 function TechSkills() {
+  const { t } = useTranslation();
+
   return (
     <main className="tech-skills">
-      {/* ── Sol: Skill Barlar ── */}
       <section className="sec-1-tech">
         <div className="small-header">
           <span></span>
-          <p>Tech Skills</p>
+          <p>{t("tech_skills.small_header")}</p>
         </div>
         <div className="main-header">
-          <h1>What I</h1>
-          <h1 className="italic">build with.</h1>
+          <h1>{t("tech_skills.title_1")}</h1>
+          <h1 className="italic">{t("tech_skills.title_2")}</h1>
         </div>
         <div className="skills">
           {skills.map((skill) => (
@@ -39,39 +41,38 @@ function TechSkills() {
         </div>
       </section>
 
-      {/* ── Sağ: Soft Skills + Tools ── */}
       <section className="sec-2-tech">
         <div className="small-header">
           <span></span>
-          <p>Soft Skills & Tools</p>
+          <p>{t("tech_skills.soft_header")}</p>
         </div>
         <div className="soft-skills-tools">
           <div className="soft-skills">
             <div className="box">
               <div className="icon">🗨️</div>
-              <h2>Communication</h2>
-              <p>Clear, direct and friendly. You always know where the project stands.</p>
+              <h2>{t("tech_skills.comm_title")}</h2>
+              <p>{t("tech_skills.comm_desc")}</p>
             </div>
             <div className="box">
               <div className="icon">⚡</div>
-              <h2>Fast Delivery</h2>
-              <p>Most projects live in 2–3 weeks. No delays, no excuses.</p>
+              <h2>{t("tech_skills.delivery_title")}</h2>
+              <p>{t("tech_skills.delivery_desc")}</p>
             </div>
             <div className="box">
               <div className="icon">🎯</div>
-              <h2>Detail-oriented</h2>
-              <p>Every pixel, every word, every interaction — crafted with care.</p>
+              <h2>{t("tech_skills.detail_title")}</h2>
+              <p>{t("tech_skills.detail_desc")}</p>
             </div>
             <div className="box">
               <div className="icon">🔄</div>
-              <h2>Adaptable</h2>
-              <p>Every business is different. I adapt to what works for you.</p>
+              <h2>{t("tech_skills.adapt_title")}</h2>
+              <p>{t("tech_skills.adapt_desc")}</p>
             </div>
           </div>
           <div className="tools">
             <div className="tools-header">
               <span></span>
-              <p>Tools I use</p>
+              <p>{t("tech_skills.tools_header")}</p>
             </div>
             <div className="tool">
               {tools.map((tool, index) => (

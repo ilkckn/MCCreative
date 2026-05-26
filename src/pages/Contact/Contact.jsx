@@ -2,75 +2,72 @@ import CommonQuestions from "../../components/Contact-Common/CommonQuestions.jsx
 import Form from "../../components/Contact-Form/Form.jsx";
 import "./Contact.css";
 import processSteps from "./ProcessData.js";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.slice(0, 2) || "en";
+
   return (
     <main className="contact-container">
       <section className="contact-get-in-touch">
         <div className="section-left">
           <div className="contact-small-header">
             <span></span>
-            <p>get in touch</p>
+            <p>{t("contact.small_header")}</p>
           </div>
           <div className="contact-main-header">
-            <h1>Let's build</h1>
-            <h1>something</h1>
-            <h1>together.</h1>
+            <h1>{t("contact.title_1")}</h1>
+            <h1>{t("contact.title_2")}</h1>
+            <h1>{t("contact.title_3")}</h1>
           </div>
-          <p className="contact-desc">
-            Have a project in mind? Want to get your business online? Just want
-            to ask a question? I'd love to hear from you. No pressure, no
-            commitment, just a friendly conversation.
-          </p>
+          <p className="contact-desc">{t("contact.desc")}</p>
           <div className="line-break"></div>
           <div className="contact-info">
             <div className="email">
               <div className="icon">📧</div>
               <div className="email-info">
-                <p>email</p>
+                <p>{t("contact.email_label")}</p>
                 <p>musacekcn@gmail.com</p>
-                <p>I reply within 24 hours</p>
+                <p>{t("contact.email_reply")}</p>
               </div>
             </div>
             <div className="location">
               <div className="icon">📍</div>
               <div className="location-info">
-                <p>location</p>
-                <p>Lörrach in Baden-Württemberg, Germany</p>
-                <p>Serving the Basel-Lörrach and beyond</p>
+                <p>{t("contact.location_label")}</p>
+                <p>{t("contact.location_value")}</p>
+                <p>{t("contact.location_serving")}</p>
               </div>
             </div>
             <div className="languages">
               <div className="icon">🌐</div>
               <div className="languages-info">
-                <p>languages</p>
-                <p>Turkish, English, German</p>
+                <p>{t("contact.languages_label")}</p>
+                <p>{t("contact.languages_value")}</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="section-right">
-          <p className="how-it-works-label">How it works</p>
 
+        <div className="section-right">
+          <p className="how-it-works-label">{t("contact.how_it_works")}</p>
           <div className="process-steps">
             {processSteps.map((step) => (
               <div key={step.id} className="process-step">
                 <div className="step-num">{step.id}</div>
                 <div className="step-content">
-                  <p className="step-title">{step.title}</p>
-                  <p className="step-desc">{step.desc}</p>
+                  <p className="step-title">{step.title?.[lang] || step.title?.en}</p>
+                  <p className="step-desc">{step.desc?.[lang] || step.desc?.en}</p>
                 </div>
               </div>
             ))}
           </div>
-
           <div className="response-badge">
             <div className="rb-icon">⚡</div>
             <div className="rb-text">
-              <p>Fast response guaranteed</p>
-              <p>
-                I reply to every message within 24 hours — usually much faster.
-              </p>
+              <p>{t("contact.response_badge_title")}</p>
+              <p>{t("contact.response_badge_desc")}</p>
             </div>
           </div>
         </div>
@@ -80,13 +77,11 @@ function Contact() {
         <div className="sam-left">
           <div className="sam-small-header">
             <span></span>
-            <p>send a message</p>
+            <p>{t("contact.sam_small_header")}</p>
           </div>
           <div className="sam-main-header">
-            <h1>Tell me about</h1>
-            <h1>
-              your <span>project.</span>
-            </h1>
+            <h1>{t("contact.sam_title_1")}</h1>
+            <h1><span>{t("contact.sam_title_2")}</span></h1>
           </div>
           <div className="form">
             <Form />

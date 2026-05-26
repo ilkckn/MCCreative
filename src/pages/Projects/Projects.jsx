@@ -2,25 +2,23 @@ import ProjectsCta from "../../components/Projects-CTA/ProjectsCta";
 import ProjectsGrid from "../../components/Projects-Grid/ProjectsGrid";
 import "./Projects.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import websites from "../../MyWebsites.js";
 
 function Projects() {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState("all");
-  const [filterButtons, setFilterButtons] = useState([
-    { name: "all", label: "All" },
-    { name: "salon-beauty", label: "Salon & Beauty" },
-    { name: "restaurant-cafe", label: "Restaurant & Cafe" },
-    { name: "retail", label: "Retail" },
-    { name: "other", label: "Other" },
-  ]);
 
-  const activeButton = (buttonName) => {
-    setIsActive(buttonName);
-  };
+  const filterButtons = [
+    { name: "all",             label: t("projects_page.filter_all") },
+    { name: "salon-beauty",    label: t("projects_page.filter_salon") },
+    { name: "restaurant-cafe", label: t("projects_page.filter_restaurant") },
+    { name: "retail",          label: t("projects_page.filter_retail") },
+    { name: "other",           label: t("projects_page.filter_other") },
+  ];
 
   const filteredProject = websites.filter((website) => {
     if (isActive === "all") return true;
-
     return website.category === isActive;
   });
 
@@ -30,47 +28,31 @@ function Projects() {
         <div className="left">
           <div className="header-top">
             <span></span>
-            <p>my work</p>
+            <p>{t("projects_page.small_header")}</p>
           </div>
           <div className="main-header">
-            <h1>Every Project</h1>
-            <h1>
-              tells a <span>story.</span>
-            </h1>
-          </div>
-          <div className="filter-btns">
-            {filterButtons.map((button) => (
-              <button
-                key={button.name}
-                className={`${button.name} ${isActive === button.name ? "active" : ""}`}
-                onClick={() => activeButton(button.name)}
-              >
-                {button.label}
-              </button>
-            ))}
+            <h1>{t("projects_page.title_1")}</h1>
+            <h1>{t("projects_page.title_2")}</h1>
           </div>
         </div>
         <div className="right">
           <div className="desc">
             <div className="delivered-project">
-              <p className="number">
-                4 <span>+</span>
-              </p>
-              <p>
-                <span>Projects</span> delivered and counting
-              </p>
-              <p>
-                A collection of websites built for real local businesses —
-                salons, cafés, restaurants and more. Each one designed to
-                attract customers and make your business shine online.
-              </p>
+              <p className="number">4 <span>+</span></p>
+              <p><span>Projects</span> {t("projects_page.delivered")}</p>
+              <p>{t("projects_page.delivered_desc")}</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="projects-grid">
-        <ProjectsGrid filteredProject={filteredProject} />
+        <ProjectsGrid
+          filteredProject={filteredProject}
+          filterButtons={filterButtons}
+          isActive={isActive}
+          setIsActive={setIsActive}
+        />
       </section>
       <section className="cta">
         <ProjectsCta />

@@ -3,15 +3,16 @@ import TechSkills from "../../components/A-TechSkills/TechSkills.jsx";
 import WorkWithMe from "../../components/A-WorkWithMe/WorkWithMe.jsx";
 import "./About.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function About() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleProjectClick = () => {
     navigate("/projects");
     window.scrollTo(0, 0);
   };
-
   const handleContactClick = () => {
     navigate("/contact");
     window.scrollTo(0, 0);
@@ -23,28 +24,22 @@ function About() {
         <div className="content-left">
           <div className="small-header">
             <span></span>
-            <p>about me</p>
+            <p>{t("about.small_header")}</p>
           </div>
           <div className="main-header">
-            <h1>The person</h1>
-            <h1>behind the</h1>
-            <h1>websites.</h1>
+            <h1>{t("about.title_1")}</h1>
+            <h1>{t("about.title_2")}</h1>
+            <h1>{t("about.title_3")}</h1>
           </div>
           <div className="desc">
-            <p>
-              I'm Musa a freelance web designer and developer based in Freiburg,
-              Germany. I build beautiful, fast websites for small local
-              businesses. My background is working directly with customers,
-              which means I know what your clients want to see when they land on
-              your site.
-            </p>
+            <p>{t("about.desc")}</p>
           </div>
           <div className="btns">
             <button className="btn-1" onClick={handleContactClick}>
-              Let's talk
+              {t("about.btn_talk")}
             </button>
             <button className="btn-2" onClick={handleProjectClick}>
-              See my projects
+              {t("about.btn_projects")}
             </button>
           </div>
         </div>
@@ -52,10 +47,10 @@ function About() {
         <div className="content-right">
           <div className="name">
             <h1>Musa Çekcen</h1>
-            <p>Web Designer & Developer</p>
+            <p>{t("about.job_title")}</p>
             <div className="location">
               <div className="icon">📍</div>
-              <p>Lörrach im Baden-Württemberg, Germany</p>
+              <p>{t("about.location")}</p>
             </div>
           </div>
           <div className="info">
@@ -64,11 +59,11 @@ function About() {
                 <p>
                   100 <span>%</span>
                 </p>
-                <p>Client focus</p>
+                <p>{t("about.stat_client_focus")}</p>
               </div>
               <div className="delivery">
                 <p>3-4</p>
-                <p>Weeks delivery</p>
+                <p>{t("about.stat_delivery")}</p>
               </div>
             </div>
             <div className="direct-contact-hidden-fees">
@@ -76,42 +71,38 @@ function About() {
                 <p>
                   1 <span>:1</span>
                 </p>
-                <p>Direct contact</p>
+                <p>{t("about.stat_contact")}</p>
               </div>
               <div className="hidden-fees">
                 <p>
                   0 <span>€</span>
                 </p>
-                <p>Hidden fees</p>
+                <p>{t("about.stat_fees")}</p>
               </div>
             </div>
           </div>
-
           <div className="language-level">
             <div className="turkish">
               <p>
-                <span>tr</span>Turkish{" "}
+                <span>tr</span>{t("about.lang_turkish")}
               </p>
-              <p>native</p>
+              <p>{t("about.lang_native")}</p>
             </div>
             <div className="english">
               <p>
-                <span>en</span>English{" "}
+                <span>en</span>{t("about.lang_english")}
               </p>
-              <p>c1-fluent</p>
+              <p>{t("about.lang_fluent")}</p>
             </div>
             <div className="german">
               <p>
-                <span>de</span>German{" "}
+                <span>de</span>{t("about.lang_german")}
               </p>
-              <p>learning-a2</p>
+              <p>{t("about.lang_learning")}</p>
             </div>
           </div>
           <div className="my-word">
-            <p>
-              "I built websites because I saw how many great local businesses
-              were invisible online — and I knew I could fix that."
-            </p>
+            <p>"{t("about.quote")}"</p>
           </div>
         </div>
       </section>

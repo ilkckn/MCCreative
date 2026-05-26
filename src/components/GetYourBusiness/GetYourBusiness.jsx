@@ -1,9 +1,11 @@
 import "./GetYourBusiness.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 function GetYourBusiness() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleNavigateContact = () => {
     navigate("/contact");
@@ -19,20 +21,19 @@ function GetYourBusiness() {
     <main className="get-your-business">
       <section className="sec-1">
         <div className="main-header">
-          <h1>Ready to get your</h1>
-          <h1>business</h1>
-          <h1 className="italic">online?</h1>
+          <h1>{t("get_your_business.title_1")}</h1>
+          <h1>{t("get_your_business.title_2")}</h1>
+          <h1 className="italic">{t("get_your_business.title_3")}</h1>
         </div>
-        <p className="description">
-          Free consultation. No commitment. Just a friendly chat about what you
-          need.
-        </p>
+        <p className="description">{t("get_your_business.desc")}</p>
         <div className="btns">
           <button onClick={handleNavigateContact}>
-            Start a Project
+            {t("get_your_business.btn_start")}
             <MdOutlineArrowRightAlt className="right-arrow" />
           </button>
-          <button onClick={handleNavigateProjects}>See All Projects</button>
+          <button onClick={handleNavigateProjects}>
+            {t("get_your_business.btn_projects")}
+          </button>
         </div>
       </section>
 
@@ -40,24 +41,22 @@ function GetYourBusiness() {
         <div className="box">
           <div className="icon">📞</div>
           <div className="info">
-            <h2>Free discovery call</h2>
-            <p>30 minutes to understand your business and what you need.</p>
+            <h2>{t("get_your_business.box_1_title")}</h2>
+            <p>{t("get_your_business.box_1_desc")}</p>
           </div>
         </div>
         <div className="box">
           <div className="icon">⚡</div>
           <div className="info">
-            <h2>Fast delivery</h2>
-            <p>
-              Most projects completed in 2–3 weeks from first call to launch.
-            </p>
+            <h2>{t("get_your_business.box_2_title")}</h2>
+            <p>{t("get_your_business.box_2_desc")}</p>
           </div>
         </div>
         <div className="box">
           <div className="icon">💰</div>
           <div className="info">
-            <h2>Fair, transparent pricing</h2>
-            <p>No hidden fees. You know the full cost before we start.</p>
+            <h2>{t("get_your_business.box_3_title")}</h2>
+            <p>{t("get_your_business.box_3_desc")}</p>
           </div>
         </div>
       </section>

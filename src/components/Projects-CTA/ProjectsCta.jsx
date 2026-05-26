@@ -1,37 +1,36 @@
 import "./ProjectsCta.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function ProjectsCta() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <main className="projects-cta-container">
       <section className="cta-left">
         <div className="cta-top-header">
           <span></span>
-          <p>work with me</p>
+          <p>{t("projects_page.cta_small_header")}</p>
         </div>
         <div className="cta-main-header">
-          <h1>Your business</h1>
+          <h1>{t("projects_page.cta_title_1")}</h1>
           <h1>
-            could be <span>next.</span>
+            <span>{t("projects_page.cta_title_2")}</span>
           </h1>
         </div>
         <div className="cta-desc">
-          <p>
-            Have a project in mind? Let's talk about it. Free consultation, no
-            commitment, just a friendly chat about what you need.
-          </p>
+          <p>{t("projects_page.cta_desc")}</p>
         </div>
         <div className="cta-btns">
           <button
             className="start-a-project"
             onClick={() => window.scrollTo({ top: 370, behavior: "smooth" })}
           >
-            Start a Project
+            {t("projects_page.cta_btn_start")}
           </button>
           <button className="get-in-touch" onClick={() => navigate("/contact")}>
-            Get in Touch
+            {t("projects_page.cta_btn_touch")}
           </button>
         </div>
       </section>
@@ -40,22 +39,22 @@ function ProjectsCta() {
         <div className="cta-box">
           <div className="icon">📞</div>
           <div className="info">
-            <p>Free discovery call</p>
-            <p>30 minutes to understand your business. Zero pressure.</p>
+            <p>{t("projects_page.cta_box_1_title")}</p>
+            <p>{t("projects_page.cta_box_1_desc")}</p>
           </div>
         </div>
         <div className="cta-box">
           <div className="icon">⚡</div>
           <div className="info">
-            <p>Fast turnaround</p>
-            <p>Most websites live within 2–3 weeks from our first call.</p>
+            <p>{t("projects_page.cta_box_2_title")}</p>
+            <p>{t("projects_page.cta_box_2_desc")}</p>
           </div>
         </div>
         <div className="cta-box">
           <div className="icon">💰</div>
           <div className="info">
-            <p>Transparent pricing</p>
-            <p>Fixed quotes. You know the cost before we start.</p>
+            <p>{t("projects_page.cta_box_3_title")}</p>
+            <p>{t("projects_page.cta_box_3_desc")}</p>
           </div>
         </div>
       </section>

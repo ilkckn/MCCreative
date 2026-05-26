@@ -1,54 +1,47 @@
 import "./AboutMeLanding.css";
+import { useTranslation } from "react-i18next";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 function AboutMeLanding() {
+  const { t } = useTranslation();
+
   return (
     <main className="about-me-landing">
-      {/* ── Sol: Metin ── */}
       <section className="sec-1">
         <div className="small-header">
           <span></span>
-          <p>About Me</p>
+          <p>{t("about_landing.small_header")}</p>
         </div>
         <div className="main-header">
-          <h1>I don't just build</h1>
+          <h1>{t("about_landing.title_1")}</h1>
           <h1 className="has-dash">
-            websites <span className="dash"></span> I build
+            {t("about_landing.title_2")} <span className="dash"></span>
           </h1>
-          <h1 className="italic">customers for you</h1>
+          <h1 className="italic">{t("about_landing.title_3")}</h1>
         </div>
         <div className="main-desc">
-          <p>
-            I'm Musa, a freelance web designer and developer based in Lörrach.
-            My background is in working directly with customers and businesses,
-            which means I understand what your clients actually want to see when
-            they land on your website.
-          </p>
-          <p>
-            I specialize in small local businesses: hair salons, cafés,
-            restaurants, shops. Your customers just want to find you, see what
-            you offer, and book or visit.
-          </p>
+          <p>{t("about_landing.desc_1")}</p>
+          <p>{t("about_landing.desc_2")}</p>
         </div>
         <ul className="my-info">
-          <li>Based in Lörrach — I know the local market</li>
-          <li>I speak your language — Turkish, English and a little German</li>
-          <li>You deal directly with me — no agency middlemen</li>
-          <li>Fixed price, fast delivery, no hidden surprises</li>
+          <li>{t("about_landing.list_1")}</li>
+          <li>{t("about_landing.list_2")}</li>
+          <li>{t("about_landing.list_3")}</li>
+          <li>{t("about_landing.list_4")}</li>
         </ul>
         <div className="btns">
           <button>
-            Let's talk <HiMiniArrowLongRight className="right-arrow" />
+            {t("about_landing.btn_talk")}{" "}
+            <HiMiniArrowLongRight className="right-arrow" />
           </button>
-          <button>See my works</button>
+          <button>{t("about_landing.btn_works")}</button>
         </div>
       </section>
 
-      {/* ── Sağ: Kart panel ── */}
       <section className="sec-2">
         <div className="name">
           <h1>Musa Çekcen</h1>
-          <p className="title">Web Designer & Developer</p>
+          <p className="title">{t("about_landing.job_title")}</p>
           <div className="location">
             <span className="icon">📍</span>
             <p>Lörrach im Baden-Württemberg, Germany</p>
@@ -60,54 +53,53 @@ function AboutMeLanding() {
             <div className="stat-value">
               100<span>%</span>
             </div>
-            <p className="stat-label">Client focus</p>
+            <p className="stat-label">{t("about_landing.stat_client_focus")}</p>
           </div>
           <div className="stat">
             <div className="stat-value">
               3<span>-4</span>
             </div>
-            <p className="stat-label">Weeks delivery</p>
+            <p className="stat-label">{t("about_landing.stat_delivery")}</p>
           </div>
           <div className="stat">
             <div className="stat-value">
               1<span>:1</span>
             </div>
-            <p className="stat-label">Direct contact</p>
+            <p className="stat-label">{t("about_landing.stat_contact")}</p>
           </div>
           <div className="stat">
             <div className="stat-value">
               0<span>€</span>
             </div>
-            <p className="stat-label">Hidden fees</p>
+            <p className="stat-label">{t("about_landing.stat_fees")}</p>
           </div>
         </div>
 
         <div className="language-level">
           <div className="lang-row">
             <span className="lang-name">
-              <span className="lang-code">TR</span>Turkish
+              <span className="lang-code">TR</span>{t("about_landing.lang_turkish")}
             </span>
-            <span className="lang-level">Native</span>
+            <span className="lang-level">{t("about_landing.lang_native")}</span>
           </div>
           <div className="lang-row">
             <span className="lang-name">
-              <span className="lang-code">EN</span>English
+              <span className="lang-code">EN</span>{t("about_landing.lang_english")}
             </span>
-            <span className="lang-level">C1 — Fluent</span>
+            <span className="lang-level">{t("about_landing.lang_fluent")}</span>
           </div>
           <div className="lang-row">
             <span className="lang-name">
-              <span className="lang-code">DE</span>German
+              <span className="lang-code">DE</span>{t("about_landing.lang_german")}
             </span>
-            <span className="lang-level">Learning — A2</span>
+            <span className="lang-level">
+              {t("about_landing.lang_learning")}
+            </span>
           </div>
         </div>
 
         <div className="my-word">
-          <p>
-            "I build websites because I saw how many great local businesses were
-            invisible online — and I knew I could fix that."
-          </p>
+          <p>"{t("about_landing.quote")}"</p>
         </div>
       </section>
     </main>

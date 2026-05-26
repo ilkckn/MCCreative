@@ -1,18 +1,57 @@
 import "./ProjectsGrid.css";
-// import websites from "../../MyWebsites.js";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   HiMiniArrowSmallRight,
   HiOutlineArrowLongRight,
 } from "react-icons/hi2";
 import { TbArrowUpRight } from "react-icons/tb";
+import { LuSlidersHorizontal } from "react-icons/lu";
 
-function ProjectsGrid({ filteredProject }) {
+function ProjectsGrid({
+  filteredProject,
+  filterButtons,
+  isActive,
+  setIsActive,
+}) {
+  const { t } = useTranslation();
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  const handleToggleFilter = () => {
+    setIsFilterOpen((prev) => !prev);
+  };
+
   return (
     <main className="projects-grid-container">
-      {/* <div className="projects-small-header">
-        <span></span>
-        <p>Projects</p>
-      </div> */}
+      {/* ── Filter Bar ── */}
+      <div className="filter-bar">
+        {!isFilterOpen ? (
+          <button className="filter-toggle-btn" onClick={handleToggleFilter}>
+            <LuSlidersHorizontal className="filter-icon" />
+            {t("projects_page.filter_btn")}
+          </button>
+        ) : (
+          <div className="filter-options">
+            <button className="filter-toggle-btn" onClick={handleToggleFilter}>
+              <LuSlidersHorizontal className="filter-icon" />
+              {t("projects_page.filter_btn")}
+            </button>
+            {filterButtons.map((button) => (
+              <button
+                key={button.name}
+                className={`filter-option ${isActive === button.name ? "active" : ""}`}
+                onClick={() => {
+                  setIsActive(button.name);
+                }}
+              >
+                {button.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* ── Proje Kartları ── */}
       <div>
         {filteredProject.map((website) => (
           <div className="project-box" key={website.id}>
@@ -22,7 +61,7 @@ function ProjectsGrid({ filteredProject }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Project
+              {t("projects_page.view_project")}
               <HiOutlineArrowLongRight className="right-arrow" />
             </a>
             <div className="image">
@@ -30,13 +69,15 @@ function ProjectsGrid({ filteredProject }) {
               <p
                 className={`project-status ${website.latest ? "latest" : "in-progress"}`}
               >
-                {website.latest ? "Latest Project" : "In Progress"}
+                {website.latest
+                  ? t("projects_page.status_latest")
+                  : t("projects_page.status_in_progress")}
               </p>
             </div>
             <div className="info">
               <h2>{website.type}</h2>
               <h1>{website.name}</h1>
-              <p>{website.description}</p>
+              <p>{t(website.descKey)}</p>
               <span></span>
               <p>
                 {website.tags.map((tag) => (
@@ -44,7 +85,8 @@ function ProjectsGrid({ filteredProject }) {
                 ))}
               </p>
               <p>
-                Live Demo <HiMiniArrowSmallRight className="right-arrow" />
+                {t("projects_page.live_demo")}{" "}
+                <HiMiniArrowSmallRight className="right-arrow" />
                 <a
                   href={website.live_demo}
                   target="_blank"
@@ -58,9 +100,10 @@ function ProjectsGrid({ filteredProject }) {
           </div>
         ))}
       </div>
+
       <div className="coming-soon">
         <p>✦</p>
-        <h2>Next Project Coming Soon</h2>
+        <h2>{t("projects_page.coming_soon")}</h2>
       </div>
     </main>
   );
