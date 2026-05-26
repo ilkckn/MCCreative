@@ -1,7 +1,7 @@
 const timelineData = [
   {
   id: 1,
-  year: "2024 — Present",
+  year: "2026 — Present",
   title: {
     en: "Founder & Web Designer / Developer",
     tr: "Kurucu & Web Tasarımcı / Geliştirici",
@@ -22,7 +22,7 @@ const timelineData = [
 },
   {
     id: 2,
-    year: "2023 — 2024",
+    year: "2024 — 2025",
     title: {
       en: "Technical Support & Web",
       tr: "Teknik Destek & Web",
@@ -43,7 +43,7 @@ const timelineData = [
   },
   {
     id: 3,
-    year: "2022 — 2023",
+    year: "2021 — 2023",
     title: {
       en: "Ad Operations & Campaign Manager",
       tr: "Reklam Operasyonları & Kampanya Yöneticisi",
@@ -64,7 +64,7 @@ const timelineData = [
   },
   {
     id: 4,
-    year: "2015 — 2022",
+    year: "2015 — 2021",
     title: {
       en: "Senior Manager — Travel Industry",
       tr: "Kıdemli Yönetici — Turizm Sektörü",
