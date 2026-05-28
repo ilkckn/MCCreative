@@ -28,7 +28,7 @@ function Contact() {
               <div className="icon">📧</div>
               <div className="email-info">
                 <p>{t("contact.email_label")}</p>
-                <p>musacekcn@gmail.com</p>
+                <p>musa@mccreativestudio.de</p>
                 <p>{t("contact.email_reply")}</p>
               </div>
             </div>
