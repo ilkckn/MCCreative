@@ -2,7 +2,7 @@ const websites = [
   {
     id: 1,
     nameKey: "selected_work.name.salon_beauty",
-    typeKey: "selected_work.type.restaurant_cafe",
+    typeKey: "selected_work.type.salon_beauty",
     category: "salon-beauty",
     descKey: "selected_work.projects.blanche_desc",
     image: "https://images.unsplash.com/photo-1707979577466-2d6109c68a45?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -24,6 +24,19 @@ const websites = [
     tags: ["React", "HTML", "CSS", "JavaScript", "Responsive", "Reservation System"],
     latest: false,
     live_demo: "https://terra-restaurant-sigma.vercel.app/",
+  },
+  {
+    id: 3,
+    nameKey: "selected_work.name.medical_health",
+    typeKey: "selected_work.type.medical_health",
+    category: "medical-health",
+    descKey: "selected_work.projects.dr_med_schmidt_desc",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://github.com/ilkckn/House-Doctor",
+    location: "Lörrach, Germany",
+    tags: ["React", "Responsive", "CSS", "JavaScript", "React Router", "Leaflet"],
+    latest: true,
+    live_demo: "https://dr-med-schmidt.vercel.app/",
   },
 ];
 

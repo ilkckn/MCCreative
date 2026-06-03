@@ -75,8 +75,8 @@ function ProjectsGrid({
               </p>
             </div>
             <div className="info">
-              <h2>{website.type}</h2>
-              <h1>{website.name}</h1>
+              <h2>{t(website.typeKey)}</h2>
+              <h1>{t(website.nameKey)}</h1>
               <p>{t(website.descKey)}</p>
               <span></span>
               <p>

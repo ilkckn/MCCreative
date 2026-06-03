@@ -55,15 +55,18 @@
     "view_project": "View project",
     "name": {
       "salon_beauty": "Blanche Hair Salon",
-      "restaurant_cafe": "Terra Restaurant"
+      "restaurant_cafe": "Terra Restaurant",
+      "medical_health": "Dr.Med.Schmidt"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
-      "restaurant_cafe": "Restaurant & Cafe"
+      "restaurant_cafe": "Restaurant & Cafe",
+      "medical_health": "Medical & Health"
     },
     "projects": {
       "blanche_desc": "A modern and elegant website for a hair salon, featuring a sleek design and easy navigation.",
-      "terra_desc": "A stylish and user friendly website for a restaurant, showcasing the menu, location, and reservation system."
+      "terra_desc": "A stylish and user friendly website for a restaurant, showcasing the menu, location, and reservation system.",
+      "dr_med_schmidt_desc": "A clean and professional website for a medical practice, providing information about services, team, and contact details."
     }
   },
   "about_landing": {
