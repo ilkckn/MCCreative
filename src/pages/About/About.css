@@ -173,6 +173,7 @@
         .hidden-fees {
           display: flex;
           flex-direction: column;
+          width: fit-content;
 
           p:nth-child(1) {
             font-family: var(--font-1);
@@ -196,7 +197,7 @@
         }
 
         .hidden-fees {
-          transform: translateX(-2rem);
+          /*transform: translateX(-2rem);*/
         }
       }
 
