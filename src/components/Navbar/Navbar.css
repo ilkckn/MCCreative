@@ -15,8 +15,10 @@
     justify-content: space-between;
     padding: 0 5rem;
     background-color: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    isolation: isolate;
+    transform: translateZ(0);
     border-bottom: 1px solid #1e1e1e;
     position: fixed;
     top: 0;
