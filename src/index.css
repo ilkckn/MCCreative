@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 :root {
@@ -35,6 +34,10 @@
   --font-2: "DM Sans", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   width: 100%;
   max-width: 1440px;
@@ -58,7 +61,7 @@ body {
   --bg-elevated: #e0e0e0;
   --white: #111111;
   --border: #e0e0e0;
-  --description: #444444;     /* #555555'ten daha koyu yaptım */
+  --description: #444444; /* #555555'ten daha koyu yaptım */
   --description-2: #666666;
   --description-3: #e8e8e8;
   --background-3: rgba(249, 115, 22, 0.08);
@@ -78,25 +81,63 @@ body {
   color: var(--orange);
 }
 
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-btn .lang-icon,
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-btn span {
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-btn
+  .lang-icon,
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-btn
+  span {
   color: #111111;
 }
 
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown {
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-dropdown {
   background-color: #f9f9f9;
 }
 
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button {
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-dropdown
+  li
+  button {
   color: #111111;
 }
 
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button:hover {
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-dropdown
+  li
+  button:hover {
   color: var(--orange);
   background-color: transparent;
 }
 
-[data-theme="light"] .nav-container .navbar .sec-btns .lang-switcher .lang-dropdown li button.active {
+[data-theme="light"]
+  .nav-container
+  .navbar
+  .sec-btns
+  .lang-switcher
+  .lang-dropdown
+  li
+  button.active {
   color: white;
   background-color: var(--orange);
 }
@@ -123,8 +164,22 @@ body {
 
 [data-theme="light"] .landing-container .sec-1 .land-left .main-desc p,
 [data-theme="light"] .landing-container .sec-1 .land-right .tech-skills .header,
-[data-theme="light"] .landing-container .sec-1 .land-right .tech-skills .skills .skill-item .skill-label span:nth-child(1),
-[data-theme="light"] .landing-container .sec-1 .land-right .metrics-grid .metric-card .metric-label {
+[data-theme="light"]
+  .landing-container
+  .sec-1
+  .land-right
+  .tech-skills
+  .skills
+  .skill-item
+  .skill-label
+  span:nth-child(1),
+[data-theme="light"]
+  .landing-container
+  .sec-1
+  .land-right
+  .metrics-grid
+  .metric-card
+  .metric-label {
   color: #333333;
   font-weight: 300;
 }
@@ -142,12 +197,22 @@ body {
 }
 
 [data-theme="light"] .what-i-offer-container .description p,
-[data-theme="light"] .what-i-offer-container .services-content .box .text-content p {
+[data-theme="light"]
+  .what-i-offer-container
+  .services-content
+  .box
+  .text-content
+  p {
   color: #333333;
   font-weight: 300;
 }
 
-[data-theme="light"] .sw-container .sw-sec-2 .sw-project-box .sw-card-body .sw-card-desc {
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-card-body
+  .sw-card-desc {
   color: #333333;
   font-weight: 300;
 }
@@ -168,23 +233,38 @@ body {
 }
 
 [data-theme="light"] .about-me-landing .sec-1 .btns button:nth-child(1),
-[data-theme="light"] .about .sec-1 .content-left .btns button:nth-child(2):hover,
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-left
+  .btns
+  button:nth-child(2):hover,
 [data-theme="light"] .get-your-business .sec-1 .btns button:nth-child(1) {
   color: #ffffff;
 }
 
-[data-theme="light"] .sw-container .sw-sec-2 .sw-project-box .sw-image-wrap .sw-status {
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-image-wrap
+  .sw-status {
   color: white;
 }
 
-[data-theme="light"] .sw-container .sw-sec-2 .sw-project-box .sw-view-btn button {
+[data-theme="light"]
+  .sw-container
+  .sw-sec-2
+  .sw-project-box
+  .sw-view-btn
+  button {
   color: white;
 }
 
 /* ══════════════════════════════
    ABOUT
 ══════════════════════════════ */
-[data-theme="light"] .about .sec-1 .content-left .main-header h1:nth-child(1), 
+[data-theme="light"] .about .sec-1 .content-left .main-header h1:nth-child(1),
 [data-theme="light"] .about .sec-1 .content-left .main-header h1:nth-child(2) {
   color: #111111;
 }
@@ -209,11 +289,41 @@ body {
 
 /* İnce yazılar */
 [data-theme="light"] .about .sec-1 .content-left .desc p,
-[data-theme="light"] .about .sec-1 .content-right .name .location p:nth-child(2),
-[data-theme="light"] .about .sec-1 .content-right .info .percentage p:nth-child(2),
-[data-theme="light"] .about .sec-1 .content-right .info .delivery p:nth-child(2),
-[data-theme="light"] .about .sec-1 .content-right .info .direct-contact p:nth-child(2),
-[data-theme="light"] .about .sec-1 .content-right .info .hidden-fees p:nth-child(2),
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-right
+  .name
+  .location
+  p:nth-child(2),
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-right
+  .info
+  .percentage
+  p:nth-child(2),
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-right
+  .info
+  .delivery
+  p:nth-child(2),
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-right
+  .info
+  .direct-contact
+  p:nth-child(2),
+[data-theme="light"]
+  .about
+  .sec-1
+  .content-right
+  .info
+  .hidden-fees
+  p:nth-child(2),
 [data-theme="light"] .about .sec-1 .content-right .my-word p {
   color: #333333;
   font-weight: 300;
@@ -226,19 +336,48 @@ body {
 [data-theme="light"] .my-story .sec-1-my-story .desc p,
 [data-theme="light"] .my-story .sec-1-my-story .desc .quote,
 [data-theme="light"] .my-story .sec-1-my-story .list ul li,
-[data-theme="light"] .my-story .sec-2-my-story .experiences .timeline .tl-item .tl-content .tl-place,
-[data-theme="light"] .my-story .sec-2-my-story .experiences .timeline .tl-item .tl-content .tl-desc {
+[data-theme="light"]
+  .my-story
+  .sec-2-my-story
+  .experiences
+  .timeline
+  .tl-item
+  .tl-content
+  .tl-place,
+[data-theme="light"]
+  .my-story
+  .sec-2-my-story
+  .experiences
+  .timeline
+  .tl-item
+  .tl-content
+  .tl-desc {
   color: #333333;
   font-weight: 300;
 }
 
 /* Timeline başlığı */
-[data-theme="light"] .my-story .sec-2-my-story .experiences .timeline .tl-item .tl-content .tl-title {
+[data-theme="light"]
+  .my-story
+  .sec-2-my-story
+  .experiences
+  .timeline
+  .tl-item
+  .tl-content
+  .tl-title {
   color: #111111;
 }
 
 /* tl-tags */
-[data-theme="light"] .my-story .sec-2-my-story .experiences .timeline .tl-item .tl-content .tl-tags .tl-tag {
+[data-theme="light"]
+  .my-story
+  .sec-2-my-story
+  .experiences
+  .timeline
+  .tl-item
+  .tl-content
+  .tl-tags
+  .tl-tag {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #111111;
@@ -255,18 +394,36 @@ body {
 }
 
 /* Skill isim yazıları */
-[data-theme="light"] .tech-skills .sec-1-tech .skills .skill .tech-percentage p:nth-child(1) {
+[data-theme="light"]
+  .tech-skills
+  .sec-1-tech
+  .skills
+  .skill
+  .tech-percentage
+  p:nth-child(1) {
   color: #111111;
 }
 
 /* Soft skill kart yazıları */
-[data-theme="light"] .tech-skills .sec-2-tech .soft-skills-tools .soft-skills .box p {
+[data-theme="light"]
+  .tech-skills
+  .sec-2-tech
+  .soft-skills-tools
+  .soft-skills
+  .box
+  p {
   color: #333333;
   font-weight: 300;
 }
 
 /* Tools pill'leri */
-[data-theme="light"] .tech-skills .sec-2-tech .soft-skills-tools .tools .tool p {
+[data-theme="light"]
+  .tech-skills
+  .sec-2-tech
+  .soft-skills-tools
+  .tools
+  .tool
+  p {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #111111;
@@ -277,12 +434,20 @@ body {
 ══════════════════════════════ */
 
 /* Turuncu buton yazısı */
-[data-theme="light"] .work-with-me .sec-1-work-with-me .btns button:nth-child(1) {
+[data-theme="light"]
+  .work-with-me
+  .sec-1-work-with-me
+  .btns
+  button:nth-child(1) {
   color: #ffffff;
 }
 
 /* İkinci buton */
-[data-theme="light"] .work-with-me .sec-1-work-with-me .btns button:nth-child(2) {
+[data-theme="light"]
+  .work-with-me
+  .sec-1-work-with-me
+  .btns
+  button:nth-child(2) {
   color: #111111;
   border-color: #d0d0d0;
 }
@@ -305,7 +470,12 @@ body {
 }
 
 /* Sağ taraf ince yazı */
-[data-theme="light"] .projects-container .hero-sec .right .delivered-project p:nth-child(3) {
+[data-theme="light"]
+  .projects-container
+  .hero-sec
+  .right
+  .delivered-project
+  p:nth-child(3) {
   color: #333333;
   font-weight: 300;
 }
@@ -320,7 +490,11 @@ body {
 }
 
 /* Proje açıklama yazısı */
-[data-theme="light"] .projects-grid-container .project-box .info p:nth-child(3) {
+[data-theme="light"]
+  .projects-grid-container
+  .project-box
+  .info
+  p:nth-child(3) {
   color: #333333;
   font-weight: 300;
 }
@@ -331,14 +505,24 @@ body {
 }
 
 /* Tag'ler */
-[data-theme="light"] .projects-grid-container .project-box .info p:nth-child(5) span {
+[data-theme="light"]
+  .projects-grid-container
+  .project-box
+  .info
+  p:nth-child(5)
+  span {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #111111;
 }
 
 /* Live demo linki */
-[data-theme="light"] .projects-grid-container .project-box .info p:nth-child(6) a {
+[data-theme="light"]
+  .projects-grid-container
+  .project-box
+  .info
+  p:nth-child(6)
+  a {
   color: #111111;
 }
 
@@ -351,14 +535,32 @@ body {
    PROJECTS CTA
 ══════════════════════════════ */
 
-[data-theme="light"] .projects-container .hero-sec .left .filter-btns button.active,
-[data-theme="light"] .projects-container .hero-sec .left .filter-btns button:hover {
+[data-theme="light"]
+  .projects-container
+  .hero-sec
+  .left
+  .filter-btns
+  button.active,
+[data-theme="light"]
+  .projects-container
+  .hero-sec
+  .left
+  .filter-btns
+  button:hover {
   color: #ffffff;
 }
 
 /* Ana başlıklar — var(--dark-blue) kullanıyor, light'ta #ffffff oluyor */
-[data-theme="light"] .projects-cta-container .cta-left .cta-main-header h1:nth-child(1),
-[data-theme="light"] .projects-cta-container .cta-left .cta-main-header h1:nth-child(2) {
+[data-theme="light"]
+  .projects-cta-container
+  .cta-left
+  .cta-main-header
+  h1:nth-child(1),
+[data-theme="light"]
+  .projects-cta-container
+  .cta-left
+  .cta-main-header
+  h1:nth-child(2) {
   color: #111111;
 }
 
@@ -369,17 +571,29 @@ body {
 }
 
 /* Turuncu buton yazısı */
-[data-theme="light"] .projects-cta-container .cta-left .cta-btns button:nth-child(1) {
+[data-theme="light"]
+  .projects-cta-container
+  .cta-left
+  .cta-btns
+  button:nth-child(1) {
   color: #ffffff;
 }
 
 /* İkinci buton — var(--dark-blue) border ve renk, light'ta beyaz oluyor */
-[data-theme="light"] .projects-cta-container .cta-left .cta-btns button:nth-child(2) {
+[data-theme="light"]
+  .projects-cta-container
+  .cta-left
+  .cta-btns
+  button:nth-child(2) {
   color: #111111;
   border-color: #d0d0d0;
 }
 
-[data-theme="light"] .projects-cta-container .cta-left .cta-btns button:nth-child(2):hover {
+[data-theme="light"]
+  .projects-cta-container
+  .cta-left
+  .cta-btns
+  button:nth-child(2):hover {
   background-color: var(--orange);
   color: #ffffff;
   border-color: var(--orange);
@@ -395,7 +609,12 @@ body {
 }
 
 /* CTA box içerik yazıları */
-[data-theme="light"] .projects-cta-container .cta-right .cta-box .info p:nth-child(2) {
+[data-theme="light"]
+  .projects-cta-container
+  .cta-right
+  .cta-box
+  .info
+  p:nth-child(2) {
   color: #333333;
   font-weight: 300;
 }
@@ -405,9 +624,24 @@ body {
 ══════════════════════════════ */
 
 /* Ana başlıklar — var(--dark-blue) light'ta #ffffff oluyor */
-[data-theme="light"] .blog-container .section-the-blog .blog-left .main-header h1:nth-child(1),
-[data-theme="light"] .blog-container .section-the-blog .blog-left .main-header h1:nth-child(2),
-[data-theme="light"] .blog-container .section-the-blog .blog-left .main-header h1:nth-child(3) {
+[data-theme="light"]
+  .blog-container
+  .section-the-blog
+  .blog-left
+  .main-header
+  h1:nth-child(1),
+[data-theme="light"]
+  .blog-container
+  .section-the-blog
+  .blog-left
+  .main-header
+  h1:nth-child(2),
+[data-theme="light"]
+  .blog-container
+  .section-the-blog
+  .blog-left
+  .main-header
+  h1:nth-child(3) {
   color: #111111;
 }
 
@@ -422,12 +656,21 @@ body {
 }
 
 /* Sayılar */
-[data-theme="light"] .blog-container .section-the-blog .blog-right .number-status p {
+[data-theme="light"]
+  .blog-container
+  .section-the-blog
+  .blog-right
+  .number-status
+  p {
   color: #111111;
 }
 
 /* Ayırıcı border */
-[data-theme="light"] .blog-container .section-the-blog .blog-right .articles-number,
+[data-theme="light"]
+  .blog-container
+  .section-the-blog
+  .blog-right
+  .articles-number,
 [data-theme="light"] .blog-container .section-the-blog .blog-right .topics,
 [data-theme="light"] .blog-container .section-the-blog .blog-right .read-time {
   border-color: #e0e0e0;
@@ -439,7 +682,11 @@ body {
 
 /* View all linki */
 [data-theme="light"] .featured-post-container .featured-top-header .view-all,
-[data-theme="light"] .featured-post-container .featured-top-header .view-all .right-arrow {
+[data-theme="light"]
+  .featured-post-container
+  .featured-top-header
+  .view-all
+  .right-arrow {
   color: #111111;
 }
 
@@ -497,29 +744,62 @@ body {
 }
 
 /* Kart başlığı */
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .info-section h1 {
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .info-section
+  h1 {
   color: #111111;
 }
 
 /* Kart açıklama */
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .info-section p:nth-child(3) {
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .info-section
+  p:nth-child(3) {
   color: #333333;
   font-weight: 300;
 }
 
 /* Ayırıcı çizgi */
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .info-section p:nth-child(4) {
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .info-section
+  p:nth-child(4) {
   background-color: #e0e0e0;
 }
 
 /* Read btn */
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .info-section .date-readBtn .read-btn,
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .info-section .date-readBtn .read-btn .right-arrow {
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .info-section
+  .date-readBtn
+  .read-btn,
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .info-section
+  .date-readBtn
+  .read-btn
+  .right-arrow {
   color: #555555;
 }
 
 /* Okuma süresi badge — resim üzerinde */
-[data-theme="light"] .all-posts-container .grid-all-posts .blog-box .image-section span:nth-child(3) {
+[data-theme="light"]
+  .all-posts-container
+  .grid-all-posts
+  .blog-box
+  .image-section
+  span:nth-child(3) {
   background-color: #ffffff;
   color: #555555;
 }
@@ -529,9 +809,21 @@ body {
 ══════════════════════════════ */
 
 /* Sol: ana başlıklar */
-[data-theme="light"] .stay-updated-container section:nth-child(1) .main-header h1:nth-child(1),
-[data-theme="light"] .stay-updated-container section:nth-child(1) .main-header h1:nth-child(2),
-[data-theme="light"] .stay-updated-container section:nth-child(1) .main-header h1:nth-child(3) {
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(1)
+  .main-header
+  h1:nth-child(1),
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(1)
+  .main-header
+  h1:nth-child(2),
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(1)
+  .main-header
+  h1:nth-child(3) {
   color: #111111;
 }
 
@@ -543,14 +835,22 @@ body {
 }
 
 /* Input */
-[data-theme="light"] .stay-updated-container section:nth-child(1) .subscribe input {
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(1)
+  .subscribe
+  input {
   background-color: #ffffff;
   border-color: #d0d0d0;
   color: #111111;
 }
 
 /* Subscribe butonu yazısı */
-[data-theme="light"] .stay-updated-container section:nth-child(1) .subscribe button:nth-child(2) {
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(1)
+  .subscribe
+  button:nth-child(2) {
   color: #ffffff;
 }
 
@@ -560,17 +860,33 @@ body {
 }
 
 /* Sağ: başlık yazıları */
-[data-theme="light"] .stay-updated-container section:nth-child(2) .web-design h2,
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(2)
+  .web-design
+  h2,
 [data-theme="light"] .stay-updated-container section:nth-child(2) .local-seo h2,
-[data-theme="light"] .stay-updated-container section:nth-child(2) .business-tips h2,
-[data-theme="light"] .stay-updated-container section:nth-child(2) .react-dev h2 {
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(2)
+  .business-tips
+  h2,
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(2)
+  .react-dev
+  h2 {
   color: #111111;
 }
 
 /* Sağ: post sayısı badge */
 [data-theme="light"] .stay-updated-container section:nth-child(2) .web-design p,
 [data-theme="light"] .stay-updated-container section:nth-child(2) .local-seo p,
-[data-theme="light"] .stay-updated-container section:nth-child(2) .business-tips p,
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(2)
+  .business-tips
+  p,
 [data-theme="light"] .stay-updated-container section:nth-child(2) .react-dev p {
   background-color: #e0e0e0;
   color: #333333;
@@ -579,7 +895,10 @@ body {
 /* Sağ: ayırıcı border */
 [data-theme="light"] .stay-updated-container section:nth-child(2) .web-design,
 [data-theme="light"] .stay-updated-container section:nth-child(2) .local-seo,
-[data-theme="light"] .stay-updated-container section:nth-child(2) .business-tips {
+[data-theme="light"]
+  .stay-updated-container
+  section:nth-child(2)
+  .business-tips {
   border-color: #e0e0e0;
 }
 
@@ -591,7 +910,12 @@ body {
   color: #ffffff;
 }
 
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-left p:nth-child(4) .back-arrow {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-left
+  p:nth-child(4)
+  .back-arrow {
   color: #ffffff;
 }
 
@@ -602,24 +926,49 @@ body {
 }
 
 /* Filter aktif buton yazısı */
-[data-theme="light"] .all-posts-page .all-posts-filters .filter-left .filter-pills button.active {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-filters
+  .filter-left
+  .filter-pills
+  button.active {
   color: #ffffff;
 }
 /* Hero right */
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud .tag-item.neutral {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud
+  .tag-item.neutral {
   background-color: #f0f0f0;
   border-color: #d0d0d0;
   color: #333333;
 }
 
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud .tag-item.accent {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud
+  .tag-item.accent {
   background-color: rgba(249, 115, 22, 0.08);
   border-color: rgba(249, 115, 22, 0.35);
   color: var(--orange);
 }
 
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud .tag-item:hover,
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud .tag-item.active {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud
+  .tag-item:hover,
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud
+  .tag-item.active {
   background-color: var(--orange-glow);
   border-color: var(--orange);
   color: var(--orange);
@@ -632,14 +981,23 @@ body {
 }
 
 /* Tag cloud item'lar */
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud .tag-item {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud
+  .tag-item {
   color: #333333;
   border-color: #d0d0d0;
   background-color: #f0f0f0;
 }
 
 /* Tag cloud hint */
-[data-theme="light"] .all-posts-page .all-posts-hero .hero-right .tag-cloud-hint {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-hero
+  .hero-right
+  .tag-cloud-hint {
   color: #555555;
 }
 
@@ -667,30 +1025,57 @@ body {
 }
 
 /* Kart başlık */
-[data-theme="light"] .all-posts-page .all-posts-grid .post-card .card-body .card-title {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-grid
+  .post-card
+  .card-body
+  .card-title {
   color: #111111;
 }
 
 /* Kart açıklama */
-[data-theme="light"] .all-posts-page .all-posts-grid .post-card .card-body .card-desc {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-grid
+  .post-card
+  .card-body
+  .card-desc {
   color: #333333;
   font-weight: 300;
 }
 
 /* Kart tag'ler */
-[data-theme="light"] .all-posts-page .all-posts-grid .post-card .card-body .card-tags span {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-grid
+  .post-card
+  .card-body
+  .card-tags
+  span {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #111111;
 }
 
 /* Kart footer meta */
-[data-theme="light"] .all-posts-page .all-posts-grid .post-card .card-footer .card-meta span {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-grid
+  .post-card
+  .card-footer
+  .card-meta
+  span {
   color: #555555;
 }
 
 /* Kart read butonu */
-[data-theme="light"] .all-posts-page .all-posts-grid .post-card .card-footer .card-read {
+[data-theme="light"]
+  .all-posts-page
+  .all-posts-grid
+  .post-card
+  .card-footer
+  .card-read {
   color: #111111;
 }
 
@@ -720,129 +1105,276 @@ body {
   background-color: #ebebeb;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-breadcrumb .breadcrumb-current {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-breadcrumb
+  .breadcrumb-current {
   color: #111111;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-breadcrumb .breadcrumb-link {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-breadcrumb
+  .breadcrumb-link {
   color: #555555;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-breadcrumb .breadcrumb-current {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-breadcrumb
+  .breadcrumb-current {
   color: #111111;
 }
 
 /* Post title — var(--dark-blue) dark'ta #ffffff oluyor */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-header .post-title {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-header
+  .post-title {
   color: #111111;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-header .post-description {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-header
+  .post-description {
   color: #444444;
 }
 
 /* Avatar */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-header .post-meta .post-author .post-author-avatar {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-header
+  .post-meta
+  .post-author
+  .post-author-avatar {
   background-color: var(--orange);
   color: #ffffff;
 }
 
 /* Yazar adı */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-header .post-meta .post-author .post-author-info .post-author-name {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-header
+  .post-meta
+  .post-author
+  .post-author-info
+  .post-author-name {
   color: #111111;
 }
 
 /* Post tag'ler — background-2 dark'ta siyah */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-tags .post-tag {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-tags
+  .post-tag {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #444444;
 }
 
 /* Article intro + heading */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-article-body .article-intro,
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-article-body .article-heading {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-article-body
+  .article-intro,
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-article-body
+  .article-heading {
   color: #111111;
 }
 
 /* Article paragraph + list */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-article-body .article-paragraph,
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-article-body .article-list .article-list-item {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-article-body
+  .article-paragraph,
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-article-body
+  .article-list
+  .article-list-item {
   color: #333333;
 }
 
 /* Article callout — var(--dark-blue) dark'ta #ffffff */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-article-body .article-callout {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-article-body
+  .article-callout {
   color: #111111;
   background-color: rgba(249, 115, 22, 0.06);
 }
 
 /* Footer tag'ler */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-footer .post-footer-tags .post-tag {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-footer
+  .post-footer-tags
+  .post-tag {
   background-color: #ebebeb;
   border-color: #d0d0d0;
   color: #444444;
 }
 
 /* Share butonları */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-footer .post-footer-share .share-btn {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-footer
+  .post-footer-share
+  .share-btn {
   background-color: #f0f0f0;
   border-color: #d0d0d0;
   color: #111111;
 }
 
 /* Back to blog */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-content .post-footer .back-to-blog {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-content
+  .post-footer
+  .back-to-blog {
   color: #111111;
   border-color: #111111;
 }
 
 /* Sidebar author card — var(--background) dark'ta siyah */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-author-card {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-author-card {
   background-color: #f5f5f5;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-author-card .sidebar-author-avatar {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-author-card
+  .sidebar-author-avatar {
   color: #ffffff;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-author-card .sidebar-author-info .sidebar-author-name {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-author-card
+  .sidebar-author-info
+  .sidebar-author-name {
   color: #111111;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-author-card .sidebar-author-bio {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-author-card
+  .sidebar-author-bio {
   color: #444444;
   border-color: #e0e0e0;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-author-card .sidebar-author-cta {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-author-card
+  .sidebar-author-cta {
   color: #ffffff;
 }
 
 /* Sidebar TOC — var(--background-2) dark'ta siyah */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-toc {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-toc {
   background-color: #f5f5f5;
   border-color: #e0e0e0;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-toc .sidebar-toc-list .sidebar-toc-item .sidebar-toc-text {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-toc
+  .sidebar-toc-list
+  .sidebar-toc-item
+  .sidebar-toc-text {
   color: #444444;
 }
 
 /* Sidebar related */
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-related .sidebar-related-title {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-related
+  .sidebar-related-title {
   color: #555555;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-related .sidebar-related-list .sidebar-related-card {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-related
+  .sidebar-related-list
+  .sidebar-related-card {
   border-color: #e0e0e0;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-related .sidebar-related-list .sidebar-related-card .sidebar-related-info .sidebar-related-header {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-related
+  .sidebar-related-list
+  .sidebar-related-card
+  .sidebar-related-info
+  .sidebar-related-header {
   color: #111111;
 }
 
-[data-theme="light"] .blog-post-container .blog-post-layout .blog-post-sidebar .sidebar-related .sidebar-related-list .sidebar-related-card .sidebar-related-info .sidebar-related-read {
+[data-theme="light"]
+  .blog-post-container
+  .blog-post-layout
+  .blog-post-sidebar
+  .sidebar-related
+  .sidebar-related-list
+  .sidebar-related-card
+  .sidebar-related-info
+  .sidebar-related-read {
   color: #555555;
 }
 
@@ -851,43 +1383,109 @@ body {
 ══════════════════════════════ */
 
 /* Ana başlıklar — var(--dark-blue) */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-main-header h1:nth-child(1),
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-main-header h1:nth-child(2) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-main-header
+  h1:nth-child(1),
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-main-header
+  h1:nth-child(2) {
   color: #111111;
 }
 
 /* Açıklama yazısı */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left p:nth-child(3) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  p:nth-child(3) {
   color: #333333;
   font-weight: 300;
 }
 
 /* Email/location/languages — 2. p (değer) rengi ve kalınlık */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .email-info p:nth-child(2),
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .location-info p:nth-child(2),
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .languages-info p:nth-child(2) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .email-info
+  p:nth-child(2),
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .location-info
+  p:nth-child(2),
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .languages-info
+  p:nth-child(2) {
   color: #111111;
   font-weight: 500;
 }
 
 /* Email/location/languages — 1. ve 3. p kalınlık */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .email .email-info p:nth-child(1),
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .email .email-info p:nth-child(3) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .email
+  .email-info
+  p:nth-child(1),
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .email
+  .email-info
+  p:nth-child(3) {
   color: #111111;
   font-weight: 400;
 }
 
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .location .location-info p:nth-child(1),
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .location .location-info p:nth-child(3) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .location
+  .location-info
+  p:nth-child(1),
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .location
+  .location-info
+  p:nth-child(3) {
   color: #111111;
   font-weight: 400;
 }
 
-[data-theme="light"] .contact-container .contact-get-in-touch .section-left .contact-info .languages .languages-info p:nth-child(1) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-left
+  .contact-info
+  .languages
+  .languages-info
+  p:nth-child(1) {
   color: #111111;
   font-weight: 400;
 }
-
 
 /* Section right — arka plan */
 [data-theme="light"] .contact-container .contact-get-in-touch .section-right {
@@ -895,37 +1493,77 @@ body {
 }
 
 /* How it works label */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .how-it-works-label {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .how-it-works-label {
   color: #111111;
 }
 
 /* Process step numarası — zaten beyaz yazı turuncu arka plan, olduğu gibi kalıyor */
 
 /* Process step başlık ve açıklama */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .process-steps .process-step .step-num {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .process-steps
+  .process-step
+  .step-num {
   color: #ffffff;
 }
 
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .process-steps .process-step .step-content .step-title {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .process-steps
+  .process-step
+  .step-content
+  .step-title {
   color: #111111;
 }
 
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .process-steps .process-step .step-content .step-desc {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .process-steps
+  .process-step
+  .step-content
+  .step-desc {
   color: #333333;
   font-weight: 300;
 }
 
 /* Timeline dikey çizgi */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .process-steps::before {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .process-steps::before {
   background-color: #d0d0d0;
 }
 
 /* Response badge yazıları */
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .response-badge .rb-text p:nth-child(1) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .response-badge
+  .rb-text
+  p:nth-child(1) {
   color: #111111;
 }
 
-[data-theme="light"] .contact-container .contact-get-in-touch .section-right .response-badge .rb-text p:nth-child(2) {
+[data-theme="light"]
+  .contact-container
+  .contact-get-in-touch
+  .section-right
+  .response-badge
+  .rb-text
+  p:nth-child(2) {
   color: #333333;
   font-weight: 300;
 }
@@ -935,13 +1573,26 @@ body {
 ══════════════════════════════ */
 
 /* Ana başlıklar */
-[data-theme="light"] .contact-container .contact-send-a-message-common-questions .sam-left .sam-main-header h1:nth-child(1),
-[data-theme="light"] .contact-container .contact-send-a-message-common-questions .sam-left .sam-main-header h1:nth-child(2) {
+[data-theme="light"]
+  .contact-container
+  .contact-send-a-message-common-questions
+  .sam-left
+  .sam-main-header
+  h1:nth-child(1),
+[data-theme="light"]
+  .contact-container
+  .contact-send-a-message-common-questions
+  .sam-left
+  .sam-main-header
+  h1:nth-child(2) {
   color: #111111;
 }
 
 /* Sam right — arka plan */
-[data-theme="light"] .contact-container .contact-send-a-message-common-questions .sam-right {
+[data-theme="light"]
+  .contact-container
+  .contact-send-a-message-common-questions
+  .sam-right {
   background-color: #f9f9f9;
 }
 
@@ -951,9 +1602,27 @@ body {
 
 /* Label'lar — var(--dark-blue) ve var(--white) karışık */
 [data-theme="light"] .contact-container .sam-left .form .name-email .name label,
-[data-theme="light"] .contact-container .sam-left .form .name-email .email label,
-[data-theme="light"] .contact-container .sam-left .form .business-service .business label,
-[data-theme="light"] .contact-container .sam-left .form .business-service .service label,
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .name-email
+  .email
+  label,
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .business-service
+  .business
+  label,
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .business-service
+  .service
+  label,
 [data-theme="light"] .contact-container .sam-left .form .how-did-you-hear label,
 [data-theme="light"] .contact-container .sam-left .form .your-message label {
   color: #111111;
@@ -968,20 +1637,45 @@ body {
 }
 
 /* How did you hear — seçenek butonları */
-[data-theme="light"] .contact-container .sam-left .form .how-did-you-hear .choose span {
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .how-did-you-hear
+  .choose
+  span {
   color: #333333;
   border-color: #d0d0d0;
 }
 
 /* Choose hover — yazı beyaz */
-[data-theme="light"] .contact-container .sam-left .form .how-did-you-hear .choose span:hover,
-[data-theme="light"] .contact-container .sam-left .form .how-did-you-hear .choose span.active {
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .how-did-you-hear
+  .choose
+  span:hover,
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .how-did-you-hear
+  .choose
+  span.active {
   color: #ffffff;
   border-color: var(--orange);
 }
 
 /* Select option arka plan */
-[data-theme="light"] .contact-container .sam-left .form .business-service .service select option {
+[data-theme="light"]
+  .contact-container
+  .sam-left
+  .form
+  .business-service
+  .service
+  select
+  option {
   background-color: #ffffff;
   color: #111111;
 }
@@ -996,12 +1690,20 @@ body {
 ══════════════════════════════ */
 
 /* Soru başlıkları — var(--dark-blue) */
-[data-theme="light"] .common-questions-container .questions .question p:nth-child(1) {
+[data-theme="light"]
+  .common-questions-container
+  .questions
+  .question
+  p:nth-child(1) {
   color: #111111;
 }
 
 /* Soru cevapları */
-[data-theme="light"] .common-questions-container .questions .question p:nth-child(2) {
+[data-theme="light"]
+  .common-questions-container
+  .questions
+  .question
+  p:nth-child(2) {
   color: #333333;
   font-weight: 300;
 }
@@ -1013,21 +1715,43 @@ body {
 }
 
 /* Comment yazısı */
-[data-theme="light"] .common-questions-container .comments .comment p:nth-child(2) {
+[data-theme="light"]
+  .common-questions-container
+  .comments
+  .comment
+  p:nth-child(2) {
   color: #333333;
   font-weight: 300;
 }
 
 /* Comment isim ve ünvan */
-[data-theme="light"] .common-questions-container .comments .comment .name-avatar .name p:nth-child(2) {
+[data-theme="light"]
+  .common-questions-container
+  .comments
+  .comment
+  .name-avatar
+  .name
+  p:nth-child(2) {
   color: #666666;
   font-weight: 400;
 }
 
-[data-theme="light"] .common-questions-container .comments .comment .name-avatar .name p:nth-child(1) {
+[data-theme="light"]
+  .common-questions-container
+  .comments
+  .comment
+  .name-avatar
+  .name
+  p:nth-child(1) {
   color: #111111;
 }
 
-[data-theme="light"] .common-questions-container .comments .comment .name-avatar .name p:nth-child(2) {
+[data-theme="light"]
+  .common-questions-container
+  .comments
+  .comment
+  .name-avatar
+  .name
+  p:nth-child(2) {
   color: #555555;
 }
