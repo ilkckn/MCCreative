@@ -56,15 +56,18 @@
     "view_project": "Projeyi gör",
     "name": {
       "salon_beauty": "Blanche Kuaför Salonu",
-      "restaurant_cafe": "Terra Restoran"
+      "restaurant_cafe": "Terra Restoran",
+      "fitness_gym": "Iron Pulse"
     },
     "type": {
       "salon_beauty": "Kuaför & Güzellik",
-      "restaurant_cafe": "Restoran & Kafe"
+      "restaurant_cafe": "Restoran & Kafe",
+      "fitness_gym": "Iron Pulse"
     },
     "projects": {
       "blanche_desc": "Şık tasarımı ve kolay navigasyonuyla bir kuaför salonu için modern ve zarif bir web sitesi.",
-      "terra_desc": "Menüyü, konumu ve rezervasyon sistemini sergileyen, kullanıcı dostu ve şık bir restoran web sitesi."
+      "terra_desc": "Menüyü, konumu ve rezervasyon sistemini sergileyen, kullanıcı dostu ve şık bir restoran web sitesi.",
+      "iron_pulse": "Taktiksel bir estetikle tasarlanmış; konum noktaları, biyometrik altyapı detayları ve etkileşimli bir harita içeren, yüksek yoğunluklu antrenman odaklı bir spor salonu web sitesi."
     }
   },
   "about_landing": {

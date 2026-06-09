@@ -56,15 +56,18 @@
     "view_project": "Projekt ansehen",
     "name": {
       "salon_beauty": "Blanche Friseursalon",
-      "restaurant_cafe": "Terra Restaurant"
+      "restaurant_cafe": "Terra Restaurant",
+      "fitness_gym": "Iron Pulse"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
-      "restaurant_cafe": "Restoran & Kafe"
+      "restaurant_cafe": "Restoran & Kafe",
+      "fitness_gym": "Iron Pulse"
     },
     "projects": {
       "blanche_desc": "Eine moderne und elegante Website für einen Friseursalon mit schlichtem Design und einfacher Navigation.",
-      "terra_desc": "Eine stilvolle und benutzerfreundliche Website für ein Restaurant mit Menü, Standort und Reservierungssystem."
+      "terra_desc": "Eine stilvolle und benutzerfreundliche Website für ein Restaurant mit Menü, Standort und Reservierungssystem.",
+      "iron_pulse": "Eine Website für ein High-Intensity-Fitnessstudio im taktischen Design, ausgestattet mit Standort-Markierungen, Details zur biometrischen Infrastruktur und einer interaktiven Karte."
     }
   },
   "about_landing": {

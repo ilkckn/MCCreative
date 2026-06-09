@@ -21,6 +21,12 @@ function ProjectsGrid({
     setIsFilterOpen((prev) => !prev);
   };
 
+  const getStatus = (status) => {
+    if (status === "latest") return t("projects_page.status_latest");
+    if (status === "in-progress") return t("projects_page.status_in_progress");
+    return null;
+  };
+
   return (
     <main className="projects-grid-container">
       {/* ── Filter Bar ── */}
@@ -66,13 +72,11 @@ function ProjectsGrid({
             </a>
             <div className="image">
               <img src={website.image} alt={website.name} />
-              <p
-                className={`project-status ${website.latest ? "latest" : "in-progress"}`}
-              >
-                {website.latest
-                  ? t("projects_page.status_latest")
-                  : t("projects_page.status_in_progress")}
-              </p>
+              {getStatus(website.status) && (
+                <p className={`project-status ${website.status}`}>
+                  {getStatus(website.status)}
+                </p>
+              )}
             </div>
             <div className="info">
               <h2>{t(website.typeKey)}</h2>

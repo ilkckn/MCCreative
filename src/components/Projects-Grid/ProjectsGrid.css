@@ -230,7 +230,14 @@
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
-
+        background-color: var(--orange);
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 0.3rem;
+        font-size: 1.3rem;
+        font-family: var(--font-2);
+        letter-spacing: 0.5px;
+        color: white;
         z-index: 2;
       }
     }
