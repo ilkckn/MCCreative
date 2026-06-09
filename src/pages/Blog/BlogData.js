@@ -24,9 +24,9 @@ const posts = [
     },
     image: image_website1,
     header: {
-      en: "Why your local business needs a website in 2025 and what happens if you don't have one",
-      tr: "Yerel işletmenizin 2025'te neden bir web sitesine ihtiyacı var ve yoksa ne olur",
-      de: "Warum Ihr lokales Unternehmen 2025 eine Website braucht und was passiert, wenn Sie keine haben",
+      en: "Why your local business needs a website in 2026 and what happens if you don't have one",
+      tr: "Yerel işletmenizin 2026'te neden bir web sitesine ihtiyacı var ve yoksa ne olur",
+      de: "Warum Ihr lokales Unternehmen 2026 eine Website braucht und was passiert, wenn Sie keine haben",
     },
     description: {
       en: "Most local businesses are losing customers every day to competitors who are simply easier to find online. Here's what you're missing.",
@@ -188,7 +188,7 @@ const posts = [
       de: ["Webdesign", "Lokales Unternehmen", "Online-Präsenz"],
     },
     readTime: "6 min read",
-    date: { en: "May 2025", tr: "Mayıs 2025", de: "Mai 2025" },
+    date: { en: "May 2026", tr: "Mayıs 2026", de: "Mai 2026" },
   },
   {
     id: 2,
