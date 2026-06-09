@@ -62,7 +62,7 @@ const websites = [
     category: "fitness-gym",
     descKey: "selected_work.projects.iron_pulse",
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1591311630200-ffa9120a540f?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://github.com/ilkckn/Iron-Pulse",
     location: "New York, USA",
     tags: [
