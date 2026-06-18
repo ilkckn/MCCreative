@@ -57,17 +57,23 @@
     "name": {
       "salon_beauty": "Blanche Kuaför Salonu",
       "restaurant_cafe": "Terra Restoran",
-      "fitness_gym": "Iron Pulse"
+      "fitness_gym": "Iron Pulse",
+      "cafe_ember": "Ember Cafe",
+      "medical_health": "Dr. Med. Schmidt"
     },
     "type": {
       "salon_beauty": "Kuaför & Güzellik",
       "restaurant_cafe": "Restoran & Kafe",
-      "fitness_gym": "Iron Pulse"
+      "fitness_gym": "Iron Pulse",
+      "cafe_ember": "Restoran & Kafe",
+      "medical_health": "Sağlık & Tıp"
     },
     "projects": {
       "blanche_desc": "Şık tasarımı ve kolay navigasyonuyla bir kuaför salonu için modern ve zarif bir web sitesi.",
       "terra_desc": "Menüyü, konumu ve rezervasyon sistemini sergileyen, kullanıcı dostu ve şık bir restoran web sitesi.",
-      "iron_pulse": "Taktiksel bir estetikle tasarlanmış; konum noktaları, biyometrik altyapı detayları ve etkileşimli bir harita içeren, yüksek yoğunluklu antrenman odaklı bir spor salonu web sitesi."
+      "iron_pulse": "Taktiksel bir estetikle tasarlanmış; konum noktaları, biyometrik altyapı detayları ve etkileşimli bir harita içeren, yüksek yoğunluklu antrenman odaklı bir spor salonu web sitesi.",
+      "ember_desc": "Sıcak terracotta tonları ve el yapımı atmosferiyle bir kafe için tasarlanmış, görsel bir galeri, menü sayfası ve çoklu bölüm içeren modern bir web sitesi.",
+      "dr_med_schmidt_desc": "Bir muayenehane için hizmetler, ekip ve iletişim bilgilerini sunan, sade ve profesyonel bir web sitesi."
     }
   },
   "about_landing": {

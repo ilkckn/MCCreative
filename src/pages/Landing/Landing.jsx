@@ -73,7 +73,7 @@ function Landing() {
           <div className="metrics-grid">
             <div className="metric-card">
               <div className="metric-value">
-                4<span>+</span>
+                5<span>+</span>
               </div>
               <p className="metric-label">{t("landing.metric_projects")}</p>
             </div>
