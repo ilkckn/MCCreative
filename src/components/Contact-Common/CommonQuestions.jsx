@@ -59,7 +59,7 @@ function CommonQuestions() {
           <div className="name-avatar">
             <div className="avatar">JD</div>
             <div className="name">
-              <p>John Doe</p>
+              <p>Figen Yılmaz</p>
               <p>Example Company, New York</p>
             </div>
           </div>
