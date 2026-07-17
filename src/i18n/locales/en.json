@@ -66,7 +66,7 @@
       "salon_beauty": "Salon & Beauty",
       "restaurant_cafe": "Restaurant & Cafe",
       "medical_health": "Medical & Health",
-      "fitness_gym": "Iron Pulse",
+      "fitness_gym": "Fitness & Gym",
       "cafe_ember": "Restaurant & Cafe",
       "butchers_block": "Butcher & Catering"
     },
@@ -193,6 +193,7 @@
     "filter_btn": "Filter",
     "filter_all": "All",
     "filter_salon": "Salon & Beauty",
+    "filter_fitness": "Fitness & Gym",
     "filter_restaurant": "Restaurant & Cafe",
     "filter_retail": "Retail",
     "filter_other": "Other",

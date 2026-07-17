@@ -65,7 +65,7 @@
     "type": {
       "salon_beauty": "Kuaför & Güzellik",
       "restaurant_cafe": "Restoran & Kafe",
-      "fitness_gym": "Iron Pulse",
+      "fitness_gym": "Fitness & Gym",
       "cafe_ember": "Restoran & Kafe",
       "medical_health": "Sağlık & Tıp",
       "butchers_block": "Kasap & Catering"
@@ -193,6 +193,7 @@
     "filter_btn": "Filtrele",
     "filter_all": "Tümü",
     "filter_salon": "Salon & Güzellik",
+    "filter_fitness": "Fitness ve Spor Salonu",
     "filter_restaurant": "Restoran & Kafe",
     "filter_retail": "Perakende",
     "filter_other": "Diğer",

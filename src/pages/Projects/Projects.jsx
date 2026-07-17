@@ -11,7 +11,8 @@ function Projects() {
 
   const filterButtons = [
     { name: "all",             label: t("projects_page.filter_all") },
-    { name: "salon-beauty",    label: t("projects_page.filter_salon") },
+    { name: "salon-beauty", label: t("projects_page.filter_salon") },
+    { name: "fitness", label: t("projects_page.filter_fitness") },
     { name: "restaurant-cafe", label: t("projects_page.filter_restaurant") },
     { name: "retail",          label: t("projects_page.filter_retail") },
     { name: "other",           label: t("projects_page.filter_other") },
