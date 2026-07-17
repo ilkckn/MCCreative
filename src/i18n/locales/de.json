@@ -59,21 +59,24 @@
       "restaurant_cafe": "Terra Restaurant",
       "fitness_gym": "Iron Pulse",
       "cafe_ember": "Ember Cafe",
-      "medical_health": "Dr. Med. Schmidt"
+      "medical_health": "Dr. Med. Schmidt",
+      "butchers_block": "The Butcher's Block"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
       "restaurant_cafe": "Restaurant & Café",
       "fitness_gym": "Iron Pulse",
       "cafe_ember": "Restaurant & Café",
-      "medical_health": "Gesundheit & Medizin"
+      "medical_health": "Gesundheit & Medizin",
+      "butchers_block": "Metzgerei & Catering"
     },
     "projects": {
       "blanche_desc": "Eine moderne und elegante Website für einen Friseursalon mit schlichtem Design und einfacher Navigation.",
       "terra_desc": "Eine stilvolle und benutzerfreundliche Website für ein Restaurant mit Menü, Standort und Reservierungssystem.",
       "iron_pulse": "Eine Website für ein High-Intensity-Fitnessstudio im taktischen Design, ausgestattet mit Standort-Markierungen, Details zur biometrischen Infrastruktur und einer interaktiven Karte.",
       "ember_desc": "Eine moderne Website für ein Café mit warmen Terrakotta-Tönen und handwerklicher Atmosphäre, mit einer Bildergalerie, einer Menüseite und mehreren Abschnitten.",
-      "dr_med_schmidt_desc": "Eine schlichte und professionelle Website für eine Arztpraxis mit Informationen zu Leistungen, Team und Kontaktdaten."
+      "dr_med_schmidt_desc": "Eine schlichte und professionelle Website für eine Arztpraxis mit Informationen zu Leistungen, Team und Kontaktdaten.",
+      "butchers_block_desc": "Eine Website für eine Metzgerei mit Catering-Bereich: Produktkatalog mit Filtern, persistenter Warenkorb und ein Catering-Konfigurator mit größenbasierter Preislogik. Bestellungen gehen direkt per WhatsApp oder E-Mail an den Betrieb ganz ohne Checkout oder Zahlungsanbieter."
     }
   },
   "about_landing": {

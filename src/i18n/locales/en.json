@@ -59,21 +59,24 @@
       "restaurant_cafe": "Terra Restaurant",
       "medical_health": "Dr.Med.Schmidt",
       "fitness_gym": "Iron Pulse",
-      "cafe_ember": "Ember Cafe"
+      "cafe_ember": "Ember Cafe",
+      "butchers_block": "The Butcher's Block"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
       "restaurant_cafe": "Restaurant & Cafe",
       "medical_health": "Medical & Health",
       "fitness_gym": "Iron Pulse",
-      "cafe_ember": "Restaurant & Cafe"
+      "cafe_ember": "Restaurant & Cafe",
+      "butchers_block": "Butcher & Catering"
     },
     "projects": {
       "blanche_desc": "A modern and elegant website for a hair salon, featuring a sleek design and easy navigation.",
       "terra_desc": "A stylish and user friendly website for a restaurant, showcasing the menu, location, and reservation system.",
       "dr_med_schmidt_desc": "A clean and professional website for a medical practice, providing information about services, team, and contact details.",
       "iron_pulse": "A high-intensity gym website built with a tactical aesthetic, featuring location nodes, biometric infrastructure details, and an interactive map.",
-      "ember_desc": "A modern website designed for a cafe with warm terracotta tones and a handcrafted atmosphere, featuring a visual gallery, a menu page, and multiple sections."
+      "ember_desc": "A modern website designed for a cafe with warm terracotta tones and a handcrafted atmosphere, featuring a visual gallery, a menu page, and multiple sections.",
+      "butchers_block_desc": "A website for a butcher shop with a catering section: a filterable product catalog, a persistent cart, and a catering configurator with serving-size-based pricing. Orders go straight to the business via WhatsApp or email no checkout, no payment provider."
     }
   },
   "about_landing": {

@@ -24,6 +24,7 @@
       border-radius: 0.5rem;
       border: 1px solid var(--description);
       padding: 0.6rem 1.8rem;
+      cursor: pointer;
 
       .filter-icon {
         color: var(--description);
@@ -193,7 +194,7 @@
 
       /* YÜKSEKLİK KONTROLÜ */
       min-height: 35rem;
-      max-height: 35rem;
+      max-height: 40rem;
 
       img {
         width: 100%;
