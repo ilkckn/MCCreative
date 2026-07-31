@@ -1265,7 +1265,7 @@ const posts = [
         de: ["Google-Bewertungen", "Lokales SEO", "Online-Reputation"],
       },
       readTime: "6 min read",
-      date: { en: "July 2026", tr: "Temmuz 2026", de: "Juli 2026" },
+      date: { en: "June 2026", tr: "Haziran 2026", de: "Juni 2026" },
     },
     {
       id: 9,
@@ -1401,7 +1401,7 @@ const posts = [
         de: ["Website-Geschwindigkeit", "Performance", "Webdesign"],
       },
       readTime: "5 min read",
-      date: { en: "June 2026", tr: "Haziran 2026", de: "Juni 2026" },
+      date: { en: "July 2026", tr: "Temmuz 2026", de: "Juli 2026" },
     },
 ];
 
