@@ -123,13 +123,13 @@
         white-space: nowrap;
 
         &:hover .arrow-subscribe {
-          transform: translateX(3px);
+          transform: translateX(.4rem) translateY(-.05rem);
           transition: transform 0.3s ease;
         }
 
         .arrow-subscribe {
           font-size: 1.7rem;
-          color: var(--white);
+          transform: translateY(-.05rem) translateX(.2rem);
         }
       }
     }
@@ -156,7 +156,7 @@
     .header-text {
       font-family: var(--font-2);
       font-size: 1.7rem;
-      font-weight: 300;
+      font-weight: 500;
       letter-spacing: 1px;
       color: var(--orange);
       text-transform: uppercase;
