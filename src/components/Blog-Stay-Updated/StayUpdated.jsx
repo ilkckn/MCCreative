@@ -32,15 +32,15 @@ function StayUpdated() {
         <p className="header-text">{t("blog.topics_header")}</p>
         <div className="web-design">
           <h2>{t("blog.topic_web_design")}</h2>
-          <p>2 post</p>
+          <p>3 post</p>
         </div>
         <div className="local-seo">
           <h2>{t("blog.topic_seo")}</h2>
-          <p>1 post</p>
+          <p>2 post</p>
         </div>
         <div className="business-tips">
           <h2>{t("blog.topic_business")}</h2>
-          <p>2 posts</p>
+          <p>3 posts</p>
         </div>
         <div className="react-dev">
           <h2>{t("blog.topic_react")}</h2>

@@ -13,6 +13,13 @@ const image_business2 =
   "https://images.unsplash.com/photo-1726056652663-8f1e42b2fc95?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const image_website2 =
   "https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const image_instagram =
+  "https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=1740&auto=format&fit=crop";
+const image_reviews =
+  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1740&auto=format&fit=crop";
+const image_speed =
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1740&auto=format&fit=crop";
+
 
 const posts = [
   {
@@ -988,6 +995,414 @@ const posts = [
     readTime: "6 min read",
     date: { en: "October 2025", tr: "Ekim 2025", de: "Oktober 2025" },
   },
+  {
+      id: 7,
+      name: {
+        en: "Business Tips",
+        tr: "İşletme İpuçları",
+        de: "Business-Tipps",
+      },
+      image: image_instagram,
+      header: {
+        en: "Do you really need a website if you're already on Instagram?",
+        tr: "Zaten Instagram'daysanız gerçekten bir web sitesine ihtiyacınız var mı?",
+        de: "Brauchen Sie wirklich eine Website, wenn Sie bereits auf Instagram sind?",
+      },
+      description: {
+        en: "It's the question I hear most from local business owners. The honest answer isn't what social media gurus want you to believe.",
+        tr: "Yerel işletme sahiplerinden en çok duyduğum soru bu. Dürüst cevap, sosyal medya gurularının inanmanızı istediği gibi değil.",
+        de: "Das ist die Frage, die ich von lokalen Unternehmern am häufigsten höre. Die ehrliche Antwort ist nicht das, was Social-Media-Gurus Ihnen glauben machen wollen.",
+      },
+      fullContent: {
+        en: [
+          {
+            type: "intro",
+            text: "Almost every week a business owner tells me the same thing: 'I already have Instagram with a few thousand followers, why would I need a website?' It's a fair question. Social media feels free, fast, and everyone is on it. But relying only on Instagram is a bit like building your shop on rented land you don't control the ground you're standing on.",
+          },
+          { type: "heading", text: "You don't own your Instagram audience" },
+          {
+            type: "paragraph",
+            text: "Here's the uncomfortable part: your followers don't belong to you, they belong to Instagram. The algorithm decides how many of them actually see your posts, and that number is often shockingly low, frequently under 10%. One change to the algorithm, one account suspension, one shift in trends, and the audience you spent years building can vanish overnight. A website is the one piece of your online presence that you fully own.",
+          },
+          { type: "heading", text: "Instagram and a website do different jobs" },
+          {
+            type: "paragraph",
+            text: "This isn't really an either/or decision. Instagram is brilliant for discovery and personality, it's where people find you and get a feel for your vibe. But it's a terrible place to hold detailed information. Prices, opening hours, services, directions, a booking form, all of that gets buried under posts within days. A website keeps it organised, searchable, and available 24/7.",
+          },
+          { type: "heading", text: "What Instagram alone can't do for you" },
+          {
+            type: "list",
+            items: [
+              "Show up on Google when someone searches for your service",
+              "Rank on Google Maps, which needs a website to link to",
+              "Let customers book or contact you without scrolling through posts",
+              "Build long-term trust with a professional, permanent home",
+              "Survive when the algorithm changes or your account gets locked",
+            ],
+          },
+          { type: "heading", text: "The best setup for a local business" },
+          {
+            type: "paragraph",
+            text: "Use Instagram for what it's great at, showing your work, your face, your daily life. Then send that audience somewhere you control. Put your website link in your bio and let it do the heavy lifting: answering questions, taking bookings, and turning casual followers into paying customers. Social media brings people to the door, your website invites them in.",
+          },
+          {
+            type: "callout",
+            text: "Instagram is a great place to be found. A website is the only place you truly own. The smartest businesses use both and never rely on rented land alone.",
+          },
+        ],
+        tr: [
+          {
+            type: "intro",
+            text: "Neredeyse her hafta bir işletme sahibi bana aynı şeyi söylüyor: 'Zaten birkaç bin takipçili bir Instagram'ım var, neden bir web sitesine ihtiyacım olsun ki?' Haklı bir soru. Sosyal medya ücretsiz, hızlı ve herkes orada. Ama yalnızca Instagram'a güvenmek, dükkanını kiralık bir arsaya kurmak gibidir, üzerinde durduğun zemini kontrol etmiyorsun.",
+          },
+          { type: "heading", text: "Instagram kitlenizin sahibi siz değilsiniz" },
+          {
+            type: "paragraph",
+            text: "İşte rahatsız edici kısım: takipçileriniz size değil, Instagram'a ait. Algoritma, onların kaçının gönderilerinizi gerçekten gördüğüne karar veriyor ve bu sayı çoğu zaman şaşırtıcı derecede düşük, sıklıkla %10'un altında. Algoritmada tek bir değişiklik, tek bir hesap askıya alınması, trendlerdeki tek bir kayma, ve yıllarca inşa ettiğiniz kitle bir gecede yok olabilir. Bir web sitesi, çevrimiçi varlığınızın tamamen size ait olan tek parçasıdır.",
+          },
+          { type: "heading", text: "Instagram ve web sitesi farklı işler yapar" },
+          {
+            type: "paragraph",
+            text: "Bu aslında bir 'ya o ya bu' kararı değil. Instagram keşif ve kişilik için harika, insanların sizi bulduğu ve tarzınızı hissettiği yer. Ama detaylı bilgiyi tutmak için berbat bir yer. Fiyatlar, çalışma saatleri, hizmetler, yol tarifi, bir rezervasyon formu, bunların hepsi günler içinde gönderilerin altında kaybolur. Bir web sitesi bunları düzenli, aranabilir ve 7/24 erişilebilir tutar.",
+          },
+          { type: "heading", text: "Tek başına Instagram'ın sizin için yapamadıkları" },
+          {
+            type: "list",
+            items: [
+              "Biri hizmetinizi aradığında Google'da görünmek",
+              "Bağlantı verecek bir web sitesi gerektiren Google Haritalar'da sıralanmak",
+              "Müşterilerin gönderiler arasında kaybolmadan rezervasyon yapması veya size ulaşması",
+              "Profesyonel, kalıcı bir yuvayla uzun vadeli güven inşa etmek",
+              "Algoritma değiştiğinde ya da hesabınız kilitlendiğinde ayakta kalmak",
+            ],
+          },
+          { type: "heading", text: "Yerel bir işletme için en iyi kurulum" },
+          {
+            type: "paragraph",
+            text: "Instagram'ı en iyi olduğu şey için kullanın, işinizi, yüzünüzü, günlük hayatınızı göstermek. Sonra o kitleyi kontrol ettiğiniz bir yere yönlendirin. Web sitesi bağlantınızı biyografinize koyun ve asıl yükü ona taşıtın: soruları yanıtlamak, rezervasyon almak ve gündelik takipçileri ödeme yapan müşterilere dönüştürmek. Sosyal medya insanları kapıya getirir, web siteniz onları içeri davet eder.",
+          },
+          {
+            type: "callout",
+            text: "Instagram bulunmak için harika bir yer. Web sitesi ise gerçekten sahip olduğunuz tek yer. En akıllı işletmeler ikisini birden kullanır ve asla yalnızca kiralık arsaya güvenmez.",
+          },
+        ],
+        de: [
+          {
+            type: "intro",
+            text: "Fast jede Woche sagt mir ein Unternehmer dasselbe: 'Ich habe bereits Instagram mit ein paar tausend Followern, warum sollte ich eine Website brauchen?' Eine faire Frage. Social Media fühlt sich kostenlos und schnell an, und alle sind dort. Aber sich nur auf Instagram zu verlassen ist ein bisschen so, als würde man sein Geschäft auf gemietetem Land bauen, Sie kontrollieren den Boden nicht, auf dem Sie stehen.",
+          },
+          { type: "heading", text: "Ihre Instagram-Zielgruppe gehört nicht Ihnen" },
+          {
+            type: "paragraph",
+            text: "Hier ist der unbequeme Teil: Ihre Follower gehören nicht Ihnen, sie gehören Instagram. Der Algorithmus entscheidet, wie viele davon Ihre Beiträge tatsächlich sehen, und diese Zahl ist oft erschreckend niedrig, häufig unter 10%. Eine Änderung am Algorithmus, eine Kontosperrung, eine Verschiebung der Trends, und die Zielgruppe, die Sie jahrelang aufgebaut haben, kann über Nacht verschwinden. Eine Website ist der eine Teil Ihrer Online-Präsenz, der vollständig Ihnen gehört.",
+          },
+          { type: "heading", text: "Instagram und eine Website erfüllen verschiedene Aufgaben" },
+          {
+            type: "paragraph",
+            text: "Das ist eigentlich keine Entweder-oder-Entscheidung. Instagram ist brillant für Entdeckung und Persönlichkeit, dort finden Menschen Sie und bekommen ein Gefühl für Ihren Stil. Aber es ist ein schlechter Ort, um detaillierte Informationen zu speichern. Preise, Öffnungszeiten, Leistungen, Anfahrt, ein Buchungsformular, all das wird innerhalb von Tagen unter Beiträgen begraben. Eine Website hält es organisiert, durchsuchbar und rund um die Uhr verfügbar.",
+          },
+          { type: "heading", text: "Was Instagram allein nicht für Sie tun kann" },
+          {
+            type: "list",
+            items: [
+              "Bei Google erscheinen, wenn jemand nach Ihrer Leistung sucht",
+              "Bei Google Maps ranken, was eine verlinkbare Website benötigt",
+              "Kunden buchen oder Kontakt aufnehmen lassen, ohne durch Beiträge zu scrollen",
+              "Langfristiges Vertrauen mit einem professionellen, dauerhaften Zuhause aufbauen",
+              "Überleben, wenn sich der Algorithmus ändert oder Ihr Konto gesperrt wird",
+            ],
+          },
+          { type: "heading", text: "Das beste Setup für ein lokales Unternehmen" },
+          {
+            type: "paragraph",
+            text: "Nutzen Sie Instagram für das, worin es großartig ist, Ihre Arbeit, Ihr Gesicht, Ihren Alltag zu zeigen. Leiten Sie diese Zielgruppe dann an einen Ort, den Sie kontrollieren. Setzen Sie Ihren Website-Link in Ihre Bio und lassen Sie sie die eigentliche Arbeit erledigen: Fragen beantworten, Buchungen annehmen und gelegentliche Follower in zahlende Kunden verwandeln. Social Media bringt die Menschen an die Tür, Ihre Website lädt sie herein.",
+          },
+          {
+            type: "callout",
+            text: "Instagram ist ein großartiger Ort, um gefunden zu werden. Eine Website ist der einzige Ort, den Sie wirklich besitzen. Die klügsten Unternehmen nutzen beides und verlassen sich nie nur auf gemietetes Land.",
+          },
+        ],
+      },
+      tags: {
+        en: ["Social media", "Local business", "Online presence"],
+        tr: ["Sosyal medya", "Yerel işletme", "Çevrimiçi varlık"],
+        de: ["Social Media", "Lokales Unternehmen", "Online-Präsenz"],
+      },
+      readTime: "5 min read",
+      date: { en: "November 2025", tr: "Kasım 2025", de: "November 2025" },
+    },
+    {
+      id: 8,
+      name: {
+        en: "SEO",
+        tr: "SEO",
+        de: "SEO",
+      },
+      image: image_reviews,
+      header: {
+        en: "How to get more Google reviews and turn them into customers",
+        tr: "Nasıl daha fazla Google yorumu alınır ve bunlar müşteriye dönüştürülür",
+        de: "Wie Sie mehr Google-Bewertungen erhalten und sie in Kunden verwandeln",
+      },
+      description: {
+        en: "Reviews are the closest thing to free advertising a local business has and most owners are leaving them on the table. Here's how to change that.",
+        tr: "Yorumlar, yerel bir işletmenin sahip olduğu ücretsiz reklama en yakın şeydir ve çoğu işletme sahibi onları masada bırakıyor. İşte bunu nasıl değiştireceğiniz.",
+        de: "Bewertungen sind das, was kostenloser Werbung für ein lokales Unternehmen am nächsten kommt, und die meisten Inhaber lassen sie ungenutzt. So ändern Sie das.",
+      },
+      fullContent: {
+        en: [
+          {
+            type: "intro",
+            text: "When someone searches for a business like yours, what's the first thing their eyes jump to? Not your logo, not your website, the stars. That little row of gold stars and the number next to it decides, in a fraction of a second, whether someone clicks on you or your competitor. Google reviews are quietly one of the most powerful marketing tools you have, and they cost nothing.",
+          },
+          { type: "heading", text: "Why reviews matter more than you think" },
+          {
+            type: "paragraph",
+            text: "Reviews do two jobs at once. First, they build instant trust, most people trust an online review almost as much as a personal recommendation from a friend. Second, they directly affect your ranking. Google uses the quantity, quality, and freshness of your reviews as a signal when deciding which businesses to show first in local results. More good reviews literally means more visibility.",
+          },
+          { type: "heading", text: "The number one reason you don't have enough reviews" },
+          {
+            type: "paragraph",
+            text: "It's simple: you're not asking. Happy customers are usually glad to leave a review, but they never think to do it on their own. They walk out satisfied and get on with their day. The businesses drowning in five-star reviews aren't lucky, they've just made asking a normal, effortless part of how they work.",
+          },
+          { type: "heading", text: "How to actually get more reviews" },
+          {
+            type: "list",
+            items: [
+              "Ask in person, right after a positive moment, when the customer is happiest",
+              "Make it one tap: use a short link or QR code that opens your review page directly",
+              "Send a friendly follow-up message or email with the link after the visit",
+              "Add a 'Leave us a review' button on your website and in your email signature",
+              "Never buy fake reviews, Google detects them and it can get your profile suspended",
+            ],
+          },
+          { type: "heading", text: "Turn reviews into customers by replying" },
+          {
+            type: "paragraph",
+            text: "Getting the review is only half the work. Reply to every single one, the good and the bad. Thanking someone for a kind review shows future customers you care. And handling a negative review calmly and professionally often impresses people more than a perfect five-star rating ever could. People aren't looking for perfection, they're looking for a business that listens.",
+          },
+          {
+            type: "callout",
+            text: "Every happy customer who leaves without being asked is a five-star review you'll never get. Make asking a habit, and watch how quickly it changes who finds you.",
+          },
+        ],
+        tr: [
+          {
+            type: "intro",
+            text: "Biri sizin gibi bir işletme aradığında, gözü ilk nereye kayar? Logonuza değil, web sitenize değil, yıldızlara. O küçük altın yıldız sırası ve yanındaki sayı, saniyenin çok küçük bir diliminde, birinin size mi yoksa rakibinize mi tıklayacağına karar veriyor. Google yorumları sessizce sahip olduğunuz en güçlü pazarlama araçlarından biri ve hiçbir maliyeti yok.",
+          },
+          { type: "heading", text: "Yorumlar neden düşündüğünüzden daha önemli" },
+          {
+            type: "paragraph",
+            text: "Yorumlar aynı anda iki iş yapıyor. Birincisi, anında güven inşa ediyorlar, çoğu insan bir çevrimiçi yoruma neredeyse bir arkadaşının kişisel tavsiyesi kadar güveniyor. İkincisi, sıralamanızı doğrudan etkiliyorlar. Google, yerel sonuçlarda hangi işletmeleri önce göstereceğine karar verirken yorumlarınızın sayısını, kalitesini ve tazeliğini bir sinyal olarak kullanıyor. Daha fazla iyi yorum, kelimenin tam anlamıyla daha fazla görünürlük demek.",
+          },
+          { type: "heading", text: "Yeterince yorumunuzun olmamasının bir numaralı nedeni" },
+          {
+            type: "paragraph",
+            text: "Çok basit: istemiyorsunuz. Memnun müşteriler genellikle yorum bırakmaktan memnun olur, ama bunu kendiliğinden yapmayı hiç akıl etmezler. Memnun ayrılır ve günlerine devam ederler. Beş yıldızlı yorumlara boğulmuş işletmeler şanslı değil, sadece istemeyi çalışma şekillerinin normal, zahmetsiz bir parçası haline getirmişler.",
+          },
+          { type: "heading", text: "Gerçekten nasıl daha fazla yorum alınır" },
+          {
+            type: "list",
+            items: [
+              "Yüz yüze isteyin, olumlu bir andan hemen sonra, müşteri en mutluyken",
+              "Tek dokunuşla yapın: yorum sayfanızı doğrudan açan kısa bir bağlantı veya QR kod kullanın",
+              "Ziyaretten sonra bağlantıyla birlikte dostça bir takip mesajı veya e-posta gönderin",
+              "Web sitenize ve e-posta imzanıza bir 'Bize yorum bırakın' butonu ekleyin",
+              "Asla sahte yorum satın almayın, Google bunları tespit eder ve profiliniz askıya alınabilir",
+            ],
+          },
+          { type: "heading", text: "Yanıt vererek yorumları müşteriye dönüştürün" },
+          {
+            type: "paragraph",
+            text: "Yorumu almak işin sadece yarısı. Her birine yanıt verin, iyisine de kötüsüne de. Nazik bir yorum için birine teşekkür etmek, gelecekteki müşterilere önemsediğinizi gösterir. Ve olumsuz bir yorumu sakin ve profesyonel bir şekilde ele almak, çoğu zaman kusursuz bir beş yıldızlı puanın asla yapamayacağı kadar insanları etkiler. İnsanlar kusursuzluk aramıyor, dinleyen bir işletme arıyorlar.",
+          },
+          {
+            type: "callout",
+            text: "İstenmeden ayrılan her mutlu müşteri, asla alamayacağınız beş yıldızlı bir yorumdur. İstemeyi bir alışkanlık haline getirin ve sizi kimin bulduğunu ne kadar hızlı değiştirdiğini izleyin.",
+          },
+        ],
+        de: [
+          {
+            type: "intro",
+            text: "Wenn jemand nach einem Unternehmen wie Ihrem sucht, worauf springt sein Blick zuerst? Nicht auf Ihr Logo, nicht auf Ihre Website, auf die Sterne. Diese kleine Reihe goldener Sterne und die Zahl daneben entscheidet in Sekundenbruchteilen, ob jemand auf Sie oder Ihren Konkurrenten klickt. Google-Bewertungen sind leise eines der mächtigsten Marketinginstrumente, die Sie haben, und sie kosten nichts.",
+          },
+          { type: "heading", text: "Warum Bewertungen wichtiger sind, als Sie denken" },
+          {
+            type: "paragraph",
+            text: "Bewertungen erledigen zwei Aufgaben auf einmal. Erstens bauen sie sofortiges Vertrauen auf, die meisten Menschen vertrauen einer Online-Bewertung fast so sehr wie einer persönlichen Empfehlung eines Freundes. Zweitens beeinflussen sie direkt Ihr Ranking. Google nutzt die Menge, Qualität und Aktualität Ihrer Bewertungen als Signal, wenn es entscheidet, welche Unternehmen in lokalen Ergebnissen zuerst angezeigt werden. Mehr gute Bewertungen bedeuten buchstäblich mehr Sichtbarkeit.",
+          },
+          { type: "heading", text: "Der wichtigste Grund, warum Sie nicht genug Bewertungen haben" },
+          {
+            type: "paragraph",
+            text: "Es ist einfach: Sie fragen nicht. Zufriedene Kunden hinterlassen meist gerne eine Bewertung, aber sie kommen von selbst nie darauf. Sie gehen zufrieden hinaus und machen mit ihrem Tag weiter. Die Unternehmen, die in Fünf-Sterne-Bewertungen schwimmen, haben kein Glück, sie haben das Fragen einfach zu einem normalen, mühelosen Teil ihrer Arbeit gemacht.",
+          },
+          { type: "heading", text: "Wie Sie tatsächlich mehr Bewertungen bekommen" },
+          {
+            type: "list",
+            items: [
+              "Fragen Sie persönlich, direkt nach einem positiven Moment, wenn der Kunde am zufriedensten ist",
+              "Machen Sie es zu einem Tipp: ein kurzer Link oder QR-Code, der Ihre Bewertungsseite direkt öffnet",
+              "Senden Sie nach dem Besuch eine freundliche Folgenachricht oder E-Mail mit dem Link",
+              "Fügen Sie einen 'Bewerten Sie uns'-Button auf Ihrer Website und in Ihrer E-Mail-Signatur hinzu",
+              "Kaufen Sie niemals gefälschte Bewertungen, Google erkennt sie und Ihr Profil kann gesperrt werden",
+            ],
+          },
+          { type: "heading", text: "Verwandeln Sie Bewertungen durch Antworten in Kunden" },
+          {
+            type: "paragraph",
+            text: "Die Bewertung zu bekommen ist nur die halbe Arbeit. Antworten Sie auf jede einzelne, die guten und die schlechten. Sich für eine freundliche Bewertung zu bedanken zeigt zukünftigen Kunden, dass es Ihnen wichtig ist. Und eine negative Bewertung ruhig und professionell zu behandeln beeindruckt Menschen oft mehr, als es eine perfekte Fünf-Sterne-Bewertung je könnte. Menschen suchen keine Perfektion, sie suchen ein Unternehmen, das zuhört.",
+          },
+          {
+            type: "callout",
+            text: "Jeder zufriedene Kunde, der geht, ohne gefragt zu werden, ist eine Fünf-Sterne-Bewertung, die Sie nie bekommen werden. Machen Sie das Fragen zur Gewohnheit und beobachten Sie, wie schnell es verändert, wer Sie findet.",
+          },
+        ],
+      },
+      tags: {
+        en: ["Google reviews", "Local SEO", "Online reputation"],
+        tr: ["Google yorumları", "Yerel SEO", "Çevrimiçi itibar"],
+        de: ["Google-Bewertungen", "Lokales SEO", "Online-Reputation"],
+      },
+      readTime: "6 min read",
+      date: { en: "December 2025", tr: "Aralık 2025", de: "Dezember 2025" },
+    },
+    {
+      id: 9,
+      name: {
+        en: "Web Design",
+        tr: "Web Tasarım",
+        de: "Webdesign",
+      },
+      image: image_speed,
+      header: {
+        en: "Your website has 3 seconds before visitors leave",
+        tr: "Ziyaretçiler ayrılmadan önce web sitenizin 3 saniyesi var",
+        de: "Ihre Website hat 3 Sekunden, bevor Besucher gehen",
+      },
+      description: {
+        en: "A slow website doesn't just annoy people, it quietly sends your customers straight to your competitors. Here's what speed really costs you.",
+        tr: "Yavaş bir web sitesi sadece insanları sinirlendirmez, sessizce müşterilerinizi doğrudan rakiplerinize gönderir. İşte hızın size gerçek maliyeti.",
+        de: "Eine langsame Website nervt nicht nur, sie schickt Ihre Kunden leise direkt zu Ihren Konkurrenten. Das kostet Sie Geschwindigkeit wirklich.",
+      },
+      fullContent: {
+        en: [
+          {
+            type: "intro",
+            text: "Think about your own behaviour online. You tap a link, the page hangs on a blank white screen, and after a couple of seconds you're already hitting the back button. You didn't think about it, you just left. Every single visitor to your website does exactly the same thing, and if your site is slow, most of them leave before they ever see what you offer.",
+          },
+          { type: "heading", text: "The three second rule is real" },
+          {
+            type: "paragraph",
+            text: "Studies consistently show that most people abandon a website that takes longer than three seconds to load. Every extra second dramatically increases the number of visitors who give up. For a local business, that's not an abstract statistic, it's real customers who were interested enough to click, then gone before they could call, book, or buy.",
+          },
+          { type: "heading", text: "Speed is also an SEO problem" },
+          {
+            type: "paragraph",
+            text: "It's not just visitors you lose. Google uses page speed as a ranking factor, especially on mobile. A slow website is pushed down in the search results, which means fewer people find you in the first place. So a slow site hurts you twice: fewer visitors arrive, and more of the ones who do arrive leave immediately.",
+          },
+          { type: "heading", text: "What usually makes a website slow" },
+          {
+            type: "list",
+            items: [
+              "Huge, uncompressed images that take forever to download",
+              "Bloated page builders and dozens of plugins loading in the background",
+              "Cheap or overloaded hosting that responds slowly",
+              "Too many external scripts, trackers, and ad tools",
+              "No caching, so everything is rebuilt from scratch on every visit",
+            ],
+          },
+          { type: "heading", text: "The good news: speed is fixable" },
+          {
+            type: "paragraph",
+            text: "This is one of the reasons I build websites from scratch with React rather than heavy page builders. A clean, custom-coded site loads fast by default, there's no bloated system dragging it down. Compressed images, lean code, and solid hosting can take a site from painfully slow to near-instant, and your visitors feel the difference immediately, even if they can't explain why.",
+          },
+          {
+            type: "callout",
+            text: "Your customers won't wait, and they won't tell you they left. A fast website isn't a nice-to-have, it's the difference between a visitor and a lost sale.",
+          },
+        ],
+        tr: [
+          {
+            type: "intro",
+            text: "Kendi çevrimiçi davranışınızı düşünün. Bir bağlantıya dokunuyorsunuz, sayfa boş beyaz bir ekranda takılı kalıyor ve birkaç saniye sonra çoktan geri tuşuna basıyorsunuz. Düşünmediniz bile, sadece ayrıldınız. Web sitenize gelen her bir ziyaretçi tam olarak aynı şeyi yapıyor ve siteniz yavaşsa çoğu, ne sunduğunuzu görmeden ayrılıyor.",
+          },
+          { type: "heading", text: "Üç saniye kuralı gerçek" },
+          {
+            type: "paragraph",
+            text: "Araştırmalar tutarlı bir şekilde, çoğu insanın yüklenmesi üç saniyeden uzun süren bir web sitesini terk ettiğini gösteriyor. Her ekstra saniye, vazgeçen ziyaretçi sayısını dramatik biçimde artırıyor. Yerel bir işletme için bu soyut bir istatistik değil, tıklayacak kadar ilgilenen, sonra arayabilmeden, rezervasyon yapabilmeden ya da satın alabilmeden giden gerçek müşteriler.",
+          },
+          { type: "heading", text: "Hız aynı zamanda bir SEO sorunu" },
+          {
+            type: "paragraph",
+            text: "Kaybettiğiniz sadece ziyaretçiler değil. Google, özellikle mobilde, sayfa hızını bir sıralama faktörü olarak kullanıyor. Yavaş bir web sitesi arama sonuçlarında aşağı itiliyor, bu da en baştan daha az kişinin sizi bulması demek. Yani yavaş bir site size iki kez zarar veriyor: daha az ziyaretçi geliyor ve gelenlerin daha fazlası hemen ayrılıyor.",
+          },
+          { type: "heading", text: "Bir web sitesini genellikle ne yavaşlatır" },
+          {
+            type: "list",
+            items: [
+              "İndirilmesi sonsuza kadar süren devasa, sıkıştırılmamış görseller",
+              "Arka planda yüklenen şişkin sayfa oluşturucular ve onlarca eklenti",
+              "Yavaş yanıt veren ucuz veya aşırı yüklü barındırma",
+              "Çok fazla harici script, izleyici ve reklam aracı",
+              "Önbellek yok, yani her ziyarette her şey sıfırdan yeniden oluşturuluyor",
+            ],
+          },
+          { type: "heading", text: "İyi haber: hız düzeltilebilir" },
+          {
+            type: "paragraph",
+            text: "Web sitelerini ağır sayfa oluşturucular yerine sıfırdan React ile inşa etmemin nedenlerinden biri de bu. Temiz, özel kodlanmış bir site varsayılan olarak hızlı yüklenir, onu aşağı çeken şişkin bir sistem yoktur. Sıkıştırılmış görseller, yalın kod ve sağlam barındırma bir siteyi acı verecek kadar yavaştan neredeyse anlık hale getirebilir ve ziyaretçileriniz nedenini açıklayamasalar bile farkı hemen hisseder.",
+          },
+          {
+            type: "callout",
+            text: "Müşterileriniz beklemez ve ayrıldıklarını size söylemezler. Hızlı bir web sitesi olsa iyi olur türünden bir şey değil, bir ziyaretçi ile kaybedilmiş bir satış arasındaki farktır.",
+          },
+        ],
+        de: [
+          {
+            type: "intro",
+            text: "Denken Sie an Ihr eigenes Verhalten online. Sie tippen auf einen Link, die Seite hängt auf einem leeren weißen Bildschirm, und nach ein paar Sekunden drücken Sie schon den Zurück-Button. Sie haben nicht darüber nachgedacht, Sie sind einfach gegangen. Jeder einzelne Besucher Ihrer Website macht genau dasselbe, und wenn Ihre Seite langsam ist, gehen die meisten, bevor sie je sehen, was Sie anbieten.",
+          },
+          { type: "heading", text: "Die Drei-Sekunden-Regel ist real" },
+          {
+            type: "paragraph",
+            text: "Studien zeigen konsequent, dass die meisten Menschen eine Website verlassen, die länger als drei Sekunden zum Laden braucht. Jede zusätzliche Sekunde erhöht die Zahl der aufgebenden Besucher dramatisch. Für ein lokales Unternehmen ist das keine abstrakte Statistik, es sind echte Kunden, die interessiert genug waren zu klicken, dann weg, bevor sie anrufen, buchen oder kaufen konnten.",
+          },
+          { type: "heading", text: "Geschwindigkeit ist auch ein SEO-Problem" },
+          {
+            type: "paragraph",
+            text: "Es sind nicht nur Besucher, die Sie verlieren. Google nutzt die Seitengeschwindigkeit als Ranking-Faktor, besonders auf Mobilgeräten. Eine langsame Website wird in den Suchergebnissen nach unten geschoben, was bedeutet, dass Sie überhaupt weniger Menschen finden. Eine langsame Seite schadet Ihnen also doppelt: weniger Besucher kommen an, und mehr von denen, die ankommen, gehen sofort.",
+          },
+          { type: "heading", text: "Was eine Website normalerweise langsam macht" },
+          {
+            type: "list",
+            items: [
+              "Riesige, unkomprimierte Bilder, deren Download ewig dauert",
+              "Aufgeblähte Page-Builder und Dutzende von Plugins, die im Hintergrund laden",
+              "Günstiges oder überlastetes Hosting, das langsam reagiert",
+              "Zu viele externe Skripte, Tracker und Werbe-Tools",
+              "Kein Caching, sodass bei jedem Besuch alles neu aufgebaut wird",
+            ],
+          },
+          { type: "heading", text: "Die gute Nachricht: Geschwindigkeit ist behebbar" },
+          {
+            type: "paragraph",
+            text: "Das ist einer der Gründe, warum ich Websites von Grund auf mit React baue statt mit schweren Page-Buildern. Eine saubere, individuell programmierte Seite lädt standardmäßig schnell, es gibt kein aufgeblähtes System, das sie ausbremst. Komprimierte Bilder, schlanker Code und solides Hosting können eine Seite von schmerzhaft langsam zu nahezu sofort machen, und Ihre Besucher spüren den Unterschied sofort, auch wenn sie nicht erklären können, warum.",
+          },
+          {
+            type: "callout",
+            text: "Ihre Kunden warten nicht, und sie sagen Ihnen nicht, dass sie gegangen sind. Eine schnelle Website ist kein Nice-to-have, sie ist der Unterschied zwischen einem Besucher und einem verlorenen Verkauf.",
+          },
+        ],
+      },
+      tags: {
+        en: ["Website speed", "Performance", "Web design"],
+        tr: ["Web sitesi hızı", "Performans", "Web tasarım"],
+        de: ["Website-Geschwindigkeit", "Performance", "Webdesign"],
+      },
+      readTime: "5 min read",
+      date: { en: "January 2026", tr: "Ocak 2026", de: "Januar 2026" },
+    },
 ];
 
 export default posts;
