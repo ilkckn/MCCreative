@@ -1129,7 +1129,7 @@ const posts = [
         de: ["Social Media", "Lokales Unternehmen", "Online-Präsenz"],
       },
       readTime: "5 min read",
-      date: { en: "November 2025", tr: "Kasım 2025", de: "November 2025" },
+      date: { en: "May 2026", tr: "Mayıs 2026", de: "Mai 2026" },
     },
     {
       id: 8,
@@ -1265,7 +1265,7 @@ const posts = [
         de: ["Google-Bewertungen", "Lokales SEO", "Online-Reputation"],
       },
       readTime: "6 min read",
-      date: { en: "December 2025", tr: "Aralık 2025", de: "Dezember 2025" },
+      date: { en: "July 2026", tr: "Temmuz 2026", de: "Juli 2026" },
     },
     {
       id: 9,
@@ -1401,7 +1401,7 @@ const posts = [
         de: ["Website-Geschwindigkeit", "Performance", "Webdesign"],
       },
       readTime: "5 min read",
-      date: { en: "January 2026", tr: "Ocak 2026", de: "Januar 2026" },
+      date: { en: "June 2026", tr: "Haziran 2026", de: "Juni 2026" },
     },
 ];
 
