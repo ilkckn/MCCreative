@@ -60,7 +60,8 @@
       "fitness_gym": "Iron Pulse",
       "cafe_ember": "Ember Cafe",
       "medical_health": "Dr. Med. Schmidt",
-      "butchers_block": "The Butcher's Block"
+      "butchers_block": "The Butcher's Block",
+      "physiovital": "PhysioVital"
     },
     "type": {
       "salon_beauty": "Kuaför & Güzellik",
@@ -68,7 +69,8 @@
       "fitness_gym": "Fitness & Gym",
       "cafe_ember": "Restoran & Kafe",
       "medical_health": "Sağlık & Tıp",
-      "butchers_block": "Kasap & Catering"
+      "butchers_block": "Kasap & Catering",
+      "physiovital": "Fizyoterapi & Rehabilitasyon"
     },
     "projects": {
       "blanche_desc": "Şık tasarımı ve kolay navigasyonuyla bir kuaför salonu için modern ve zarif bir web sitesi.",
@@ -76,7 +78,8 @@
       "iron_pulse": "Taktiksel bir estetikle tasarlanmış; konum noktaları, biyometrik altyapı detayları ve etkileşimli bir harita içeren, yüksek yoğunluklu antrenman odaklı bir spor salonu web sitesi.",
       "ember_desc": "Sıcak terracotta tonları ve el yapımı atmosferiyle bir kafe için tasarlanmış, görsel bir galeri, menü sayfası ve çoklu bölüm içeren modern bir web sitesi.",
       "dr_med_schmidt_desc": "Bir muayenehane için hizmetler, ekip ve iletişim bilgilerini sunan, sade ve profesyonel bir web sitesi.",
-      "butchers_block_desc": "Catering bölümü olan bir kasap için web sitesi: filtrelenebilir ürün kataloğu, kalıcı sepet ve porsiyon bazlı fiyatlandırmaya sahip catering konfigüratörü. Siparişler ödeme sistemi olmadan doğrudan WhatsApp veya e-posta ile işletmeye ulaşıyor."
+      "butchers_block_desc": "Catering bölümü olan bir kasap için web sitesi: filtrelenebilir ürün kataloğu, kalıcı sepet ve porsiyon bazlı fiyatlandırmaya sahip catering konfigüratörü. Siparişler ödeme sistemi olmadan doğrudan WhatsApp veya e-posta ile işletmeye ulaşıyor.",
+      "physiovital_desc": "Bir fizyoterapi kliniği için tam kapsamlı (full-stack) web sitesi: hizmet sayfaları, çok dilli içerik (TR/EN/DE) ve çalışan bir randevu sistemi. Form gönderileri, Node.js/Express backend'i üzerinden MongoDB veritabanına kaydediliyor."
     }
   },
   "about_landing": {

@@ -38,7 +38,7 @@ const websites = [
     id: 3,
     nameKey: "selected_work.name.medical_health",
     typeKey: "selected_work.type.medical_health",
-    category: "medical-health",
+    category: "other",
     descKey: "selected_work.projects.dr_med_schmidt_desc",
     image:
       "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -108,8 +108,32 @@ const websites = [
       "Context API",
       "WhatsApp Ordering",
     ],
-    status: "latest",
+    status: null,
     live_demo: "https://the-butcher-s-block.vercel.app/",
+  },
+  // {
+  //   id: 7,
+  // },
+  {
+    id: 8,
+    nameKey: "selected_work.name.physiovital",
+    typeKey: "selected_work.type.physiovital",
+    category: "other",
+    descKey: "selected_work.projects.physiovital_desc",
+    image: "https://images.unsplash.com/photo-1540206063137-4a88ca974d1a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://github.com/ilkckn/PhysioVital",
+    location: "Basel, Switzerland",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST API",
+      "i18n",
+      "Responsive",
+    ],
+    status: "latest",
+    live_demo: "https://fizyo-vital.vercel.app/",
   },
 ];
 

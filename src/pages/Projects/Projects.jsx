@@ -39,7 +39,7 @@ function Projects() {
         <div className="right">
           <div className="desc">
             <div className="delivered-project">
-              <p className="number">6 <span>+</span></p>
+              <p className="number">7 <span>+</span></p>
               <p><span>Projects</span> {t("projects_page.delivered")}</p>
               <p>{t("projects_page.delivered_desc")}</p>
             </div>
