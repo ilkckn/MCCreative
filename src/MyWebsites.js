@@ -11,7 +11,7 @@ const websites = [
     location: "Freiburg, Germany",
     tags: ["React", "Responsive", "Booking System", "CSS", "JavaScript"],
     status: null,
-    live_demo: "https://blanche-bice.vercel.app/",
+    live_demo: "https://melisa-dede-hair-salon.vercel.app/",
   },
   {
     id: 2,
