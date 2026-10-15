@@ -61,7 +61,8 @@
       "cafe_ember": "Ember Cafe",
       "medical_health": "Dr. Med. Schmidt",
       "butchers_block": "The Butcher's Block",
-      "physiovital": "PhysioVital"
+      "physiovital": "PhysioVital",
+      "blackline_tattoo": "Blackline Tattoo Studio"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
@@ -70,7 +71,8 @@
       "cafe_ember": "Restaurant & Café",
       "medical_health": "Gesundheit & Medizin",
       "butchers_block": "Metzgerei & Catering",
-      "physiovital": "Physiotherapie & Reha"
+      "physiovital": "Physiotherapie & Reha",
+      "blackline_tattoo": "Tattoo-Studio & Buchung"
     },
     "projects": {
       "blanche_desc": "Eine moderne und elegante Website für einen Friseursalon mit schlichtem Design und einfacher Navigation.",
@@ -79,7 +81,8 @@
       "ember_desc": "Eine moderne Website für ein Café mit warmen Terrakotta-Tönen und handwerklicher Atmosphäre, mit einer Bildergalerie, einer Menüseite und mehreren Abschnitten.",
       "dr_med_schmidt_desc": "Eine schlichte und professionelle Website für eine Arztpraxis mit Informationen zu Leistungen, Team und Kontaktdaten.",
       "butchers_block_desc": "Eine Website für eine Metzgerei mit Catering-Bereich: Produktkatalog mit Filtern, persistenter Warenkorb und ein Catering-Konfigurator mit größenbasierter Preislogik. Bestellungen gehen direkt per WhatsApp oder E-Mail an den Betrieb ganz ohne Checkout oder Zahlungsanbieter.",
-      "physiovital_desc": "Eine Full-Stack-Website für eine Physiotherapie-Praxis: Leistungsseiten, mehrsprachige Inhalte (TR/EN/DE) und ein funktionierendes Terminsystem. Formulareingaben werden über ein Node.js/Express-Backend in einer MongoDB-Datenbank gespeichert."
+      "physiovital_desc": "Eine Full-Stack-Website für eine Physiotherapie-Praxis: Leistungsseiten, mehrsprachige Inhalte (TR/EN/DE) und ein funktionierendes Terminsystem. Formulareingaben werden über ein Node.js/Express-Backend in einer MongoDB-Datenbank gespeichert.",
+      "blackline_desc": "Eine Full-Stack-Buchungsplattform für ein Tattoo-Studio: Artist-Profile mit Portfolios, Studio-Galerie, öffentliche Bewertungen und ein Buchungssystem ohne Doppelbelegung. Kunden, Artists und Admins haben jeweils ein eigenes Dashboard. Ein Konzeptprojekt mit fiktivem Studio."
     }
   },
   "about_landing": {

@@ -61,7 +61,8 @@
       "cafe_ember": "Ember Cafe",
       "medical_health": "Dr. Med. Schmidt",
       "butchers_block": "The Butcher's Block",
-      "physiovital": "PhysioVital"
+      "physiovital": "PhysioVital",
+      "blackline_tattoo": "Blackline Dövme Stüdyosu"
     },
     "type": {
       "salon_beauty": "Kuaför & Güzellik",
@@ -70,7 +71,8 @@
       "cafe_ember": "Restoran & Kafe",
       "medical_health": "Sağlık & Tıp",
       "butchers_block": "Kasap & Catering",
-      "physiovital": "Fizyoterapi & Rehabilitasyon"
+      "physiovital": "Fizyoterapi & Rehabilitasyon",
+      "blackline_tattoo": "Dövme Stüdyosu & Rezervasyon"
     },
     "projects": {
       "blanche_desc": "Şık tasarımı ve kolay navigasyonuyla bir kuaför salonu için modern ve zarif bir web sitesi.",
@@ -79,7 +81,8 @@
       "ember_desc": "Sıcak terracotta tonları ve el yapımı atmosferiyle bir kafe için tasarlanmış, görsel bir galeri, menü sayfası ve çoklu bölüm içeren modern bir web sitesi.",
       "dr_med_schmidt_desc": "Bir muayenehane için hizmetler, ekip ve iletişim bilgilerini sunan, sade ve profesyonel bir web sitesi.",
       "butchers_block_desc": "Catering bölümü olan bir kasap için web sitesi: filtrelenebilir ürün kataloğu, kalıcı sepet ve porsiyon bazlı fiyatlandırmaya sahip catering konfigüratörü. Siparişler ödeme sistemi olmadan doğrudan WhatsApp veya e-posta ile işletmeye ulaşıyor.",
-      "physiovital_desc": "Bir fizyoterapi kliniği için tam kapsamlı (full-stack) web sitesi: hizmet sayfaları, çok dilli içerik (TR/EN/DE) ve çalışan bir randevu sistemi. Form gönderileri, Node.js/Express backend'i üzerinden MongoDB veritabanına kaydediliyor."
+      "physiovital_desc": "Bir fizyoterapi kliniği için tam kapsamlı (full-stack) web sitesi: hizmet sayfaları, çok dilli içerik (TR/EN/DE) ve çalışan bir randevu sistemi. Form gönderileri, Node.js/Express backend'i üzerinden MongoDB veritabanına kaydediliyor.",
+      "blackline_desc": "Bir dövme stüdyosu için tam kapsamlı (full-stack) rezervasyon platformu: portfolyolu sanatçı profilleri, stüdyo galerisi, herkese açık yorumlar ve çift rezervasyonu engelleyen bir randevu sistemi. Müşteri, sanatçı ve yönetici için ayrı paneller bulunuyor. Kurgusal bir stüdyoyla hazırlanmış konsept proje."
     }
   },
   "about_landing": {

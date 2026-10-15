@@ -135,6 +135,27 @@ const websites = [
     status: "latest",
     live_demo: "https://fizyo-vital.vercel.app/",
   },
+    {
+    id: 9,
+    nameKey: "selected_work.name.blackline_tattoo",
+    typeKey: "selected_work.type.blackline_tattoo",
+    category: "salon-beauty",
+    descKey: "selected_work.projects.blackline_desc",
+    image: "/blackline.jpg",
+    link: "https://github.com/ilkckn/Blackline-Studio",
+    location: "Basel, Switzerland",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST API",
+      "Booking System",
+      "Responsive",
+    ],
+    status: "latest",
+    live_demo: "https://blacklinetattoostudioproject.vercel.app/",
+  },
 ];
 
 export default websites;

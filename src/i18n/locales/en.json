@@ -61,7 +61,8 @@
       "fitness_gym": "Iron Pulse",
       "cafe_ember": "Ember Cafe",
       "butchers_block": "The Butcher's Block",
-      "physiovital": "PhysioVital"
+      "physiovital": "PhysioVital",
+      "blackline_tattoo": "Blackline Tattoo Studio"
     },
     "type": {
       "salon_beauty": "Salon & Beauty",
@@ -70,7 +71,8 @@
       "fitness_gym": "Fitness & Gym",
       "cafe_ember": "Restaurant & Cafe",
       "butchers_block": "Butcher & Catering",
-      "physiovital": "Physiotherapy & Rehab"
+      "physiovital": "Physiotherapy & Rehab",
+      "blackline_tattoo": "Tattoo Studio & Booking"
     },
     "projects": {
       "blanche_desc": "A modern and elegant website for a hair salon, featuring a sleek design and easy navigation.",
@@ -79,7 +81,8 @@
       "iron_pulse": "A high-intensity gym website built with a tactical aesthetic, featuring location nodes, biometric infrastructure details, and an interactive map.",
       "ember_desc": "A modern website designed for a cafe with warm terracotta tones and a handcrafted atmosphere, featuring a visual gallery, a menu page, and multiple sections.",
       "butchers_block_desc": "A website for a butcher shop with a catering section: a filterable product catalog, a persistent cart, and a catering configurator with serving-size-based pricing. Orders go straight to the business via WhatsApp or email no checkout, no payment provider.",
-      "physiovital_desc": "A full-stack website for a physiotherapy clinic: service pages, multilingual content (TR/EN/DE), and a working appointment system. Form submissions are stored in a MongoDB database through a Node.js/Express backend."
+      "physiovital_desc": "A full-stack website for a physiotherapy clinic: service pages, multilingual content (TR/EN/DE), and a working appointment system. Form submissions are stored in a MongoDB database through a Node.js/Express backend.",
+      "blackline_desc": "A full-stack booking platform for a tattoo studio: artist profiles with portfolios, a studio gallery, public reviews and a booking engine that prevents double bookings. Clients, artists and admins each get their own dashboard. A concept project with a fictional studio."
     }
   },
   "about_landing": {
