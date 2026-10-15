@@ -6,8 +6,7 @@ const websites = [
     category: "salon-beauty",
     descKey: "selected_work.projects.blanche_desc",
     image:
-      "https://images.unsplash.com/photo-1707979577466-2d6109c68a45?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://blanche-hair-salon.netlify.app/",
+      "/BlancheHairSalon.png",
     location: "Freiburg, Germany",
     tags: ["React", "Responsive", "Booking System", "CSS", "JavaScript"],
     status: null,
@@ -20,8 +19,7 @@ const websites = [
     category: "restaurant-cafe",
     descKey: "selected_work.projects.terra_desc",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://terra-restaurant-sigma.vercel.app/",
+      "Terra.png",
     location: "Berlin, Germany",
     tags: [
       "React",
@@ -41,8 +39,7 @@ const websites = [
     category: "other",
     descKey: "selected_work.projects.dr_med_schmidt_desc",
     image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://github.com/ilkckn/House-Doctor",
+      "Dr.Med.Schmidt.png",
     location: "Lörrach, Germany",
     tags: [
       "React",
@@ -62,8 +59,7 @@ const websites = [
     category: "fitness",
     descKey: "selected_work.projects.iron_pulse",
     image:
-      "https://images.unsplash.com/photo-1591311630200-ffa9120a540f?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://github.com/ilkckn/Iron-Pulse",
+      "IronPulse.png",
     location: "New York, USA",
     tags: [
       "React",
@@ -83,8 +79,7 @@ const websites = [
     category: "restaurant-cafe",
     descKey: "selected_work.projects.ember_desc",
     image:
-      "https://images.unsplash.com/photo-1655182413225-695cc7ed0411?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://github.com/ilkckn/Ember-Cafe",
+      "EmberCafe.png",
     location: "Portland, USA",
     tags: ["React", "Responsive", "CSS", "JavaScript", "React Router"],
     status: null,
@@ -96,7 +91,7 @@ const websites = [
     typeKey: "selected_work.type.butchers_block",
     category: "retail",
     descKey: "selected_work.projects.butchers_block_desc",
-    image: "/the-butchers-block.png",
+    image: "/TheButcher.png",
     link: "https://github.com/ilkckn/The-Butcher-s-Block",
     location: "Frankfurt, Germany",
     tags: [
@@ -120,7 +115,7 @@ const websites = [
     typeKey: "selected_work.type.physiovital",
     category: "other",
     descKey: "selected_work.projects.physiovital_desc",
-    image: "https://images.unsplash.com/photo-1540206063137-4a88ca974d1a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "PhysioVital.png",
     link: "https://github.com/ilkckn/PhysioVital",
     location: "Basel, Switzerland",
     tags: [
